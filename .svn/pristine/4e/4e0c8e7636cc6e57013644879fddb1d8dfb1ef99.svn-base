@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>天下网络-优惠永远多一点</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" type="text/css" href="../user_css/user.css">
+    <link href="../user_css/deposit.css" rel="stylesheet" type="text/css"/>
+    <script src="../../public/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="../user_js/layer/layer.js"></script>
+    <script type="text/javascript" src="../user_js/user_main.js"></script>
+    <script src="OnlinePay/desposit-alipay.js"></script>
+</head>
+<!--全局视图绑定-->
+<body ms-controller="index" class="ms-controller">
+<div class="user_header">
+    <script>
+        puli('../component/user_header.html', '.user_header')
+    </script>
+</div>
+<div class="clear wrap" ms-controller="AliPay">
+    <div class="holder">
+        <div class="side-bar">
+            <div class="top-height"></div>
+            <a id="mm_nav_1" class="dpt-sd-lnk-header">
+                会员中心
+            </a>
+            <a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+                <span class="icon-member-left member-left-icon"></span>会员首页
+            </a>
+
+
+            <a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+                <span class="icon-wallet member-left-icon"></span>转账
+            </a>
+            <a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+                <span class="icon-wallet member-left-icon"></span>存款
+            </a>
+            <a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+                <span class="icon-wallet member-left-icon"></span>提款
+            </a>
+            <a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+                <span class="icon-file member-left-icon"></span>历史记录
+            </a>
+            <a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+                <span class="icon-journal member-left-icon"></span>个人资料
+                <div class="icon icon-down" id="account-info" attr-value="down"></div>
+            </a>
+            <div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+                <a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+                    个人信息
+                    <div class="icon-purple-right"></div>
+                </a>
+                <a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+                    银行资料
+                    <div class="icon-purple-right"></div>
+                </a>
+                <a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+                    修改密码
+                    <div class="icon-purple-right"></div>
+                </a>
+            </div>
+            <a id="mm_nav_9" href="memberletter.html" class="dpt-sd-lnk">
+                <span class="icon-mail member-left-icon"></span>站内信
+            </a>
+            <div></div>
+        </div>
+        <!--支付视图绑定-->
+        <div class="dtls-con">
+            <div class="deposit-tabs">
+                <ul class="tabs">
+                    <li><a href="deposit-card.html">在线支付</a></li>
+                    <li><a href="deposit-wepay.html">微信支付</a></li>
+                    <li><a href="javascript:vaid(0);" class="active">支付宝支付</a></li>
+                    <li><a href="deposit-qqpay.html">财付通</a></li>
+                    <li><a href="deposit-cash.html">银行汇款</a></li>
+                </ul>
+            </div>
+
+
+            <div class="row row_log">
+                <div class="icon icon-alipay"></div>
+            </div>
+
+
+            <!--支付通道选项卡-->
+            <div class="rbank-info other-info pay_1">
+                <!--支付通道循环-->
+                <div class="rbank_top clear rbank_top_wepay">
+                    <a class="clo-item " href="javascript:;" ms-if="payList" ms-for="(index,el) in payList"
+                       ms-class="[index == payConfig.isSelected &&'on']" ms-click="switchPayList(index)">
+                        <i class="rbank-icon_wepay rbank-icon_alipay"></i><label>支付{{index+1}}</label>
+                        <i class="rbank-icon mark"></i>
+                    </a>
+
+                    <!--如支付列表为空时-->
+                    <h2 ms-if='!payList' style="color: #9b9b9b;font-size: 16px;">无可用支付通道</h2>
+                </div>
+            </div>
+
+
+            <!--选项卡-end-->
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('.rbank_top_wepay a').on('click', function () {
+                        $('.rbank_top_wepay a').eq($(this).index()).addClass('on').siblings().removeClass('on');
+                    });
+                });
+
+            </script>
+
+
+            <div class="deposit-form card">
+                <div class="form">
+
+                    <div class="row">
+                        <div class="field">
+                            <label>中心钱包</label>
+                            <div class="input disabled">
+                                <!--中心钱包余额-->
+                                <input type="text" disabled="" ms-attr="{value:UserInfo.wallet +'元'}">
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="field">
+                            <label>存款金额</label>
+                            <div class="input">
+                                <input ms-duplex="payConfig.amount" type="text" name="amount"
+                                       onkeyup="this.value=this.value.replace(/^0|\D/gi,&quot;&quot;)"
+                                       ondragenter=" return false"
+                                       onpaste="return !clipboardData.getData('text').match(/\D/)">
+                                <span>元</span>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <!--最大最小值-->
+                        <div class="notice">单笔充值金额最少{{payConfig.minQuota}}元，最多{{payConfig.maxQuota}}元</div>
+                    </div>
+                    <div class="row">
+                        <div class="field buttons">
+                            <button type="button" class="button" ms-click='submitAli'>提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="user_footer">
+    <script>
+        puli('../component/user_footer.html', '.user_footer')
+    </script>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#mm_nav_" + 3).addClass("active");
+        show_sub_bar($("#mm_nav_" + 3));
+        $("#sd-lnk-" + 3 + '_' + 2).addClass("active");
+    });
+</script>
+</html>

@@ -1,0 +1,225 @@
+<!--头部-->
+<div class="top fixed" id="header">
+    <div class="top-con">
+        <div class="icn-con-left">
+        </div>
+        <div class="icn-con-right" style="width: 237px;">
+            <a style="color: #7d7881;" href="/help/aboutus1.html" class="fgp-link">关于我们</a>｜
+            <a href="/help/aboutus2.html">牌照展示</a>
+            <!--<a href="javascript:;" onclick="return BookmarkApp.addBookmark(this);">加入收藏</a>-->
+            <div class="free_play">
+                <a href="/coloum/free-hall.html">免费试玩</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<!-- End Top Container -->
+
+<div class="hdr">
+    <div class="hr"></div>
+    <div class="hdr-con">
+
+        <div class="hdr-hld ">
+            <a href="/index.html" class="logo">
+            	<img src="http://192.168.0.140:81/TXWN/images/logo.png" style="width: 100%;height: 100%;">
+            </a>
+            <!-- <a  class="slogan" ></a> -->
+            <!--<a href="javascript:;" class="bundesliga_logo"></a>-->
+            <!--登录前-->
+            <div class="hdr-fcn login" id="login" style="display: none;">
+                <form action="" method="post" name="login">
+                    <div class="ipt">
+                        <label><i class="icon_i iconfont ico_user"></i><input type="text" class="login_username" name="login_username" onfocus="if (value =='用户名'){value =''}" onblur="if (value ==''){value='用户名'}" id="login_username" value="用户名" autocomplete="off"></label>
+                    </div>
+                    <div class="ipt">
+                        <label><i class="icon_i iconfont"></i><input type="password" class="login_password" name="login_password" id="login_password" placeholder="密码" onfocus="this.placeholder=''" onblur="this.placeholder='密码'" autocomplete="new-password"></label>
+                    </div>
+                    <div class="ipt inpt_Verification">
+                        <input type="text" class="Verification" maxlength="4" name="Verification" id="Verification" onfocus="if (value =='验证码'){value =''}" onblur="if (value ==''){value='验证码'}" value="验证码">
+                        <img id="Verification_img" alt="验证码" src="">
+                    </div>
+                </form>
+
+                <a id="login_btn_login" name="login_btn02" class="login_btn">登录</a>
+                <a href="javascript:void(0)" class="free_account_btn">
+                    <div class="icon-cny"></div>真钱开户
+                </a>
+            </div>
+            
+            
+        <!--登录后-->
+        <div class="login_after" id="login_after" style=" display: none;">
+            <div class="login_after_top">
+                <ul>
+                    <li><a href="/UserCenter/membercenter.html">您好，<span id="login_user_name">-</span></a></li>
+                    <li><a href="/UserCenter/memberbalance.html">可用余额：￥<i id="login_user_money">-</i></a></li>
+                    <li><a href="/UserCenter/memberletter.html">站内信息(<span id="message_count"></span>)</a></li>
+                    <li class="login_out"><a id="login_out" href="javascript:void(0)">退出</a></li>
+                </ul>
+
+            </div>
+            <div class="login_after_btm">
+                <a href="/UserCenter/membercenter.html"><span>会员中心</span></a>
+                <a href="/UserCenter/deposit-home.html">存款</a>
+                <a href="/UserCenter/withdraw/withdraw.html">提款</a>
+                <a href="/UserCenter/memberbalance.html">额度转换</a>
+                <a href="/UserCenter/pages/record-game.html"><span>投注记录</span></a>
+            </div>
+
+        </div>
+        <!--登录后-end-->
+            <!--<script>
+                $(document).ready(function(){
+                    $('.login_info_after').hover(function(){
+                        $('.login-name-show').show();
+                    },function(){
+                        $('.login-name-show').hide();
+                    })
+                })
+            </script>-->
+            <span class="clear"></span>
+        </div>
+        <!-- Start Navigation Menu -->
+        <div id="nav_1" class="tplnk ">
+            <a href="/index.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            首页
+            </a>
+        </div>
+        <div id="nav_2" class="tplnk">
+            <a href="/coloum/live-casino.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            真人娱乐
+            </a>
+            <div class="icon-down"></div>
+            <div class="live-menu">
+                <div class="info">
+                    <div class="live-agqj" onclick="loadgame('AGIN');">
+                        <img src="http://192.168.0.140:81/TXWN/images/agqh-show.png">
+                    </div>
+                    <div class="live-agin" onclick="loadgame('CG');">
+                        <img src="http://192.168.0.140:81/TXWN/images/agin-show.png">
+                    </div>
+                    <div class="live-tel" onclick="loadgame('DS');">
+                        <img src="http://192.168.0.140:81/TXWN/images/agtel-show.png">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="nav_3" class="tplnk">
+            <a href="/coloum/lobby.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            电子游艺
+            </a>
+            <div class="icon-down"></div>
+            <div class="lobby-menu">
+                <div class="icon-small-hot icon1"></div>
+                <div class="icon-small-hot icon2"></div>
+                <div class="info">
+                    <div class="div-top"><a href="/coloum/lobby.html">MG</a></div>
+                    <div class="div-top"><a href="/coloum/lobby_pt.html">PT</a></div>
+                    <div class="div-top"><a href="/coloum/lobby_haba.html">HABA</a></div>
+                    <div class="div-middle"><a href="javascript:;" onclick="loadgame('SB','2');">TGP</a></div>
+                    <div class="div-middle"><a href="javascript:;" onclick="loadgame('BBIN','2');">BBIN</a></div>
+                    <!-- <div class="div-middle"><a href="javascript:;" onclick="loadgame('AGBY');"></a>AG捕鱼</div>
+                    <div class="div-bottom gamein_fish"><a href="javascript:;" onclick="loadgame('GGBY');"></a>GG捕鱼</div> -->
+                    <!--<div class="div-bottom">AS电玩</div>-->
+                </div>
+            </div>
+
+        </div>
+        <div id="nav_6" class="tplnk">
+            <a href="/coloum/fishing.html">
+                <div class="tplnk_rline">
+                    <div class="arrow"></div>
+                </div>
+                捕鱼达人
+            </a>
+        </div>
+        <div id="nav_4" class="tplnk">
+            <a href="/coloum/sports.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            体育投注
+            </a>
+        </div>
+        <div id="nav_5" class="tplnk">
+            <a href="/coloum/slot.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            彩票投注
+            </a>
+            <div class="icon-down"></div>
+
+            <div class="mahjong-menu">
+                <div class="info">
+                    <div class="div-top mahjong-1">
+                        <a href="javascript:;" onclick="loadgame('IGPJLOTTERY','2','PC');">
+                            <img src="http://192.168.0.140:81/TXWN/images/mahjong-1.png">
+                            <div class="top-info">IG彩票(新)</div>
+                        </a>
+                    </div>
+                    <div class="div-top mahjong-2">
+                        <a href="javascript:;" onclick="loadgame('IGLOTTERY','2','PC');">
+                        <img src="http://192.168.0.140:81/TXWN/images/mahjong-2.png">
+                        <div class="top-info">IG彩票</div>
+                        </a>
+                    </div>
+                    <!--<div class="div-top mahjong-3">
+                        <a href="javascript:;" onclick="loadgame('BG','2');">
+                            <img src="http://192.168.0.140:81/TXWN/images/mahjong-3.png">
+                            <div class="top-info">官方彩</div>
+                        </a>
+                    </div>-->
+                    <div class="div-top mahjong-3" style=" margin-left: 0px;">
+                        <a href="javascript:;" onclick="loadgame('VR','1')">
+                            <img src="http://192.168.0.140:81/TXWN/images/mahjong-4.png">
+                            <div class="top-info">VR彩票</div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!--</a>-->
+        <div id="nav_8"  class="tplnk">
+            <a href="/coloum/promotion_list.html">
+            <div class="tplnk_rline">
+                <div class="arrow"></div>
+            </div>
+            优惠活动
+            </a>
+        </div>
+        <div id="nav_9" class="tplnk">
+            <a href="/coloum/download.html">
+                <div class="tplnk_rline">
+                    <div class="arrow"></div>
+                </div>
+                手机下载
+            </a>
+        </div>
+        <!--<a href="http://bbs.amb8.com/" target="_blank" class="tplnk">-->
+            <!--<div class="tplnk_rline">-->
+                <!--<div class="arrow"></div>-->
+            <!--</div>-->
+            <!--论坛-->
+        <!--</a>-->
+        <span class="clear"></span>
+        <!-- End Navigation Menu -->
+    </div>
+</div>
+<!--头部结束-->

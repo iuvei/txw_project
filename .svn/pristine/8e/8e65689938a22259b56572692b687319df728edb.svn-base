@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" type="image/x-icon" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/home.css" rel="stylesheet" type="text/css" />
+<link href="/css/faq.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="header_bgbox">
+    <script>Main($('.header_bgbox'),'/template/header.html');</script>
+</div>
+<!-- 头部显示 end -->
+	<div class="content cstm-wrap2">
+<div class="rule_banner"></div>
+  <ul class="gmrl-con">
+		<li id="rule_nav1"><a href="rule1_branch.html" >百家乐</a></li>
+		<li id="rule_nav2"><a href="rule2_branch.html" >包桌（VIP）百家乐</a></li>
+		<li id="rule_nav3"><a href="rule3_branch.html" >竞咪（LED）百家乐 </a></li>
+		<li id="rule_nav4"><a href="rule4_branch.html" >龙宝百家乐</a></li>
+		<li id="rule_nav20"><a href="rule20_branch.html" >保险百家乐</a></li>
+		<li id="rule_nav5"><a href="rule5_branch.html" >七喜百家乐</a></li>
+		<li id="rule_nav6"><a href="rule6_branch.html" >龙虎</a></li>
+		<li id="rule_nav7"><a href="rule7_branch.html" >骰宝</a></li>
+		<li id="rule_nav8"><a href="rule8_branch.html" >轮盘</a></li>
+		<li id="rule_nav9"><a href="rule9_branch.html" >二八杠</a></li>
+		<div class="clear"></div>
+		<li id="rule_nav10"><a href="rule10_branch.html" >三公</a></li>
+		<li id="rule_nav11"><a href="rule11_branch.html" >温州牌九</a></li>
+		<li id="rule_nav12"><a href="rule12_branch.html" >牛牛</a></li>
+		<li id="rule_nav13"><a href="rule13_branch.html" >色碟</a></li>
+		<li id="rule_nav14"><a href="rule14_branch.html" >德州扑克</a></li>
+		<li id="rule_nav15" class="active"><a href="rule15_branch.html" >特奖德州扑克 </a></li>
+		<li id="rule_nav16"><a href="rule16_branch.html" >21点</a></li>
+		<li id="rule_nav17"><a href="rule17_branch.html" >真人乐透</a></li>
+		<li id="rule_nav18"><a href="rule18_branch.html" >水果拉霸</a></li>
+		<li id="rule_nav19"><a href="rule19_branch.html" >杰克高手</a></li>
+		
+		<li id="rule_nav22"><a href="rule22_branch.html">时时彩</a></li>
+		<div class="clear"></div>
+</ul>
+  <div class="gamerule-con">
+      <div class="prm_h1_rule">特奖德州扑克</div>
+        <br><br>
+        <!--<div class="pa_bn"><img src="http://192.168.0.140:81/TXWN/images/rule/rule-banner18.jpg" alt=""></div>-->
+
+        <div class="info">
+          <div class="text-title">游戏介绍：</div>
+          真人累积特奖德州扑克使用标准扑克牌去掉王牌后的52张牌。游戏中, 每个玩家只有一个投注位置, 玩家只能和庄对赌，而非和其他玩家对赌。<br><br>
+          这是一个共牌游戏，玩家用手中的两张底牌和桌面上的5张公共牌进行任意组合，选出5张牌组成一手最好的牌型 。
+        </div>
+
+        <div class="info">
+          <div class="text-title">游戏玩法 ：</div>
+
+          <ol class="ordered">
+            <li>初始赌注 
+              <ul class="list2">
+                <li>玩家们首先投注“底注”。该注金是获得2张底牌，开始新一轮游戏 </li>
+                <li> 同时，玩家们可以选择，玩家提供有权放置一个“特奖”超过一般赌注的赌博赌注在这轮比赛中。这个超过一般赌注的赌博将会很严格的对战玩家的底牌并且不会影响玩家和底牌与最佳扑克等级的比对。 </li>
+                <li>在同一轮游戏中，玩家投注"底注"后还可以选择投注"累积"。</li>
+              </ul>
+            </li>
+            <li>玩家们获得2张底牌后，可以做出以下选择：  
+              <ul class="list2">
+                <li>盖牌”，玩家选择后将失去下注的“底注”和“特奖”的注金。如果玩家盖牌，他的底牌将不能继续游戏，同时玩家无法继续任何下注。 </li>
+                <li>如果玩家"盖牌"，投注在累积的赌注将无法获得表1和表2的赔付，但仍有机会可获得表3的赔付。 </li>
+                <li>“翻牌”要求玩家在桌面标注翻牌的地方投注“底注”的2倍注金。 </li>
+                <li>如果玩家账户中没有足够的余额去"翻牌"，系统会自动默认为"盖牌"。</li>
+              </ul>
+            </li>
+            <li>翻牌   
+              <ul class="list2">
+                <li>荷官会翻出3张公共牌（翻牌） </li>
+                <li>玩家可以选择增加与底注相同金额的注金，以此来增加他的本金。</li>
+                <li>玩家亦可选择"让牌"，不加注。 </li>
+              </ul>
+            </li>
+            <li>转牌    
+              <ul class="list2">
+                <li>荷官会翻出第4张公共牌（转牌） </li>
+                <li>玩家可以选择增加与底注相同金额的注金，以此来增加他的本金，或者选择让牌 </li>
+                <li>如果玩家账户中没有足够的余额去"翻牌"，系统会自动默认为"盖牌"。  </li>
+              </ul>
+            </li>
+            <li>河牌     
+              <ul class="list2">
+                <li>荷官会翻出第5张公共牌（河牌），同时不允许再次下注。 </li>
+              </ul>
+            </li>
+            <li>游戏结果     
+              <ul class="list2">
+                <li>庄也会发底牌，并与玩家的牌进行比较。玩家或庄的底牌与五张公共牌以任意组合成排名较高的五张牌，最大者为赢家 </li>
+                <li>如果玩家的牌高于庄的牌，玩家将赢得翻牌、转牌、河牌的注金  </li>
+                <li>如果玩家赢得这手牌是顺子或更好的牌，玩家将赢得“底注”赌注。如果赢得的这手牌低于顺子“底注”赌注将持平.  </li>
+                <li>如果玩家的牌低于庄的牌，玩家将输掉所有赌注（底注，翻牌、转牌、河牌的注金），但仍有资格赢得"特奖"和"累积"的赌注。</li>
+                <li>玩家的牌的排列将和公共牌的排列一样，平局则宣布获胜。</li>
+              </ul>
+            </li>
+
+          </ol>
+          
+        </div>
+
+        <div class="info">
+           <div class="text-title">扑克牌型：</div>  
+           由大到小排序如下： 
+           <ol class="ordered1">
+             <li>皇家同花顺是由花色相同的A、K、Q、J、10组成。例如：A <span class="suites">♦</span>, K <span class="suites">♦</span>, Q<span class="suites">♦</span>, J <span class="suites">♦</span>, 10 <span class="suites">♦</span></li>
+             <li>同花顺是由五张同花色的连续牌，但不同于皇家同花顺组成的。例如：J <span class="suites">♣</span>, 10 <span class="suites">♣</span>, 9 <span class="suites">♣</span>, 8 <span class="suites">♣</span>, 7<span class="suites">♣</span> 
+              <ul class="list3">
+                <li>两个同花顺相比，排位较高的同花顺胜利。 </li>
+                <li>A可以被视为最低，所以 <span class="suites red">♥</span> 5- <span class="suites red">♥</span> 4- <span class="suites red">♥</span> 3- <span class="suites red">♥</span> 2- <span class="suites red">♥</span> A是同花顺，但是最高的点数是5。没有A就是最低的同花顺。</li>
+                <li><span class="suites red">♦</span>4- <span class="suites red">♦</span> 3- <span class="suites red">♦</span> 2- <span class="suites red">♦</span> A- <span class="suites red">♦</span> K 是不合格的 </li>
+              </ul>
+             </li>
+             <li>四条是由四张点数相同的牌加上一张其他牌组成的。例如：A <span class="suites">♣</span>, A<span class="suites">♥</span> , A <span class="suites">♦</span>, A <span class="suites">♠</span> , J <span class="suites">♥</span> 
+                <ul class="list3">
+                  <li>如果两副牌型都为四条，四张点数相同的牌的点数较高的为大。例如：4-4-4-4-2大于3-3-3-3-A </li>
+                  <li>如果两个或两个以上玩家拥有相同的四条，由单独的那一张牌来决定大小 </li>
+                </ul>
+             </li>
+             <li>满堂红是由三张点数相同的牌和一对组成。例如：K <span class="suites">♣</span>, K <span class="suites">♥</span>, K<span class="suites">♦</span> , A<span class="suites">♠</span> , A<span class="suites">♥</span> 
+              <ul class="list3">
+                <li> 满堂红对比，三张点数相同的牌的点数较高的为大。例如：9-9-9-4-4 大于8-8-8-A-A </li>
+                <li>如果三张点数相同的牌一样的情况下，由一对来决定大小 </li>
+              </ul>
+             </li>
+              <li>同花是由5张相同花色，但点数不相连的数字组成的。例如：J <span class="suites">♥</span>, 8 <span class="suites">♥</span>, 6 <span class="suites">♥</span> , 5 <span class="suites">♥</span> , 2 <span class="suites">♥</span> 
+              <ul class="list3">
+                <li>两组同花相比时，由最大的牌点来决定胜负；如果最大的牌是相同的，就取决于第二大的牌点；如果相同，就比较第三位的；以此类推。 </li>
+              </ul>
+             </li>
+             <li> 顺子是由5张相连的数字，而花色不同的牌组成的，A可以认为是最高或者最低。例如： 9 <span class="suites">♣</span>, 8 <span class="suites">♦</span>, 7 <span class="suites">♣</span>, 6 <span class="suites">♥</span>, 5 <span class="suites">♥</span>
+                <ul class="list3">
+                  <li>如果两副牌型都为顺子，排位较高的顺子胜出。</li>
+                  <li>顺子牌型中，A可以被认为是最高或者最低，但不能同时存在。所有说A-K-Q-J-10 和5-4-3-2-A 是正确的，但是2-A-K-Q-J 则不合格。 </li>
+                  <li>5-4-3-2-A 被称为“wheel”，是顺子中最小的组合，最高点数是5点。 </li>
+                </ul>
+             </li>
+             <li>3条是5张牌中由3张相同点数的牌组成的排列。例如：10 <span class="suites">♣</span>, 10 <span class="suites">♥</span>, 10 <span class="suites">♠</span> 6 <span class="suites">♥</span>, 3 <span class="suites">♦</span> 
+                <ul class="list3">
+                  <li>两幅3条相比，将取决于排位较高的那副 </li>
+                </ul>
+             </li>
+             <li> 两对是由两个对子组合而成的。例如：Q <span class="suites">♣</span>, Q <span class="suites">♥</span>, 6 <span class="suites">♠</span> 6 <span class="suites">♥</span>, 3 <span class="suites">♦</span> 
+                <ul class="list3">
+                  <li>两副两队的牌型相比，将取决于较高的对子，将不考虑较低的对子。  </li>
+                  <li>如果较高的对子相同的话，将胜负将取决于较低的对子。 </li>
+                  <li>最后，如果两队都相同的话，将比较最后一张单牌。 </li>
+                </ul>
+             </li>
+             <li>对子是由一个对子组成的排列。例如：A <span class="suites">♣</span>, A <span class="suites">♥</span>, 8 <span class="suites">♦</span> 6 <span class="suites">♥</span>, 5 <span class="suites">♠</span> 
+                <ul class="list3">
+                  <li>两幅对子相比的话，对子排列较高的获胜。例如：6-6-4-3-2将大于5-5-A-K-Q。 </li>
+                  <li>如果对子相同的话，较比较单牌的大小。 </li>
+                </ul>
+             </li>
+             <li>杂牌 
+                <ul class="list3">
+                  <li>5张牌没有任何排列。例如：Q <span class="suites">♣</span>, 10 <span class="suites">♥</span>, 6 <span class="suites">♦</span>, 5 <span class="suites">♠</span>, 2 <span class="suites">♥</span> . 有时候被称为是高牌或者无对。 </li>
+                  <li>两幅杂牌相比的话，将从最大的点数开始，以此类推。</li>
+                </ul>
+             </li>
+           </ol>
+        </div>
+        <div class="info">
+          <div class="text-title">结算：</div>
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="50%">赢注</th>
+                  <th class="thset thset-brd2" width="50%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">翻牌赢</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">转牌赢</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>          
+              <tr>
+                  <td class="tdset tdset-brd1">河牌赢</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">低注赢 (顺牌或更好)</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>                                  
+          </table><br/>
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="50%">奖金投注 (玩家的王牌)</th>
+                  <th class="thset thset-brd2" width="50%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">A-A 玩家和庄皆有</td>
+                  <td class="tdset tdset-brd2">1 赔 1000</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">A-A 仅玩家有</td>
+                  <td class="tdset tdset-brd2">1 赔 30</td>
+              </tr>        
+              <tr>
+                  <td class="tdset tdset-brd1">A-K (同花色)</td>
+                  <td class="tdset tdset-brd2">1 赔 25</td>
+              </tr>    
+              <tr>
+                  <td class="tdset tdset-brd1">A-Q 或 A-J (同花色)</td>
+                  <td class="tdset tdset-brd2">1 赔 20</td>
+              </tr>     
+              <tr>
+                  <td class="tdset tdset-brd1">A-K (不同花色)</td>
+                  <td class="tdset tdset-brd2">1 赔 15</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">K-K, Q-Q 或 J-J (高对子)</td>
+                  <td class="tdset tdset-brd2">1 赔 10</td>
+              </tr>       
+              <tr>
+                  <td class="tdset tdset-brd1">A-Q 或 A-J (不同花色)</td>
+                  <td class="tdset tdset-brd2">1 赔 5</td>
+              </tr>       
+              <tr>
+                  <td class="tdset tdset-brd1">10-10 一直到 2-2 (低对子)</td>
+                  <td class="tdset tdset-brd2">1 赔 3</td>
+              </tr>                                                                              
+          </table><br/> 
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="65%">表 P1: 累积获胜</th>
+                  <th class="thset thset-brd2" width="35%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">翻牌阶段的皇家同花顺（翻出5张牌）</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>   
+              <tr>
+                  <td class="tdset tdset-brd1">转牌阶段的皇家同花顺（翻出6张牌）</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">河牌阶段的皇家同花顺（翻出7张牌） *（最少包含一张底牌）</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>                              
+          </table>      
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="65%">表 P2: 累积固定赔付（7张牌中最大的牌型）</th>
+                  <th class="thset thset-brd2" width="35%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">同花顺</td>
+                  <td class="tdset tdset-brd2">USD 600</td>
+              </tr> 
+              <tr>
+                  <td class="tdset tdset-brd1">四条</td>
+                  <td class="tdset tdset-brd2">USD 120</td>
+              </tr>               
+          </table>     
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="65%">表 P3:共牌累积赔付（只在5张共牌中选出最大的牌型）</th>
+                  <th class="thset thset-brd2" width="35%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">共牌皇家同花顺</td>
+                  <td class="tdset tdset-brd2">USD 4,000</td>
+              </tr> 
+              <tr>
+                  <td class="tdset tdset-brd1">共牌同花顺</td>
+                  <td class="tdset tdset-brd2">USD 620</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">共牌四条</td>
+                  <td class="tdset tdset-brd2">USD 120</td>
+              </tr>                             
+          </table>                              
+        </div>
+
+        <div class="info info2">
+          <div class="text-title">注意：</div>
+          <ul class="list">
+            <li>上面表格所反映的累积投注赔付不包括投注在“累积”的金额；</li>
+            <li>由于货币的换算，所有的累积赔付金额将四舍五入；</li>
+            <li>共牌累积组合（表 P3）是只在5张共牌中选出最大的牌型组合，牌型组合并不包括玩家的底牌；</li>
+            <li>固定赔付表（表P2和P3）将根据下表中的货币换算汇率乘数, 而换算成相应的货币。 </li>
+          </ul><br/>
+          如同花顺和四条同时符合表 P2和P3，将不重复或双倍派彩。<br>
+          温馨提示：不同的游戏平台，游戏规则略有不同，具体以相关平台展示的对应游戏项目为准。<br/><br/>
+        </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--尾部-->
+<div class="footer_bgbox">
+    <script>Main($('.footer_bgbox'),'../template/footer.html');</script>
+</div>
+<!--尾部-->
+</body>
+</html>

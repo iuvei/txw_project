@@ -1,0 +1,358 @@
+﻿body{
+	background: #f4f2e4 url(http://192.168.0.140:81/TXWN/user_img/navbar_bg.jpg) center top no-repeat;
+	font-family: "Microsoft Yahei","Tahoma";
+    font-size: 14px;
+    color: #666;
+}
+/*alalon框架下的乱码问题*/
+ .ms-controller{
+     visibility: hidden;
+  }
+
+i{ font-style: normal;}
+/*body .wrap{
+	width: 1165px;
+	margin: 0 auto;
+}*/
+div{ margin: 0px auto;}
+.top_bar{
+	height: 75px;
+	width:  1200px;
+	background-color: #615893;
+}
+.top_bar p{
+	width: 235px;
+	font-size: 25px;
+	color: white;
+	float: left;
+	text-align: center;
+	line-height: 49px;
+}
+.top_bar p img{    
+	width: 209px !important;
+    /*margin-top: 4px; */  
+     }
+.top_bar .top_nav{
+	float: left;
+	width: 540px;
+} 
+.top_bar .top_nav li {
+	float: left;
+	margin-left:20px ;
+	width: 70px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+}
+.top_bar .top_nav li:hover{
+	/*border-bottom: 2px #E10000 solid;*/
+}
+.top_bar .top_nav li a:hover{
+	color:#cdcade ;
+}
+.top_bar .top_nav li a{
+	font-size: 16px;
+	color: #FFFFFF;
+	cursor:pointer;
+}
+.top_bar .header_info{
+	margin-top: 27px;
+	margin-right: 20px;
+	float: right;
+	color: #ffffff;
+	}
+.top_bar .header_info .button{
+	/*width: 68px;
+	height: 26px;*/
+	padding: 5px 10px;
+	background: #96c036;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+    font-family: 'Microsoft Yahei';
+}
+.top_bar .header_info .first{
+	margin-right: 10px;
+	color: #ffffff;
+	font-size: 13px;
+}
+.top_bar .header_info .last{
+	margin-left: 5px;
+	/*margin-top: 15px;*/
+	margin-right: 5px;
+	color: #FFFFFF;
+	font-size: 13px;
+	display: inline-block;
+	width: 50px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 2px;
+	background: #f84e4e;
+	cursor:pointer;
+}
+.top_bar .header_info a:hover{
+	color: #fff;
+}
+.notice{
+	width: 1165px;
+	height: 35px;
+	background: none !important;
+}
+/*头部 公告*/
+.eveb_header_notice{ width:570px;float:right; height:42px;}
+.eveb_header_notice h4{float:left;font-size:12px; width:70px; height:42px; line-height:42px;color: #ffffff;}
+.eveb_header_notice h4 i{ display:inline-block; width:30px; height:28px; background:url(http://192.168.0.140:81/TXWN/user_img/icon.png) no-repeat; background-position:0px -36px; vertical-align:middle;}
+.eveb_header_notice .txtScroll-top{ width:480px; height:42px; line-height: 42px;  overflow:hidden; float:right; margin-right: 20px;}
+.eveb_header_notice .txtScroll-top li{ padding-right: 20px; font-size: 12px; float: left; color: #fff; cursor: pointer;}
+.eveb_header_notice .txtScroll-top li a{ color: #fff;}
+
+.user_nav{
+	
+	height: 50px;
+	width:  1200px;
+	background:#dbdee5 ;
+	margin: 0px auto;
+}
+.user_nav li{
+	float: left;
+	/*width: 138px;*/
+	height: 50px;
+	color:#ffffff;
+	line-height: 50px;
+	background: #dbdee5;
+	cursor: pointer;
+}
+.user_nav li i{
+	float: left;
+	width: 50px;
+    height: 45px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    
+    cursor: pointer;
+}
+.user_nav li a {
+	color: #000;
+    display: block;
+    padding: 0 20px 0 4px;
+}
+.user_nav li .icon_home{
+	background-position: -350px -75px;
+}
+.user_nav li .icon_bank{
+	background-position: 0px -75px;
+}
+.user_nav li .icon_withdraw{
+	background-position: -50px -75px;
+}
+.user_nav li .icon_transfer{
+	background-position: -100px -75px;
+}
+.user_nav li .icon_letter{
+	background-position: -150px -75px;
+}
+.user_nav li .icon_market{
+	background-position: -200px -75px;
+}
+.user_nav li .icon_record{
+	background-position: -250px -75px;
+}
+.user_nav li .icon_set{
+	background-position: -300px -75px;
+}
+.user_nav li:hover{
+	background-color: #615893;
+}
+
+.user_nav li:hover a{ color: #fff;}
+.user_nav li:hover a i{ background-position-y: -463px;}
+/*底部footer*/
+
+.user_footer{
+	padding-top: 60px;
+	padding-bottom: 30px;
+    height: 40px;
+    font-size: 12px;
+    color: #999;
+    width: 1165px;
+}
+.user_footer .footer_link,.wrap .user_footer .copyright{
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.5;
+}
+.user_footer .footer_link a{
+	color: #ff7f00;
+    text-decoration: none;
+}
+.user_footer .footer_link a:hover{
+	text-decoration: underline;
+}
+.copyright{ width: 1200px; text-align: center;}
+.copyright p{ display: inline-block;}
+
+/*loading*/
+.xploading_bg {
+    width: 100%;
+    min-height: 980px;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 101;
+    display: none; 
+}
+.xploading {
+    width: 130px;
+    height: 40px;
+    background: #fff;
+    overflow: hidden;
+    margin: 0px auto;
+    position: fixed;
+    left: 47%;
+    top: 21%;
+    display: none;
+    z-index: 102;
+    font-size: 14px;
+}
+.xploading img {
+    width: 40px;
+    vertical-align: middle;
+    margin: 0px 5px;
+}
+/*错误提示框*/
+.pop_cover_bg{ width: 100%; height: 100%; background: #000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; position: fixed;top: 0px; left: 0px; z-index: 23;}
+.pop_cover_box{ width: 612px; height: 263px; background: #fff; border-radius: 8px; position: fixed; top: 150px; left: 0; right: 0; z-index: 24;}
+.pop_cover_box .pop_cover_title{ width: 600px; text-align: right; margin-right: 10px; margin-top: 10px;}
+.pop_cover_box .pop_cover_title img{ width: 20px; height: 20px;}
+.pop_cover_conter{ width: 612px; text-align: center;}
+.pop_cover_conter ul li{ text-align: center; font-size: 18px; color: #626262; margin: 25px 0px;}
+.pop_cover_conter ul li img{ width: 65px; height: 65px;}
+.confirm_ico{ width: 612px; text-align: center;}
+.confirm_ico a{ 
+	display: inline-block; 
+    width: 249px;
+    height: 44px;
+    background: #9973e6;
+    color: #fff;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+/*提示框*/
+.dialog_bg{ display: none; width: 100%; height: 100%; background: #000;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; position: fixed;top: 0px; left: 0px; z-index: 21;}
+.dialog_box{ display: none; width: 640px; height: 244px;background: #fff; border-radius: 8px; position: fixed; top: 325px; left: 0; right: 0; z-index: 22;}
+.dialog_box .dialog_title{ width: 630px; text-align: right; margin-right: 10px; margin-top: 10px;}
+.dialog_box .dialog_title img{ width: 25px; height: 25px;}
+.dialog_box .dialog_content{ width: 550px; padding: 0 40px; text-align: center;}
+.dialog_content .msg-desc {
+    color: #626262;
+    font-size: 14px;
+    margin: 0 0 30px;
+    line-height: 20px;
+}
+.dialog_content .msg-info {
+    border: 1px solid #dbda96;
+    background: #fcfdea;
+    color: #614990;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.dialog_content .msg-buttons a {
+    display: inline-block;
+    min-width: 140px;
+    background: #9973e6;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #9973e6;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 13px;
+    margin: 0 5px;
+}
+
+.dialog_content .msg-buttons a.inverted {
+    background: #fff;
+    color: #9973e6;
+    border: 1px solid #9973e6;
+}
+
+/*删除银行卡*/
+.eveb_popup_wraptbddete {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+    background-color: #000000;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 19;
+    filter:alpha(opacity = 50);
+}
+.set_alertdele{
+    position: fixed;
+    margin: auto;
+    top: 25%; left: 36%;
+    width: 420px;
+    height: 225px;
+    padding: 0 15px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    z-index: 20;
+
+}
+.set_alertdele .alert_title{
+    height: 45px;
+    line-height: 40px;
+    color: #000;
+    padding: 0 15px;
+    font-size: 16px;
+}
+.set_alertdele .alert_title h4{ width: 200px; float: left;}
+.set_alertdele .alert_title i{
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    float: right;
+}
+.set_alertdele .alert_content ul {
+    padding: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.set_alertdele .alert_content ul li span{
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+    width: 120px;
+    text-align: right;
+    color: #333;
+    margin-right: 10px;
+    font-size: 14px;
+}
+#login_pwd{
+    padding: 5px;
+}
+.set_alertdele .alert_content ul .alert_btn{border-top: 1px solid #EEE;text-align: center;padding-top: 30px;margin:20px 0; }
+.set_alertdele .alert_content ul .alert_btn input{padding: 10px 30px;font-size: 14px;border: none;border-radius: 3px;cursor: pointer;font-family: 'Microsoft Yahei';}
+#btn_getpwddele{color: #FFF;background: #ff7f00; margin-right: 10px;}
+#btn_cancledele{border: 1px solid #DDD;color: #888;background: #FFF;}

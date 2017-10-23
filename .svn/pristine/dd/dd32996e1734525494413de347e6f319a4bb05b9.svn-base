@@ -1,0 +1,1501 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', sans-serif
+}
+
+html input {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', sans-serif
+}
+
+html body {
+    background: #FFFFFF
+}
+
+html body a {
+    text-decoration: none
+}
+
+.pop-con {
+    width: 460px;
+    height: 250px;
+    margin: 0 auto;
+    background: #FFFFFF no-repeat;
+    position: fixed;
+    z-index: 99999999999
+}
+
+.pop-con .close-btn {
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 10px
+}
+
+.sk-double-bounce {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 40px auto
+}
+
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-doubleBounce 2.0s infinite ease-in-out;
+    animation: sk-doubleBounce 2.0s infinite ease-in-out
+}
+
+.sk-double-bounce .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s
+}
+
+@-webkit-keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.hide {
+    display: none
+}
+
+
+.free-play-box {
+    width: 745px;
+    height: 434px;
+    position: fixed;
+    top: 30%;
+    z-index: 999;
+    background: url(http://192.168.0.140:81/TXWN/images/free-play-box.png) no-repeat;
+    -webkit-border-radius: 8px
+}
+
+.free-play-box .icon-cancle {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    cursor: pointer
+}
+
+.free-play-box .free-top {
+    float: left;
+    width: 500px;
+    padding: 40px 0 0 110px;
+    height: 250px
+}
+
+.free-play-box .free-top .register-img {
+    width: 341px;
+    padding-left: 70px
+}
+
+.free-play-box .free-top .title {
+    font-size: 30px;
+    color: #1f1c2b;
+    padding: 23px 0 0 60px;
+    width: 450px
+}
+
+.free-play-box .free-top .title span {
+    color: #ee484c
+}
+
+.free-play-box .free-top .content {
+    color: #535353;
+    font-size: 18px;
+    padding: 15px 0 0 80px
+}
+
+.free-play-box .free-top .content span {
+    font-size: 22px
+}
+
+.free-play-box .free-top .buttons {
+    padding: 50px 0 0 100px;
+    width: 330px;
+    margin: 0 auto
+}
+
+.free-play-box .free-top .buttons .code {
+    color: #959595;
+    font-size: 16px;
+    width: 160px;
+    padding-bottom: 10px
+}
+
+.free-play-box .free-top .buttons .registercode {
+    float: left;
+    height: 32px;
+    width: 73px;
+    margin: 0 0 0 10px
+}
+
+.free-play-box .free-top .buttons #captcha {
+    outline-color: #9973e6;
+    width: 140px;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+    line-height: 32px;
+    padding: 0 10px;
+    float: left;
+    -webkit-border-radius: 3px
+}
+
+.free-play-box .free-top .buttons .icon-refresh {
+    cursor: pointer;
+    float: left;
+    margin: 5px 0 0 10px
+}
+
+.free-play-box .free-top #visityes {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 285px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    -webkit-border-radius: 6px;
+    background: #9973e6;
+    margin: 10px 0 0 130px
+}
+
+.free-play-box .free-top #visityes:hover {
+    background: #a78ae3
+}
+
+.free-play-box .free-down {
+    position: absolute;
+    right: 140px;
+    bottom: 31px;
+    width: 90px;
+    height: 70px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    background: #FFF;
+    color: #e98a8b;
+    -webkit-border-radius: 5px;
+    cursor: pointer
+}
+
+.free-play-box .free-down .register-box {
+    padding: 11px 20px 20px 20px
+}
+
+.login-box {
+    position: fixed;
+    background: url(http://192.168.0.140:81/TXWN/images/login-box.png) no-repeat;
+    width: 554px;
+    height: 319px;
+    z-index: 999
+}
+
+.login-box .icon-cancle {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    cursor: pointer
+}
+
+.login-box .login-info {
+    width: 320px;
+    float: right
+}
+
+.login-box .login-info .tiles {
+    color: #743aa4;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    margin: 0 auto;
+    padding: 23px 0 29px 0
+}
+
+.login-box .login-info .lgn-inpt {
+    width: 200px;
+    margin: 0 auto;
+    position: relative
+}
+
+.login-box .login-info .lgn-inpt input {
+    outline-color: #59397b;
+    width: 160px;
+    height: 37px;
+    border: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    padding-left: 37px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    margin-bottom: 15px
+}
+
+.login-box .login-info .arrow1 {
+    position: absolute;
+    top: 8px;
+    left: 4px
+}
+
+.login-box .login-info .arrow2 {
+    position: absolute;
+    top: 60px;
+    left: 4px
+}
+
+.login-box .login-info .login_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 39px;
+    outline: 0;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #7187de;
+    text-align: center;
+    line-height: 38px;
+    margin: 0 auto;
+    -webkit-border-radius: 5px
+}
+
+.login-box .login-info .login_btn:hover {
+    background-color: #5d74ce
+}
+
+.login-box .login-info .free_account_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 39px;
+    margin: 0 auto;
+    outline: 0;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #a671ff;
+    text-align: center;
+    line-height: 38px;
+    -webkit-border-radius: 5px
+}
+
+.login-box .login-info .free_account_btn:hover {
+    background-color: #9362e4
+}
+
+.login-box .login-info .icon-cny {
+    float: left;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 35px
+}
+
+.modifyPwd-box {
+    width: 830px;
+    height: 380px;
+    position: fixed;
+    z-index: 999;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px
+}
+
+.modifyPwd-box .icon-cancle {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    cursor: pointer
+}
+
+.modifyPwd-box .modifyPwd-left {
+    float: left;
+    width: 170px;
+    padding-left: 60px;
+    padding-top: 130px
+}
+
+.modifyPwd-box .modifyPwd-left .lock-password {
+    width: 119px;
+    height: 124px;
+    background: url(http://192.168.0.140:81/TXWN/images/lock-password.png) no-repeat
+}
+
+.modifyPwd-box .modifyPwd-content {
+    width: 320px;
+    float: left;
+    padding: 80px 0 0 0
+}
+
+.modifyPwd-box .modifyPwd-content .title {
+    width: 510px;
+    height: 31px;
+    background: #f3f0fa;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 31px;
+    color: #8b8b8b;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .title span {
+    color: red;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info {
+    padding: 30px 0 0 10px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .row {
+    padding-bottom: 20px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 550px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input {
+    float: left;
+    height: 36px;
+    width: 260px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 0 0 8px;
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #9973e6
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message {
+    float: left;
+    height: 40px;
+    width: 280px;
+    padding-left: 10px;
+    color: #8b8b8b
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message.active {
+    color: #fe0d0d
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons {
+    margin-top: 14px;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 260px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: #9973e6
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a:hover {
+    background: #a78ae3
+}
+
+.popmask {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000;
+    z-index: 998;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+#loadingpop .loadingpopimg {
+    position: fixed;
+    z-index: 999999
+}
+
+.clear {
+    clear: both
+}
+
+.loading-wrap {
+    width: 102px;
+    height: 102px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-left: -51px;
+    background: url(http://192.168.0.140:81/TXWN/images/loading-logo.png) no-repeat;
+    z-index: 9999
+}
+
+.loading-point {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+    width: 122px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-image: url(http://192.168.0.140:81/TXWN/images/loading-sprite.png);
+    background-position: 0 0
+}
+
+.loading-point.animated {
+    -webkit-animation: circle 2s linear infinite forwards;
+    animation: circle 2s linear infinite forwards
+}
+
+@-webkit-keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.am.right.align, .am .right.align {
+    text-align: right
+}
+
+.am.left.align, .am .left.align {
+    text-align: left
+}
+
+.am.center.align, .am .center.align {
+    text-align: center
+}
+
+.am.top.align, .am .top.align {
+    vertical-align: top
+}
+
+.am.middle.align, .am .middle.align {
+    vertical-align: middle
+}
+
+.am.bottom.align, .am .bottom.align {
+    vertical-align: bottom
+}
+
+.am.button, .am .button {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    background: #9973e6
+}
+
+.am.button:hover, .am.button:active, .am .button:hover, .am .button:active {
+    background: #b79cec
+}
+
+.hide {
+    display: none
+}
+
+.am.dialog-wrap {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.am.dialog-wrap .dialog-bg {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    opacity: .8;
+    background-color: #000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.am.dialog-wrap .dialog {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    min-width: 460px;
+    margin: 0 auto;
+    background: #fff no-repeat
+}
+
+.am.dialog-wrap .dialog p {
+    padding: 20px
+}
+
+.am.dialog-wrap .dialog .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 31px;
+    height: 31px
+}
+
+.am.dialog-wrap .dialog-loading {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -20px
+}
+
+.am.dialog-tips, .am .dialog-tips {
+    position: fixed;
+    z-index: 100000;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.am.dialog-tips h4, .am .dialog-tips h4 {
+    font-size: 16px
+}
+
+.am.dialog-tips p, .am .dialog-tips p {
+    line-height: 200%
+}
+
+.am.dialog-tips p:last-child, .am .dialog-tips p:last-child {
+    margin-bottom: 0
+}
+
+.am.dialog-tips .tips-confirm, .am .dialog-tips .tips-confirm {
+    margin-top: 10px;
+    text-align: center
+}
+
+.am.dialog-tips .tips-confirm .button, .am .dialog-tips .tips-confirm .button {
+    font-size: 14px;
+    min-width: 80px;
+    margin: 5px;
+    color: #fff
+}
+
+.wrap {
+    height: auto;
+    margin: 0 auto
+}
+
+.wrap .live-casino-content {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.wrap .live-casino-content .ag-div-top {
+    height: 410px;
+    width: 100%;
+    position: relative;
+    padding-top: 20px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left {
+    width: 560px;
+    float: left
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .icon-ag-hot {
+    position: absolute;
+    top: 75px;
+    left: 372px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .title {
+    width: 316px;
+    height: 78px;
+    margin: 55px 51px 0px 70px;
+    background: url(http://192.168.0.140:81/TXWN/images/icon-aglogo.png) no-repeat
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .info {
+    font-size: 16px;
+    color: #828282;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    width: 329px;
+    padding: 18px 0 0 60px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .game-type {
+    color: #b5b5b5;
+    font-size: 14px;
+    padding: 70px 0px 0px 100px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .game-type ul {
+    width: 400px;
+    height: 80px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .game-type ul li {
+    float: left;
+    list-style-type: disc;
+    width: 120px;
+    line-height: 25px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game {
+    width: 450px;
+    height: 100px;
+    padding: 30px 0px 0px 57px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .now-play {
+    cursor: pointer;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #936cb0;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-border-radius: 20px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 100px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .free-play {
+    cursor: pointer;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #936cb0;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-border-radius: 20px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 30px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .now-register {
+    cursor: pointer;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #936cb0;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-border-radius: 20px;
+    float: left;
+    text-align: center;
+    line-height: 37px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .now-register:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-top .ag-left .play-game .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 125px
+}
+
+.wrap .live-casino-content .ag-div-top .ag-right {
+    width: 627px;
+    height: 406px;
+    float: right;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img1.jpg) no-repeat center;
+
+}
+
+.wrap .live-casino-content .ag-div-top .ag-right .online-player {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    font-size: 22px;
+    color: #ffffff
+}
+
+.wrap .live-casino-content .ag-div-down {
+    width: 100%;
+    height: 585px;
+    padding-top: 30px
+}
+
+.wrap .live-casino-content .ag-div-down .ag_div_left{ width: 676px; float: left; overflow: hidden;}
+
+.wrap .live-casino-content .ag-div-down .ag_div_right{ width: 520px; float: right;}
+
+
+
+
+.wrap .live-casino-content .ag-div-down .ag-img2 {
+    float: left;
+    width: 675px;
+    height: 407px;
+    padding-right: 1px;
+    margin-left: -6px;
+    position: relative;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img2.jpg) no-repeat center;
+
+}
+
+
+.wrap .live-casino-content .ag-div-down .ag-img7{ height: 170px; margin-top: 5px;
+
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img7.jpg) no-repeat center;
+
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-footer {
+    background-color: #000000;
+    width: 675px;
+    height: 100px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    bottom: 0px;
+    position: absolute
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-footer .title {
+    width: 215px;
+    margin: 0 auto;
+    height: 33px;
+    margin-top: 17px;
+    background: url(http://192.168.0.140:81/TXWN/images/ag.png) no-repeat center;
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-footer .content {
+    color: #ac79cf;
+    font-size: 16px;
+    width: 140px;
+    margin: 0 auto;
+    padding-top: 10px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover {
+    background: url(http://192.168.0.140:81/TXWN/images/trans-bg.png) repeat;
+    height: 407px;
+    width: 676px;
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img7 .img2-cover{ height: 170px;}
+
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .now-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 258px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .free-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 197px;
+    left: 258px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .free-register {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #362f3c;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 145px;
+    left: 258px
+}
+.wrap .live-casino-content .ag-div-down .ag-img7 .img2-cover .free-register{ bottom: 30px !important;}
+.wrap .live-casino-content .ag-div-down .ag-img7 .img2-cover .free-play{ bottom: 58px !important;}
+
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .free-register:hover {
+    background-color: #514957
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2 .img2-cover .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 258px;
+    bottom: 50px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2:hover .img2-cover {
+    display: block
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img2:hover .img2-footer {
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 171px;
+    position: relative;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img3.jpg) no-repeat center;
+}
+
+.wrap .live-casino-content .ag-div-down .ag-imga3{
+    background: url(http://192.168.0.140:81/TXWN/images/ag-ico3.jpg) no-repeat center;
+
+}
+
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover {
+    background: url(http://192.168.0.140:81/TXWN/images/trans-bg.png) repeat;
+    height: 171px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .now-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .free-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 58px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .free-register {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #362f3c;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .free-register:hover {
+    background-color: #514957
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3 .img3-cover .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    bottom: 50px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3:hover .img3-cover {
+    display: block
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img3:hover .img3-footer {
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 {
+    float: right;
+    display: block;
+    width: 520px;
+    height: 230px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    position: relative;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img4.jpg) no-repeat center;
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover {
+    background: url(http://192.168.0.140:81/TXWN/images/trans-bg.png) repeat;
+    height: 230px;
+    width: 520px;
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .now-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 185px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .free-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 90px;
+    left: 185px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .free-register {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #362f3c;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 185px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .free-register:hover {
+    background-color: #514957
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4 .img4-cover .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 185px;
+    bottom: 50px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img4:hover .img4-cover {
+    display: block
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 171px;
+    margin: 0px 5px;
+    position: relative;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img5.jpg) no-repeat center;
+}
+/*.wrap .live-casino-content .ag-div-down .ag-imga5{*/
+    /*background: url(http://192.168.0.140:81/TXWN/images/ag-ico5.jpg) no-repeat center;*/
+
+/*}*/
+.wrap .live-casino-content .ag-div-down .ag-imga5{
+    background: url(http://192.168.0.140:81/TXWN/images/ag-ico55.jpg) no-repeat center;
+    margin-left: 5px;
+    margin-right: 0px;
+    }
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover {
+    background: url(http://192.168.0.140:81/TXWN/images/trans-bg.png) repeat;
+    height: 171px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .now-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .free-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 58px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .free-register {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #362f3c;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .free-register:hover {
+    background-color: #514957
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5 .img5-cover .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    bottom: 50px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img5:hover .img5-cover {
+    display: block
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 {
+    float: left;
+    display: block;
+    width: 170px;
+    height: 171px;
+    position: relative;
+    background: url(http://192.168.0.140:81/TXWN/images/ag-img6.jpg) no-repeat center;
+}
+.wrap .live-casino-content .ag-div-down .ag-imga6{
+    background: url(http://192.168.0.140:81/TXWN/images/ag-ico6.jpg) no-repeat center;
+    margin-left: 5px;
+
+}
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover {
+    background: url(http://192.168.0.140:81/TXWN/images/trans-bg.png) repeat;
+    width: 170px;
+    height: 171px;
+    position: absolute;
+    top: 0;
+    display: none
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .now-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .now-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .free-play {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #936cb0;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 58px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .free-play:hover {
+    background-color: #9973e6
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .free-register {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+    display: block;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #362f3c;
+    text-align: center;
+    line-height: 35px;
+    -webkit-border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 16px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .free-register:hover {
+    background-color: #514957
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6 .img6-cover .casino-fix {
+    background: url(http://192.168.0.140:81/TXWN/images/casino-fix.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 171px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    bottom: 50px
+}
+
+.wrap .live-casino-content .ag-div-down .ag-img6:hover .img6-cover {
+    display: block
+}
+.ag_img_box{ width: 520px; overflow: hidden; margin-bottom: 5px;}
+.wrap .live-casino-content .ag-rules {
+    padding-top: 30px;
+    height: 50px;
+    padding-bottom: 30px
+}
+
+.wrap .live-casino-content .ag-rules a {
+    display: block;
+    width: 429px;
+    height: 44px;
+    background: url(http://192.168.0.140:81/TXWN/images/rules.jpg) no-repeat;
+    margin: 0 auto
+}
+
+.divOpusHgEnd {
+    width: 610px;
+    height: 280px;
+    position: fixed;
+    z-index: 999;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px
+}
+
+.divOpusHgEnd .icon-cancle {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    cursor: pointer
+}
+
+.divOpusHgEnd .divOpusHgEnd_div_header {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eeeeee
+}
+
+.divOpusHgEnd .divOpusHgEnd_div_header .show_title {
+    font-size: 18px;
+    color: #333333;
+    display: inline-block;
+    line-height: 52px
+}
+
+.divOpusHgEnd .divOpusHgEnd_div_center {
+    width: 520px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #999999
+}
+
+.divOpusHgEnd .divOpusHgEnd_div_center .timeStop {
+    color: red
+}
+
+.divOpusHgEnd .button_center {
+    width: 350px;
+    margin: 0 auto
+}
+
+.divOpusHgEnd .button_center .divOpusHgEnd_div_confirm {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: #9973e6;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 40px;
+    float: left
+}
+
+.divOpusHgEnd .button_center .divOpusHgEnd_div_confirm:hover {
+    background: #a78ae3
+}
+
+.divOpusHgEnd .button_center .divOpusHgEnd_div_close {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 160px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: #9973e6;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 40px;
+    float: right
+}
+
+.divOpusHgEnd .button_center .divOpusHgEnd_div_close:hover {
+    background: #a78ae3
+}
+
+
+/*banner*/
+.live_casino_box .fullSlide_live{ width:100%;  position:relative;  height:300px; background:#000;  }
+.live_casino_box .fullSlide_live .bd{ margin:0 auto; position:relative; z-index:0; overflow:hidden;  }
+.live_casino_box .fullSlide_live .bd ul{ width:100% !important;  }
+.live_casino_box .fullSlide_live .bd li{ width:100% !important;  height:300px; overflow:hidden; text-align:center;  }
+.live_casino_box .fullSlide_live .bd li a{ display:block; height:300px; }
+.live_casino_box .fullSlide_live .bd li img{ width: 100%; height: 300px;}
+.live_casino_box .fullSlide_live .hd{ height:15px; overflow:hidden; position:absolute; right:23%; bottom:0px; z-index:110; }
+.live_casino_box .fullSlide_live .hd ul{ text-align:center;  padding-top:5px;  }
+.live_casino_box .fullSlide_live .hd li{ float:left; margin-right:2px;  width:30px; height:3px; margin-right: 10px; line-height:14px; text-align:center; background:#fff; cursor:pointer; list-style: none; }
+.live_casino_box .fullSlide_live .hd .on{  background:#a671ff; color:#fff; }
+

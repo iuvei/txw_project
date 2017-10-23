@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/UserCenter/user_css/user.css">
+		<link href="/UserCenter/user_css/ui.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/forms.css" rel="stylesheet" type="text/css" />
+		<script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/UserCenter/user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script src="/UserCenter/user_js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/user_main.js"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/account_set.js"></script>
+	</head>
+	<body ms-controller="index" class="ms-controller">
+		
+		<div class="user_header">
+			<script>
+				puli('/UserCenter/component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				
+
+				<div class="dtls-con">
+					<div class="f_con">
+						<ul class="tabs">
+							<li>
+								<a href="personal_information.html">个人信息</a>
+							</li>
+							<li>
+								<a href="../withdraw/bank_add.html">银行资料</a>
+							</li>
+							<li class="active">
+								<a href="javascript:;">修改密码</a>
+							</li>
+						</ul>
+						<div class="f_main">
+							<div class="form change" id="submit-form">
+								<input type="hidden" name="operate" value="1" />
+
+								<div class="cp_menu">
+									<a href="modifyPassword.html"><span>&bull;</span>登录密码</a> ｜
+									<a class="active" href="ptpwdupdate.html"><span>&bull;</span>取款密码</a>
+								</div>
+								<div class="r">
+									<label>原密码</label>
+									<span class="inp">
+                            	<input class="w3" type="password" name="oldpassword" id="t_OldPwd" maxlength="4">
+								<i class="p_icn"></i>
+                            </span>
+								</div>
+								<div class="r">
+									<label>新密码</label>
+									<span class="inp ">
+	                           <input type="password" class="w3" name="newpassword" id="t_NewPwd" maxlength="4"  placeholder="密码必须为4位数字组合"/>
+								<i class="p_icn"></i>
+                           </span>
+								</div>
+								
+								<div class="r">
+									<label>确认密码</label>
+									<span class="inp ">
+	                           <input type="password" class="w3" name="newpassword" id="t_Confirmpwd" maxlength="4"  placeholder="请再次填写新密码"/>
+								<i class="p_icn"></i>
+                           </span>
+								</div>
+
+								<div class="btn_con">
+									<a class="btn submit_a" id="changeTpwd">保存</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="user_footer">
+			<script>
+				puli('/UserCenter/component/user_footer.html','.user_footer')
+			</script>
+		</div>
+		<!--弹窗 黑底-->
+      <div class="eveb_popup_wraptbdcg"></div>
+      <!--弹窗 确定要修改密码-->
+      <div class="eveb_popupbdcg" id="eveb_popup_bank_bind_ok">
+        <div class="eveb_popup_hdbdcg">
+          <h4 class="fl">确认修改登录密码</h4>
+          <a class="icon_mini icon_close fr popupbdcg" title="关闭"></a> </div>
+        <div class="eveb_popup_bdbdcg">
+          <div class="eveb_popup_contentbdcg"> <span><i class="icon_big icon_ok_3"></i></span>
+            <p>确定要修改登录密码吗？</p>
+          </div>
+          <div class="eveb_popup_btn"> 
+          	<a name="pop_close" class="button_medium button_1 popupbdcg tc_confirm" id="tc_confirm">确定</a> 
+          	<a name="pop_close" class="button_medium button_1 popupbdcg tc_off">取消</a> 
+          </div>
+        </div>
+      </div>
+<!--弹窗 确定要修改密码-end-->
+<!--弹窗 黑底-->
+      <div class="eveb_popup_wraptbddele" id="eveb_popup_wraptbddele"></div>
+      <!--弹窗 登录密码修改成功-->
+      <div class="eveb_popupbddele" id="eveb_popup_bank_bind_dele">
+        <div class="eveb_popup_hdbdcg">
+          <h4 class="fl">登录密码修改成功</h4>
+          <a class="icon_mini icon_close fr popupbdcg popupbdcg_delde" title="关闭"></a> </div>
+        <div class="eveb_popup_bdbdcg">
+          <div class="eveb_popup_contentbdcg"> <span><i class="icon_big icon_ok_3"></i></span>
+            <p>登录密码修改成功！</p>
+          </div>
+          <div class="eveb_popup_btn"> <a name="pop_close" class="button_medium button_1 popupbdcg popupbd_dele">知道了</a> </div>
+        </div>
+      </div>
+<!--弹窗 登录密码修改成功-end-->
+<!--弹窗 黑底-->
+      <div class="eveb_popup_wraptbdcg"></div>
+      <!--弹窗 确定要修改提款密码吗-->
+      <div class="eveb_popupbdcg" id="eveb_popup_bank_bind_oktk">
+        <div class="eveb_popup_hdbdcg">
+          <h4 class="fl">确定要修改提款密码吗</h4>
+          <a class="icon_mini icon_close fr popupbdcg" title="关闭"></a> </div>
+        <div class="eveb_popup_bdbdcg">
+          <div class="eveb_popup_contentbdcg"> <span><i class="icon_big icon_ok_3"></i></span>
+            <p>确定要修改提款密码吗</p>
+          </div>
+          <div class="eveb_popup_btn"> 
+          	<a name="pop_close" class="button_medium button_1 popupbdcg" id="tk_ok">确定</a>
+          	<a name="pop_close" class="button_medium button_1 popupbdcg tc_off">取消</a> 
+          </div>
+        </div>
+      </div>
+      <!--弹窗 确定要修改提款密码吗-end-->
+	</body>
+	<script>
+			$(document).ready(function() {
+
+				$('#submit-form .p_icn').click(function() {
+					var type = $(this).siblings('input').attr('type') == 'text' ? 'password' : 'text';
+					$(this).siblings('input').prop('type', type);
+
+					var class_name = type == 'text' ? 'p_icn_open' : 'p_icn';
+					$(this).prop('class', class_name);
+				})
+				
+				$("#mm_nav_" + 8).addClass("active");
+				show_sub_bar($("#mm_nav_" + 8));
+				$("#sd-lnk-" + 8 + '_' + 3).addClass("active");
+				
+			});
+	</script>
+</html>

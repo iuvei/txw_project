@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>财付通支付</title>
+    <link rel="icon" href="http://192.168.0.140:81/TXWN/user_imgfavicon.ico"/>
+    <link href="payment.css" rel="stylesheet" />
+    <script src="/public/init.js" type="text/javascript" ></script>
+    <script src="/UserCenter/user_js/jquery-1.8.2.min.js"></script>
+    <script src="jquery.qrcode.js" type="text/javascript" charset="utf-8"></script>
+    <script src="utf.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="body">
+    <h1 class="mod-title">
+        <span class="text">财付通支付</span>
+    </h1>
+    <div class="mod-ct">
+        <div class="order">
+        </div>
+        <div class="amount">
+            <span>￥</span><span id="aliAmount">
+
+                </span></div>
+        <div id="qrImage" class="qr-image" style="width: 200px;height: 200px;margin: 20px auto 0;">
+            <!-- <img id="qrImage" src="/>-->
+        </div>
+
+        <div class="detail detail-open" id="orderDetail" style=" padding-bottom:20px;">
+            <dl class="detail-ct" style="display: block;">
+                <dt>交易单号</dt>
+                <dd id="billId">-</dd>
+                <dt>用户名</dt>
+                <dd id="createTime">-</dd>
+            </dl>
+        </div>
+
+    </div>
+    <div class="foot">
+        <div class="inner">
+            <p>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+
+    $(function  () {
+        //获取url传值
+        function getQueryString () {
+            var qrcode = location.search == 0?'':location.search.substr(1);
+            var args = new Object();
+            var items = qrcode.length?qrcode.split('&'):[];
+            for (var i = 0; i < items.length; i++){
+                var argsArr = items[i].split('=');
+                var length = argsArr[0].toString().length;
+                //防止多个=号
+                args[argsArr[0].toString()] = items[i].slice(length+1);
+            }
+            return args;
+        }
+        var para = getQueryString ();
+        $('#aliAmount').text(para.amounts);
+        $('#createTime').text(para.userName.slice(3));
+        $('#billId').text(para.OddNum);
+
+        if (para.code == 2) {
+            //生成二维码
+            var qrcode = para.url;
+            $("#qrImage").empty().qrcode({      // 调用qQcode生成二维码
+                render : "canvas",             // 设置渲染方式，有table和canvas，使用canvas方式渲染性能相对来说比较好
+                text : qrcode,                // 扫描了二维码后的内容显示,在这里也可以直接填一个网址或支付链接
+                width : "200",                 // 二维码的宽度
+                height : "200",                // 二维码的高度
+                background : "#ffffff",        // 二维码的后景色
+                foreground : "#000000",        // 二维码的前景色
+                src: ""                      // 二维码中间的图片
+            })
+        }else{
+            //添加图片链接
+            var img = document.createElement('img');
+            var qrImagae = document.getElementById('qrImage');
+            while(qrImagae.hasChildNodes()){
+                qrImagae.removeChild(qrImagae.firstChild);
+            }
+            img.src = para.url;
+            img.style.height = '100%';
+            img.style.width = '100%';
+            qrImagae.appendChild(img);
+        }
+
+
+
+
+        var time = 4000;
+        var interval;
+        function run() {
+            interval = setInterval(getData, time);
+        };
+        function getData() {
+            $.post(xpj_src+"Ys/selectReChargeStatus.do",{out_trade_no:para.OddNum} , function (result) {
+                if (result.status == "success") {
+                    clearTimeout(interval);
+                    alert('支付成功');
+                    window.location.href = "../../deposit-home.html";
+                }
+            });
+        };
+        run();
+    })
+
+</script>
+</html>

@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>天下网络-优惠永远多一点</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="../user_css/user.css">
+		<link href="../user_css/deposit.css" rel="stylesheet" type="text/css" />
+		<script src="../../public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/layer/layer.js"></script>
+		<script src="JumpPage/BankData.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/user_main.js"></script>
+		<script src="OnlinePay/desposit-card.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('../component/user_header.html','.user_header')
+			</script>
+		</div>
+		<style>
+			.deposit-form .form .row .field .nice-select .list {
+				height: 300px;
+				overflow: auto;
+			}
+		</style>
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="javascript:;" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<div class="dtls-con">
+					<div class="deposit-tabs">
+						<ul class="tabs">
+
+							<li>
+								<a href="javascript:void(0);" class="active">在线支付</a>
+							</li>
+							<li>
+								<a href="deposit-wepay.html">微信支付</a>
+							</li>
+							<li>
+								<a href="deposit-alipay.html">支付宝支付</a>
+							</li>
+							<li>
+								<a href="deposit-qqpay.html">财付通</a>
+							</li>
+							<li>
+								<a href="deposit-cash.html">银行汇款</a>
+							</li>
+						</ul>
+					</div>
+					<!--选项卡-->
+					<!--<div class="deposit_nav">
+						<h3><i>1</i>请选择线上支付通道：</h3>
+						
+						<ul>
+							li
+						</ul>
+						
+						
+					</div>-->
+
+					<div class="r-wrap" ms-controller = 'CardPay'>
+						<div class="rbank-item">
+							<!--微信支付开始-->
+							<div class="pay-list" style="" >
+								<div data-bind="visible: payList().length > 0" style="">
+									<h3><i>1</i>请选择线上支付通道：</h3>
+									<!--选项卡-->
+									<div class="rbank-info other-info pay_1" >
+										<!--支付通道-->
+										<div class="rbank_top clear rbank_card" >
+											<a ms-if ='PaymentList' class="clo-item" href="javascript:;" ms-class = "[ index == CradConfig.PayListSelected &&'on']"  ms-for = "(index,el) in PaymentList" ms-click = 'GeneList(index)'>
+												<i class="rbank-icon"></i><label>支付{{index+1}}</label>
+												<i class="rbank-icon mark"></i>
+											</a>
+											<h2 ms-if ='!PaymentList' style="color: #9b9b9b;font-size: 16px;" >无可用支付通道</h2>
+
+										</div>
+									</div>
+									<!--选项卡-->
+									
+								</div>
+								
+								<!--支付1-end-->
+								<div class="clear"></div>
+							
+								<!--支付3-->
+
+								<div  style=" display: block;">
+                                                <div  style="" ms-if = "BankList">
+                                                    <h3><i>2</i>选择银行：</h3>
+                                                    <div class="rbank-info other-info net-pay">
+                                                        <div class="rbank_top rbank_bank_list clear">
+                                                        <!--	//银行列表-->
+                                                            <a class="clo-item clo-item_bank"   ms-click = 'GetBankCode(index,el.bankcode)' href="javascript:;" ms-class = "[el.bankcode == CradConfig.BankSelected&&'on']" ms-for = "(index,el) in BankList"  >
+                                                                <b class="bank-ico zgyh ZGYX"><img ms-attr="{src:el.imgurl,title:el.title}"  /></b>
+                                                                <i class="rbank-icon mark"></i>
+                                                            </a>
+                                                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <h3><i>{{CradConfig.OrderNumber}}</i>充值金额：<span class="note">单笔最低存款金额: <font class="red">{{CradConfig.RangeValues.minquota}}</font>元以上；<font class="red">{{CradConfig.RangeValues.maxquota}}</font>元以下</span></h3>
+                                            <div class="acc-main clear other-acc">
+                                                <div class="main-l">
+                                                    <dl>
+                                                        <dt>&nbsp;</dt>
+                                                        <dd>
+                                                            <input type="text"  ms-duplex = 'CradConfig.Amount' onkeyup="this.value=this.value.replace(/^0|\D/gi,&quot;&quot;)">
+                                                            <span style="display: none;">实际金额: <span style="color:red"></span></span>
+                                                            <span style="display: none;">使用该支付方式，需要承担入款手续费 <label style="color:red">0</label>%</span>
+                                                        </dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>&nbsp;</dt>
+                                                        <dd>
+                                                            <a class="rbank-btn" ms-click="PaySubmit" href="javascript:;">立即充值</a>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+								<!--支付3-end-->
+							</div>
+							<!--<div class="cz-loading" data-bind="visible: isLoading()" style="display: block;">
+								<h3>数据加载中, 请稍候.....</h3>
+							</div>-->
+						</div>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<!--<script>
+			$(document).ready(function() {
+
+				$('select').niceSelect();
+
+				// 在线支付
+				$('#card-form').validate({
+					onkeyup: false,
+					onfocusout: false,
+					errorPlacement: function(error, element) {},
+					rules: {
+						amount: {
+							required: true,
+							number: true,
+							regExp: /^[0-9]+(.[0-9]{0,2})?$/,
+							floatRange: ['20', '50000']
+						},
+						bankCode: {
+							required: true
+						}
+					},
+					messages: {
+						amount: {
+							required: '请输入金额！',
+							number: '请输入正确的金额格式',
+							regExp: '金额格式只能为整数或者带两位小数以内',
+							floatRange: '单笔充值金额最少20元，最多50000元'
+						},
+						bankCode: {
+							required: '请选择银行'
+						}
+					},
+					invalidHandler: function(event, validator) {},
+					showErrors: function(errorMap, errorList) {
+						if(errorList.length > 0) {
+							prj.loadingcancel();
+							var firstError = errorList[0];
+							prj.tips(firstError.message, 2000);
+						}
+					},
+					submitHandler: function(form, e) {
+						e.preventDefault();
+						var $amount = $(form).find('input[name="amount"]').val();
+						//console.log($amount);
+						var $bankCode = '';
+						if($(form).find('select[name="bankCode"]').length) {
+							$bankCode = $(form).find('select[name="bankCode"]').val();
+						}
+						//console.log($bankCode);
+
+						if(!$bankCode) {
+							prj.tips('请选择银行！', 2000);
+							return false;
+						}
+
+						var $confirmForm = $('#card-confirm-form');
+						$confirmForm.find('input[name="amount"]').val($amount);
+						$confirmForm.find('input[name="bankCode"]').val($bankCode);
+						$confirmForm.submit();
+
+						var $html =
+							'<div class="popup"> \
+                       <div class="msg-desc">\
+                            	您的存款订单已生成，请您在弹出的银行页面上完成存款：  \
+                           <div class="msg-info">\
+                              	 付款后请根据状况选择 \
+                           </div>\
+                       </div> \
+                       <div class="msg-buttons">\
+                            <a href="../membercenter.html" class="wepay-finish">完成</a>\
+                            <a href="../deposit-home.html" class="wepay-fail inverted">支付遇到问题，重新支付</a>\
+                       </div>\
+                </div>';
+						prj.dialog($html);
+
+					}
+				});
+			});
+		</script>-->
+		<div class="user_footer">
+			<script>
+				puli('../component/user_footer.html','.user_footer')
+			</script>
+		</div>		
+	</body>
+	<script>
+		$(document).ready(function() {
+			$("#mm_nav_" + 3).addClass("active");
+			show_sub_bar($("#mm_nav_" + 3));
+			$("#sd-lnk-" + 3 + '_' + 2).addClass("active");
+			
+			$('.rbank_card a').on('click',function () {
+		            $('.rbank_card a').eq($(this).index()).addClass('on').siblings().removeClass('on');
+		    });
+			
+			$('.rbank_bank_list a').on('click',function () {
+		            $('.rbank_bank_list a').eq($(this).index()).addClass('on').siblings().removeClass('on');
+		    });
+			
+		});		
+	</script>
+</html>

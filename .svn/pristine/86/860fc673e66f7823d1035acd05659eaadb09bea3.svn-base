@@ -1,0 +1,1970 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+body {
+	line-height: 1;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none
+}
+a:focus{outline:none;}
+input:focus{outline:none;}
+div{ margin: 0px auto;}
+blockquote, q {
+	quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+html {
+	font-size: 14px;
+	font-family: 'Microsoft Yahei', sans-serif
+}
+html input {
+	font-size: 14px;
+	font-family: 'Microsoft Yahei', sans-serif
+}
+/*html body {
+	background: #FFFFFF
+}*/
+html body a {
+	text-decoration: none
+}
+.pop-con {
+	width: 460px;
+	height: 250px;
+	margin: 0 auto;
+	background: #FFFFFF no-repeat;
+	position: fixed;
+	z-index: 99999999999
+}
+.pop-con .close-btn {
+	width: 31px;
+	height: 31px;
+	display: block;
+	position: absolute;
+	top: 3px;
+	right: 10px
+}
+.sk-double-bounce {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	margin: 40px auto
+}
+.sk-double-bounce .sk-child {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-doubleBounce 2.0s infinite ease-in-out;
+	animation: sk-doubleBounce 2.0s infinite ease-in-out
+}
+.sk-double-bounce .sk-double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s
+}
+@-webkit-keyframes sk-doubleBounce {
+0%, 100% {
+-webkit-transform:scale(0);
+transform:scale(0)
+}
+50% {
+-webkit-transform:scale(1);
+transform:scale(1)
+}
+}
+@keyframes sk-doubleBounce {
+0%, 100% {
+-webkit-transform:scale(0);
+transform:scale(0)
+}
+50% {
+-webkit-transform:scale(1);
+transform:scale(1)
+}
+}
+
+.icon-down {
+    background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+    background-position: -521px -387px;
+    width: 11px;
+    height: 6px;
+}
+
+.icon-member-left {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	background-position: -56px -468px;
+	width: 27px;
+	height: 27px
+}
+.icon-wallet {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	background-position: -110px -468px;
+	width: 28px;
+	height: 25px
+}
+
+.icon-file {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	background-position: -506px 0px;
+	width: 26px;
+	height: 28px
+}
+
+.icon-journal {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	background-position: -506px -28px;
+	width: 24px;
+	height: 28px
+}
+
+.icon-mail {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon.png);
+	background-position: -413px -429px;
+	width: 28px;
+	height: 22px
+}
+
+
+
+
+.hide {
+	display: none
+}
+.register-pup {
+	width: 830px;
+	height: 380px;
+	position: fixed;
+	top: 30%;
+	z-index: 999;
+	background: #FFFFFF;
+	-webkit-border-radius: 8px
+}
+.register-pup .icon-cancle {
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	cursor: pointer
+}
+.register-pup .register-top {
+	width: 390px;
+	margin: 0 auto;
+	height: 35px;
+	margin-right: 150px;
+	padding: 45px 0 25px 0
+}
+.register-pup .register-top .register-top-div {
+	cursor: pointer;
+	width: 160px;
+	height: 33px;
+	color: #9973e6;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	-webkit-border-radius: 20px;
+	float: left;
+	text-align: center;
+	line-height: 32px;
+	margin-right: 25px;
+	border: 1px solid #9973e6;
+	position: relative
+}
+.register-pup .register-top .register-top-div:hover, .register-pup .register-top .register-top-div.hover {
+	background-color: #9973e6;
+	color: #FFFFFF
+}
+.register-pup .register-top .register-top-div span {
+	margin-left: 20px
+}
+.register-pup .register-top .register-top-div div {
+	position: absolute;
+	top: 5px;
+	left: 25px
+}
+.register-pup .register-top .register-top-div .registerOrdinaryHover {
+	width: 29px;
+	height: 24px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/registerOrdinaryHover.png) no-repeat
+}
+.register-pup .register-top .register-top-div .registerOrdinary {
+	width: 29px;
+	height: 24px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/registerOrdinary.png) no-repeat
+}
+.register-pup .register-top .register-top-div .registerMobileHover {
+	width: 29px;
+	height: 24px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/registerMobileHover.png) no-repeat
+}
+.register-pup .register-top .register-top-div .registerMobile {
+	width: 29px;
+	height: 24px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/registerMobile.png) no-repeat
+}
+.register-pup .register-left {
+	float: left;
+	width: 210px;
+	padding-left: 80px;
+	padding-top: 10px
+}
+.register-pup .register-content, .register-pup .register-mobile {
+	float: left;
+	width: 540px;
+	color: #b7b7b7
+}
+.register-pup .register-content .no-border a, .register-pup .register-mobile .no-border a {
+	text-decoration: underline;
+	color: #b7b7b7
+}
+.register-pup .register-content .inpt-group, .register-pup .register-mobile .inpt-group {
+	height: 34px;
+	margin-bottom: 15px;
+	clear: both;
+	position: relative
+}
+.register-pup .register-content .inpt-group .add, .register-pup .register-mobile .inpt-group .add {
+	color: #7d4ec6;
+	font-size: 18px;
+	position: absolute;
+	top: 5px;
+	left: 12px
+}
+.register-pup .register-content .inpt-group .inpt1, .register-pup .register-mobile .inpt-group .inpt1 {
+	outline-color: #9973e6;
+	width: 230px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	line-height: 32px;
+	padding: 0 10px;
+	float: left;
+	-webkit-border-radius: 3px
+}
+.register-pup .register-content .inpt-group .inpt_code, .register-pup .register-mobile .inpt-group .inpt_code {
+	outline-color: #9973e6;
+	width: 110px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	line-height: 32px;
+	padding: 0 10px;
+	float: left;
+	-webkit-border-radius: 3px
+}
+.register-pup .register-content .inpt-group .inp_btn, .register-pup .register-mobile .inpt-group .inp_btn {
+	width: 110px;
+	height: 31px;
+	line-height: 31px;
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	background: #9973e6;
+	border-radius: 3px;
+	margin-top: 2px;
+	float: left;
+	margin-left: 10px
+}
+.register-pup .register-content .inpt-group .inp_btn.disabled, .register-pup .register-mobile .inpt-group .inp_btn.disabled {
+	background: #cccccc
+}
+.register-pup .register-content .inpt-group #username, .register-pup .register-mobile .inpt-group #username {
+	outline-color: #9973e6;
+	width: 200px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	line-height: 32px;
+	padding: 0 25px;
+	float: left;
+	-webkit-border-radius: 3px
+}
+.register-pup .register-content .inpt-group .username-remid, .register-pup .register-mobile .inpt-group .username-remid {
+	color: #727272;
+	padding-top: 10px;
+	float: left;
+	padding-left: 10px
+}
+.register-pup .register-content .inpt-group .password-remid, .register-pup .register-mobile .inpt-group .password-remid {
+	color: #727272;
+	padding-top: 10px;
+	float: left;
+	padding-left: 10px
+}
+.register-pup .register-content .inpt-group .message-remid, .register-pup .register-mobile .inpt-group .message-remid {
+	color: #727272;
+	padding-top: 10px;
+	float: left;
+	padding-left: 12px
+}
+.register-pup .register-content .inpt-group .phone-remid, .register-pup .register-mobile .inpt-group .phone-remid {
+	color: #727272;
+	padding-top: 10px;
+	float: left;
+	padding-left: 10px
+}
+.register-pup .register-content .inpt-group .registercode, .register-pup .register-mobile .inpt-group .registercode {
+	float: left;
+	height: 32px;
+	margin: 0 0 0 10px
+}
+.register-pup .register-content .inpt-group .icon-eye-close, .register-pup .register-mobile .inpt-group .icon-eye-close {
+	position: absolute;
+	left: 220px;
+	top: 12px;
+	cursor: pointer
+}
+.register-pup .register-content .inpt-group .icon-eye-open, .register-pup .register-mobile .inpt-group .icon-eye-open {
+	position: absolute;
+	left: 220px;
+	top: 9px;
+	cursor: pointer
+}
+.register-pup .register-content .inpt-group .icon-refresh, .register-pup .register-mobile .inpt-group .icon-refresh {
+	position: absolute;
+	left: 225px;
+	top: 5px;
+	cursor: pointer
+}
+.register-pup .register-content .inpt-group .vldn-txt, .register-pup .register-mobile .inpt-group .vldn-txt {
+	position: absolute;
+	left: 260px;
+	top: 11px;
+	color: #fe0d0d;
+	display: none
+}
+.register-pup .register-content .inpt-group .password-class, .register-pup .register-mobile .inpt-group .password-class {
+	float: left
+}
+.register-pup .register-content .inpt-group .warnred, .register-pup .register-mobile .inpt-group .warnred {
+	color: #fe0d0d
+}
+.register-pup .register-content .buttons, .register-pup .register-mobile .buttons {
+	margin-top: 14px;
+	font-weight: bold
+}
+.register-pup .register-content .buttons #submitBtn, .register-pup .register-content .buttons #submitMobileBtn, .register-pup .register-mobile .buttons #submitBtn, .register-pup .register-mobile .buttons #submitMobileBtn {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	width: 285px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: #9973e6
+}
+.register-pup .register-content .buttons #submitBtn:hover, .register-pup .register-content .buttons #submitMobileBtn:hover, .register-pup .register-mobile .buttons #submitBtn:hover, .register-pup .register-mobile .buttons #submitMobileBtn:hover {
+	background: #a78ae3
+}
+.register-pup .register-content .buttons .login, .register-pup .register-mobile .buttons .login {
+	color: #cca352;
+	text-decoration: underline
+}
+.register-pup .register-content .buttons .info, .register-pup .register-mobile .buttons .info {
+	padding-left: 10px
+}
+.register-success {
+	width: 830px;
+	height: 380px;
+	position: fixed;
+	top: 30%;
+	z-index: 99999;
+	background: #FFFFFF;
+	-webkit-border-radius: 8px
+}
+.register-success .icon-cancle {
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	cursor: pointer
+}
+.register-success .register-left {
+	float: left;
+	width: 540px;
+	padding: 40px 0 0 220px
+}
+.register-success .register-left .register-img {
+	width: 341px;
+	padding-left: 70px
+}
+.register-success .register-left .title {
+	font-size: 30px;
+	color: #65b319;
+	padding: 23px 0 0 60px;
+	width: 300px
+}
+.register-success .register-left .content {
+	color: #535353;
+	font-size: 18px;
+	padding: 15px 0 0 80px
+}
+.register-success .register-left .content span {
+	font-size: 22px
+}
+.register-success .register-left .contentPhone {
+	color: #535353;
+	font-size: 18px;
+	padding-top: 15px;
+	margin: 0 0 0 -40px
+}
+.register-success .register-left .contentPhone span {
+	font-size: 18px
+}
+.register-success .register-left .contentPhone a {
+	color: #e1af7f;
+	text-decoration: underline
+}
+.register-success .register-left .buttons {
+	padding: 25px 0 0 0px
+}
+.register-success .register-left .buttons #now-deposit {
+	width: 250px;
+	background-color: #9973e6;
+	height: 40px;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	float: left;
+	margin: 0 20px 0px 10px;
+	-webkit-border-radius: 5px
+}
+.register-success .register-left .buttons #game-hall {
+	width: 120px;
+	background-color: #FFFFFF;
+	height: 40px;
+	color: #9973e6;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+	float: left;
+	-webkit-border-radius: 5px;
+	border: 1px solid #9973e6
+}
+.register-success .register-right {
+	float: left;
+	padding: 120px 0 0px 10px
+}
+.register-success .register-right .lottery {
+	background: url(http://192.168.0.140:81/TXWN/user_img/register/register-lottery.png) no-repeat;
+	width: 153px;
+	height: 182px;
+	position: relative
+}
+.register-success .register-right .lottery .money {
+	position: absolute;
+	top: 37px;
+	left: 51px;
+	color: #FFFFFF;
+	font-size: 30px
+}
+.register-success .register-right .lottery .money span {
+	font-size: 34px
+}
+.register-success .register-right .lottery .offers {
+	position: absolute;
+	top: 103px;
+	left: 56px;
+	color: #FFFFFF
+}
+.register-success .register-right .lottery .bind-mobile {
+	position: absolute;
+	top: 133px;
+	left: 40px;
+	color: #FFFFFF;
+	text-decoration: underline
+}
+.free-play-box {
+	width: 745px;
+	height: 434px;
+	position: fixed;
+	top: 30%;
+	z-index: 999;
+	background: url(http://192.168.0.140:81/TXWN/user_img/free-play-box.png) no-repeat;
+	-webkit-border-radius: 8px
+}
+.free-play-box .icon-cancle {
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	cursor: pointer
+}
+.free-play-box .free-top {
+	float: left;
+	width: 500px;
+	padding: 40px 0 0 110px;
+	height: 250px
+}
+.free-play-box .free-top .register-img {
+	width: 341px;
+	padding-left: 70px
+}
+.free-play-box .free-top .title {
+	font-size: 30px;
+	color: #1f1c2b;
+	padding: 23px 0 0 60px;
+	width: 450px
+}
+.free-play-box .free-top .title span {
+	color: #ee484c
+}
+.free-play-box .free-top .content {
+	color: #535353;
+	font-size: 18px;
+	padding: 15px 0 0 80px
+}
+.free-play-box .free-top .content span {
+	font-size: 22px
+}
+.free-play-box .free-top .buttons {
+	padding: 50px 0 0 100px;
+	width: 330px;
+	margin: 0 auto
+}
+.free-play-box .free-top .buttons .code {
+	color: #959595;
+	font-size: 16px;
+	width: 160px;
+	padding-bottom: 10px
+}
+.free-play-box .free-top .buttons .registercode {
+	float: left;
+	height: 32px;
+	width: 73px;
+	margin: 0 0 0 10px
+}
+.free-play-box .free-top .buttons #captcha {
+	outline-color: #9973e6;
+	width: 140px;
+	height: 32px;
+	border: 1px solid #dbdbdb;
+	line-height: 32px;
+	padding: 0 10px;
+	float: left;
+	-webkit-border-radius: 3px
+}
+.free-play-box .free-top .buttons .icon-refresh {
+	cursor: pointer;
+	float: left;
+	margin: 5px 0 0 10px
+}
+.free-play-box .free-top #visityes {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	width: 285px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	-webkit-border-radius: 6px;
+	background: #9973e6;
+	margin: 10px 0 0 130px
+}
+.free-play-box .free-top #visityes:hover {
+	background: #a78ae3
+}
+.free-play-box .free-down {
+	position: absolute;
+	right: 140px;
+	bottom: 31px;
+	width: 90px;
+	height: 70px;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: center;
+	background: #FFF;
+	color: #e98a8b;
+	-webkit-border-radius: 5px;
+	cursor: pointer
+}
+.free-play-box .free-down .register-box {
+	padding: 11px 20px 20px 20px
+}
+.login-box {
+	position: fixed;
+	background: url(http://192.168.0.140:81/TXWN/user_img/login-box.png) no-repeat;
+	width: 554px;
+	height: 319px;
+	z-index: 999
+}
+.login-box .icon-cancle {
+	position: absolute;
+	right: 14px;
+	top: 5px;
+	cursor: pointer
+}
+.login-box .login-info {
+	width: 320px;
+	float: right
+}
+.login-box .login-info .tiles {
+	color: #743aa4;
+	font-size: 14px;
+	font-weight: bold;
+	width: 80px;
+	margin: 0 auto;
+	padding: 23px 0 29px 0
+}
+.login-box .login-info .lgn-inpt {
+	width: 200px;
+	margin: 0 auto;
+	position: relative
+}
+.login-box .login-info .lgn-inpt input {
+	outline-color: #59397b;
+	width: 160px;
+	height: 37px;
+	border: 0;
+	padding: 0;
+	background-color: #FFFFFF;
+	padding-left: 37px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #333;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 5px;
+	margin-bottom: 15px
+}
+.login-box .login-info .arrow1 {
+	position: absolute;
+	top: 8px;
+	left: 4px
+}
+.login-box .login-info .arrow2 {
+	position: absolute;
+	top: 60px;
+	left: 4px
+}
+.login-box .login-info .login_btn {
+	cursor: pointer;
+	width: 200px;
+	height: 39px;
+	outline: 0;
+	margin-top: 25px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #7187de;
+	text-align: center;
+	line-height: 38px;
+	margin: 0 auto;
+	-webkit-border-radius: 5px
+}
+.login-box .login-info .login_btn:hover {
+	background-color: #5d74ce
+}
+.login-box .login-info .free_account_btn {
+	cursor: pointer;
+	width: 200px;
+	height: 39px;
+	margin: 0 auto;
+	outline: 0;
+	margin-top: 25px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #a671ff;
+	text-align: center;
+	line-height: 38px;
+	-webkit-border-radius: 5px
+}
+.login-box .login-info .free_account_btn:hover {
+	background-color: #9362e4
+}
+.login-box .login-info .icon-cny {
+	float: left;
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 35px
+}
+.modifyPwd-box {
+	width: 830px;
+	height: 380px;
+	position: fixed;
+	z-index: 999;
+	background: #FFFFFF;
+	-webkit-border-radius: 8px
+}
+.modifyPwd-box .icon-cancle {
+	position: absolute;
+	right: 14px;
+	top: 5px;
+	cursor: pointer
+}
+.modifyPwd-box .modifyPwd-left {
+	float: left;
+	width: 170px;
+	padding-left: 60px;
+	padding-top: 130px
+}
+.modifyPwd-box .modifyPwd-left .lock-password {
+	width: 119px;
+	height: 124px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/lock-password.png) no-repeat
+}
+.modifyPwd-box .modifyPwd-content {
+	width: 320px;
+	float: left;
+	padding: 80px 0 0 0
+}
+.modifyPwd-box .modifyPwd-content .title {
+	width: 510px;
+	height: 31px;
+	background: #f3f0fa;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 31px;
+	color: #8b8b8b;
+	font-weight: bold
+}
+.modifyPwd-box .modifyPwd-content .title span {
+	color: red;
+	font-weight: bold
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info {
+	padding: 30px 0 0 10px
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .row {
+	padding-bottom: 20px
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	width: 550px
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input {
+	float: left;
+	height: 36px;
+	width: 260px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	position: relative
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input input {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 3px 0 0 8px;
+	width: 90%;
+	border: 0;
+	outline: none;
+	background: transparent;
+	color: #9973e6
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message {
+	float: left;
+	height: 40px;
+	width: 280px;
+	padding-left: 10px;
+	color: #8b8b8b
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message.active {
+	color: #fe0d0d
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons {
+	margin-top: 14px;
+	font-weight: bold
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	width: 260px;
+	height: 40px;
+	line-height: 38px;
+	display: inline-block;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: #9973e6
+}
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a:hover {
+	background: #a78ae3
+}
+.popmask {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #000000;
+	z-index: 998;
+	opacity: 0.8;
+	filter: alpha(opacity=80)
+}
+#loadingpop .loadingpopimg {
+	position: fixed;
+	z-index: 999999
+}
+.clear {
+	clear: both
+}
+.loading-wrap {
+	width: 102px;
+	height: 102px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-left: -51px;
+	background: url(http://192.168.0.140:81/TXWN/user_img/loading-logo.png) no-repeat;
+	z-index: 9999
+}
+.loading-point {
+	position: absolute;
+	left: -10px;
+	top: -10px;
+	z-index: 1;
+	width: 122px;
+	height: 122px;
+	background-repeat: no-repeat;
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/loading-sprite.png);
+	background-position: 0 0
+}
+.loading-point.animated {
+	-webkit-animation: circle 2s linear infinite forwards;
+	animation: circle 2s linear infinite forwards
+}
+@-webkit-keyframes circle {
+0% {
+-webkit-transform:rotate(0deg);
+transform:rotate(0deg)
+}
+100% {
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@keyframes circle {
+0% {
+-webkit-transform:rotate(0deg);
+transform:rotate(0deg)
+}
+100% {
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+.am.right.align, .am .right.align {
+	text-align: right
+}
+.am.left.align, .am .left.align {
+	text-align: left
+}
+.am.center.align, .am .center.align {
+	text-align: center
+}
+.am.top.align, .am .top.align {
+	vertical-align: top
+}
+.am.middle.align, .am .middle.align {
+	vertical-align: middle
+}
+.am.bottom.align, .am .bottom.align {
+	vertical-align: bottom
+}
+.am.button, .am .button {
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	outline: 0;
+	background: #9973e6
+}
+.am.button:hover, .am.button:active, .am .button:hover, .am .button:active {
+	background: #b79cec
+}
+.hide {
+	display: none
+}
+.am.dialog-wrap {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.am.dialog-wrap .dialog-bg {
+	position: absolute;
+	width: 100%;
+	height: 2000px;
+	opacity: .8;
+	background-color: #000;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.am.dialog-wrap .dialog {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	min-width: 460px;
+	margin: 0 auto;
+	background: #fff no-repeat
+}
+.am.dialog-wrap .dialog p {
+	padding: 20px
+}
+.am.dialog-wrap .dialog .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 31px;
+	height: 31px
+}
+.am.dialog-wrap .dialog-loading {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	margin-top: -20px;
+	margin-left: -20px
+}
+.am.dialog-tips, .am .dialog-tips {
+	position: fixed;
+	z-index: 100000;
+	width: 300px;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,0.8)
+}
+.am.dialog-tips h4, .am .dialog-tips h4 {
+	font-size: 16px
+}
+.am.dialog-tips p, .am .dialog-tips p {
+	line-height: 200%
+}
+.am.dialog-tips p:last-child, .am .dialog-tips p:last-child {
+	margin-bottom: 0
+}
+.am.dialog-tips .tips-confirm, .am .dialog-tips .tips-confirm {
+	margin-top: 10px;
+	text-align: center
+}
+.am.dialog-tips .tips-confirm .button, .am .dialog-tips .tips-confirm .button {
+	font-size: 14px;
+	min-width: 80px;
+	margin: 5px;
+	color: #fff
+}
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+body, input, button, select {
+	font: 14px/1em 'Microsoft Yahei'
+}
+.wrap {
+	height: auto;
+	margin: 0 auto;
+	background-color: #ebebf5;
+	padding: 30px 0 30px 0
+}
+.wrap .holder {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	position: relative
+}
+.wrap .holder .top-height {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-color: #423d4d;
+	width: 240px
+}
+.wrap .holder .side-bar {
+	width: 240px;
+	float: left
+}
+.wrap .holder .side-bar .dpt-sd-lnk {
+	float: left;
+	width: 240px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #423d4d;
+	position: relative
+}
+.wrap .holder .side-bar .dpt-sd-lnk:hover, .wrap .holder .side-bar .dpt-sd-lnk.active {
+	background-color: #9973e6
+}
+.wrap .holder .side-bar .dpt-sd-lnk-header {
+	float: left;
+	width: 240px;
+	height: 65px;
+	text-align: center;
+	line-height: 65px;
+	font-size: 20px;
+	background-color: #5f4f7f;
+	color: #FFFFFF;
+	border-bottom: 2px solid #9973e6;
+	position: relative
+}
+.wrap .holder .side-bar .member-left-icon {
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 30px
+}
+.wrap .holder .side-bar #funds {
+	position: absolute;
+	top: 30px;
+	right: 22px
+}
+.wrap .holder .side-bar #account-info, .wrap .holder .side-bar #money-info {
+	position: absolute;
+	top: 30px;
+	right: 22px
+}
+.wrap .holder .side-bar .account-bar, .wrap .holder .side-bar .money-bar {
+	background-color: #2c2933;
+	color: #FFFFFF;
+	height: 0px;
+	float: left
+}
+.wrap .holder .side-bar .account-bar .sd-lnk, .wrap .holder .side-bar .money-bar .sd-lnk {
+	text-align: center;
+	height: 40px;
+	width: 240px;
+	display: inline-block;
+	line-height: 40px;
+	color: #FFFFFF;
+	position: relative
+}
+.wrap .holder .side-bar .account-bar .sd-lnk .icon-purple-right, .wrap .holder .side-bar .money-bar .sd-lnk .icon-purple-right {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	display: none
+}
+.wrap .holder .side-bar .account-bar .sd-lnk:hover, .wrap .holder .side-bar .account-bar .sd-lnk.active, .wrap .holder .side-bar .money-bar .sd-lnk:hover, .wrap .holder .side-bar .money-bar .sd-lnk.active {
+	color: #9973e6
+}
+.wrap .holder .side-bar .account-bar .sd-lnk:hover .icon-purple-right, .wrap .holder .side-bar .account-bar .sd-lnk.active .icon-purple-right, .wrap .holder .side-bar .money-bar .sd-lnk:hover .icon-purple-right, .wrap .holder .side-bar .money-bar .sd-lnk.active .icon-purple-right {
+	display: block
+}
+.wrap .holder .dtls-con {
+	float: left;
+	padding: 30px 40px !important;
+	width: 880px !important;
+	font-size: 14px;
+	line-height: 150%
+}
+.deposit-list .deposit-item {
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 0 5px 20px;
+	min-height: 115px;
+	float: left;
+	min-width: 230px;
+	position: relative;
+	cursor: pointer
+}
+.deposit-list .deposit-item:hover {
+	border-width: 2px;
+	padding: 19px
+}
+.deposit-list .deposit-item .icon {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-card.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+.deposit-list .deposit-item .content {
+	-webkit-box-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	margin-left: 15px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.deposit-list .deposit-item .content .title {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 5px
+}
+.deposit-list .deposit-item .content .desc {
+	color: #929292;
+	float: left
+}
+.deposit-list .deposit-item.card .recommend {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	width: 27px;
+	height: 36px;
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-recommend.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain
+}
+.deposit-list .deposit-item.card:hover {
+	border-color: #9973e6
+}
+.deposit-list .deposit-item.card:hover .recommend {
+	top: -1px;
+	right: 14px
+}
+.deposit-list .deposit-item.card .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-card.png)
+}
+.deposit-list .deposit-item.card .content .title {
+	color: #9973e6
+}
+.deposit-list .deposit-item.cash:hover {
+	border-color: #fa984b
+}
+.deposit-list .deposit-item.cash .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-cash.png)
+}
+.deposit-list .deposit-item.cash .content .title {
+	color: #fa984b
+}
+.deposit-list .deposit-item.atm:hover {
+	border-color: #dac709
+}
+.deposit-list .deposit-item.atm .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-atm.png)
+}
+.deposit-list .deposit-item.atm .content .title {
+	color: #dac709
+}
+.deposit-list .deposit-item.wepay:hover {
+	border-color: #1dbb61
+}
+.deposit-list .deposit-item.wepay .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-wepay.png)
+}
+.deposit-list .deposit-item.wepay .content .title {
+	color: #1dbb61
+}
+.deposit-list .deposit-item.alipay:hover {
+	border-color: #00abe8
+}
+.deposit-list .deposit-item.alipay .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-alipay.png)
+}
+.deposit-list .deposit-item.alipay .content .title {
+	color: #00abe8
+}
+.deposit-list .deposit-item.point:hover {
+	border-color: #12baa0
+}
+.deposit-list .deposit-item.point .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-point.png)
+}
+.deposit-list .deposit-item.point .content .title {
+	color: #12baa0
+}
+.deposit-list .deposit-item.qqpay:hover {
+	border-color: #7f9cf6
+}
+.deposit-list .deposit-item.qqpay .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/QQ_icon.png)
+}
+.deposit-list .deposit-item.qqpay .content .title {
+	color: #253dbb
+}
+.deposit-list .deposit-item.vpay:hover {
+	border-color: #e94c5a
+}
+.deposit-list .deposit-item.vpay .icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/vb.icon.png)
+}
+.deposit-list .deposit-item.vpay .content .title {
+	color: #e94c5a
+}
+.deposit-banner {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/banner-deposit.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 5px;
+	width: 850px;
+	height: 170px
+}
+.deposit-tabs ul, .deposit-tabs li {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+.deposit-tabs ul.tabs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	z-index: 10;
+	border-bottom: 1px solid #ccc
+}
+.deposit-tabs ul.tabs li {
+	display: inline-block;
+	font-size: 18px
+}
+.deposit-tabs ul.tabs li a {
+	color: #544771;
+	display: block;
+	width: 104px;
+	margin: 0 4px;
+	margin-right: -4px;
+	padding: 14px 0;
+	text-align: center
+}
+.deposit-tabs ul.tabs li a.active {
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	margin-bottom: -1px;
+	z-index: 11;
+	border-radius: 3px 3px 0 0;
+	color: #9973e6
+}
+.deposit-tabs .close {
+	width: 31px;
+	height: 31px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px
+}
+.deposit-form {
+	padding: 36px 30px 30px
+}
+.deposit-form .info-box {
+	border: 1px solid #dbda96;
+	color: #7b4e1e;
+	background: #fdfef1;
+	padding: 15px
+}
+.deposit-form .bank-box {
+	border: 1px solid #e8ddfb;
+	color: #999999;
+	background: #f8f4ff;
+	padding: 15px
+}
+.deposit-form .bank-box dl {
+	line-height: 200%
+}
+.deposit-form .bank-box dl dt {
+	width: 30%;
+	float: left;
+	text-align: right;
+	margin-right: 20px
+}
+.deposit-form .bank-box dl dd {
+	width: 50%;
+	float: left
+}
+.deposit-form .bank-box dl dd a {
+	float: right;
+	color: #9973e6;
+	text-decoration: underline
+}
+.deposit-form .card-box {
+	border: 1px solid #e8ddfb;
+	color: #999999;
+	background: #f8f4ff;
+	padding: 15px
+}
+.deposit-form .card-box dl {
+	line-height: 200%;
+	width: 30%;
+	text-align: center;
+	display: inline-block
+}
+.deposit-form .card-box dl dt {
+	display: inline-block;
+	text-align: right;
+	color: #787878
+}
+.deposit-form .card-box dl dd {
+	display: inline-block;
+	color: #9973e6;
+	font-size: 18px;
+	text-align: left
+}
+.deposit-form .form {
+	color: #999999
+}
+.deposit-form .form .icon {
+	width: 300px;
+	height: 65px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-left: 250px
+}
+.deposit-form .form .icon.icon-wepay {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-wepay.png)
+}
+
+.row_log{ margin: 30px auto;}
+.row_log .icon-wepay{ 
+    background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-wepay.png) !important;
+    width: 300px;
+    height: 65px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.row_log .icon-alipay{ 
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-alipay.png) !important;
+	width: 300px;
+    height: 65px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.row_log .icon-qqpay{ 
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/QQ_icon.png) !important;
+	width: 300px;
+    height: 65px;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.deposit-form .form .icon.icon-alipay {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-alipay.png)
+}
+.deposit-form .form .icon.icon-qqpay {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/QQ_icon.png)
+}
+.deposit-form .form .icon.icon-vpay {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/vb.icon.png)
+}
+.deposit-form .form .step {
+	width: 610px;
+	margin: 0 auto;
+	height: 60px;
+	margin-bottom: 20px
+}
+.deposit-form .form .step .step1 .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap1.jpg);
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 7px 10px 0 0
+}
+.deposit-form .form .step .step1 .info {
+	color: #504f51;
+	font-size: 14px;
+	float: left;
+	padding-top: 5px;
+	line-height: 15px
+}
+.deposit-form .form .step .step1.Normal .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap1-Normal.jpg);
+	width: 25px;
+	height: 25px
+}
+.deposit-form .form .step .step1.Normal .info {
+	color: #a3a3a3
+}
+.deposit-form .form .step .step2 .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap2.jpg);
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 7px 10px 0 0
+}
+.deposit-form .form .step .step2 .info {
+	color: #504f51;
+	font-size: 14px;
+	float: left;
+	padding-top: 5px;
+	line-height: 15px
+}
+.deposit-form .form .step .step2.Normal .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap2-Normal.jpg);
+	width: 25px;
+	height: 25px
+}
+.deposit-form .form .step .step2.Normal .info {
+	color: #a3a3a3
+}
+.deposit-form .form .step .step3 .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap3.jpg);
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 7px 10px 0 0
+}
+.deposit-form .form .step .step3 .info {
+	color: #504f51;
+	font-size: 14px;
+	float: left;
+	padding-top: 5px;
+	line-height: 15px
+}
+.deposit-form .form .step .step3.Normal .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap3-Normal.jpg);
+	width: 25px;
+	height: 25px
+}
+.deposit-form .form .step .step3.Normal .info {
+	color: #a3a3a3
+}
+.deposit-form .form .step .step4 .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap4.jpg);
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin: 7px 10px 0 0
+}
+.deposit-form .form .step .step4 .info {
+	color: #504f51;
+	font-size: 14px;
+	float: left;
+	padding-top: 5px;
+	line-height: 15px
+}
+.deposit-form .form .step .step4.Normal .img {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/stap4-Normal.jpg);
+	width: 25px;
+	height: 25px
+}
+.deposit-form .form .step .step4.Normal .info {
+	color: #a3a3a3
+}
+.deposit-form .form .step .next {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/next.jpg);
+	width: 10px;
+	height: 16px;
+	float: left;
+	margin: 13px 20px 0 20px
+}
+.deposit-form .form .row {
+	margin-bottom: 20px
+}
+.deposit-form .form .row .divider-line {
+	border-top: 1px dashed #9973e6;
+	position: relative;
+	width: 100%;
+	height: 1px;
+	line-height: 1px;
+	margin: 40px 0
+}
+.deposit-form .form .row .divider-line .button {
+	position: absolute;
+	width: 300px;
+	margin: 0 auto;
+	top: -18px;
+	left: 250px
+}
+.deposit-form .form .row .divider-line .divider-info {
+	position: absolute;
+	width: 185px;
+	margin: 0 auto;
+	top: -2px;
+	right: 60px;
+	font-size: 12px;
+	color: red;
+	z-index: 100;
+	background: #FFFFFF;
+	height: 15px;
+	text-align: center
+}
+.deposit-form .form .row .field {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto
+}
+
+
+.deposit-form .form .row .field p{ display: inline-block; padding-left: 10px;}
+.deposit-form .form .row .field_one{ margin-bottom: 30px;}
+.notice_deposit{ width: 320px; margin: 10px auto;}
+.deposit-form .form .row .field label {
+	float: left;
+	text-align: right;
+	width: 230px;
+	padding-right: 20px
+}
+.deposit-form .form .row .field .showBankInfo {
+	float: right;
+	color: #e33c20;
+	display: none
+}
+.deposit-form .form .row .field .msg {
+	float: left;
+	padding: 0 0 0 10px;
+	color: red
+}
+.deposit-form .form .row .field .input {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	position: relative
+}
+.deposit-form .form .row .field .input input {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 90%;
+	border: 0;
+	outline: none;
+	background: transparent;
+	color: #9973e6
+}
+.deposit-form .form .row .field .input span {
+	position: absolute;
+	top: 0;
+	right: 10px
+}
+.deposit-form .form .row .field .input span i {
+	display: inline-block
+}
+.deposit-form .form .row .field .input span .icon-calendar {
+	width: 14px;
+	height: 14px;
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-calendar.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-top: 14px
+}
+.deposit-form .form .row .field .input.disabled {
+	background: #e2e2e2;
+	border: 0
+}
+.deposit-form .form .row .field .input.disabled input {
+	color: #7a7a7a
+}
+.deposit-form .form .row .field .select {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative
+}
+.deposit-form .form .row .field .select select {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 13px 8px;
+	width: 300px;
+	color: #9973e6;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url(http://192.168.0.140:81/TXWN/user_img/icon-dropdown.png) no-repeat 274px 15px
+}
+.deposit-form .form .row .field .select select.deposit_prov {
+	width: 110px;
+	float: left;
+	margin-right: 10px
+}
+.deposit-form .form .row .field .select select.deposit_city {
+	width: 180px;
+	float: left
+}
+.deposit-form .form .row .field .select.disabled select {
+	color: #7a7a7a;
+	background-color: #e2e2e2;
+	border: 0
+}
+.deposit-form .form .row .field .nice-select .list {
+	width: 300px
+}
+.deposit-form .form .row .buttons, .deposit-form .form .row .info {
+	margin-left: 250px;
+	width: 300px
+}
+.deposit-form .form .row .buttons .warning, .deposit-form .form .row .info .warning {
+	background: #fcfdea;
+	color: #e33c20;
+	border: 1px solid #dbda96;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+.deposit-form .form .row .cash-buttons {
+	width: 720px;
+	padding: 40px 0 0 0
+}
+.deposit-form .form .row .cash-buttons .warning {
+	background: #fcfdea;
+	color: #e33c20;
+	border: 1px solid #dbda96;
+	border-radius: 3px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+.deposit-form .form .row .buttons {
+	margin-top: 30px
+}
+.deposit-form .form .row .button {
+	width: 100%;
+	background: #9973e6;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	border: 0;
+	border-radius: 3px;
+	font-size: 18px;
+	letter-spacing: 3px;
+	padding: 10px;
+	z-index: 10
+}
+.deposit-form .form .row .button:hover {
+	background: #b695f8
+}
+.deposit-form .form .row .button.disabled {
+	background: #949494;
+	color: #ffffff
+}
+.deposit-form .form .row a.button {
+	display: inline-block;
+	width: 200px;
+	padding: 0;
+	margin-right: 35px;
+	cursor: pointer
+}
+.deposit-form .form .notice {
+	margin-left: 250px;
+	margin-top: 10px;
+	color: #9b9b9b;
+	font-size: 12px
+}
+.deposit-form .form .information {
+	float: left;
+	width: 500px
+}
+.deposit-form .form .information .deposit-info {
+	background: #fcfdea;
+	color: #7b4e1e;
+	border: 1px solid #dbda96;
+	border-radius: 3px;
+	padding: 10px
+}
+.deposit-form .form .information .deposit-info dl {
+	clear: both;
+	height: 30px;
+	line-height: 30px
+}
+.deposit-form .form .information .deposit-info dl dt {
+	float: left;
+	text-align: right;
+	width: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+.deposit-form .form .information .deposit-info dl dd {
+	float: left;
+	text-align: left;
+	width: 50%
+}
+.deposit-form .form .information .deposit-desc {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 12px
+}
+.deposit-form .form .countdown {
+	float: left;
+	width: 260px;
+	margin-left: 20px
+}
+.deposit-form .form .countdown .timer {
+	padding: 10px;
+	font-weight: 800;
+	font-size: 48px;
+	color: #595959;
+	text-align: center;
+	margin-top: 10px
+}
+.deposit-form .form .countdown .timer-desc {
+	text-align: center;
+	margin-top: 30px;
+	line-height: 20px;
+	font-size: 12px
+}
+.deposit-form .form .response {
+	background: #f9f9f9;
+	padding: 5px;
+	border-radius: 5px
+}
+.deposit-form .form .response dl {
+	clear: both;
+	height: 30px;
+	width: 600px;
+	line-height: 30px;
+	padding: 5px
+}
+.deposit-form .form .response dl dt {
+	float: left;
+	text-align: right;
+	width: 50%
+}
+.deposit-form .form .response dl dd {
+	float: left;
+	width: 50%
+}
+.deposit-form .form .response dl dd a {
+	color: #9973e6;
+	float: right
+}
+.popup {
+	padding: 0 40px;
+	text-align: center;
+	min-width: 560px
+}
+.popup .msg-icon {
+	width: 80px;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin: 0 auto 20px
+}
+.popup .msg-title {
+	color: #d54141;
+	font-size: 18px;
+	margin: 0 0 30px
+}
+.popup .msg-desc {
+	color: #626262;
+	font-size: 14px;
+	margin: 0 0 30px;
+	line-height: 20px
+}
+.popup .msg-desc.big {
+	font-size: 18px;
+	line-height: 180%
+}
+.popup .msg-info {
+	border: 1px solid #dbda96;
+	background: #fcfdea;
+	color: #614990;
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 3px
+}
+.popup .msg-info dl {
+	line-height: 200%
+}
+.popup .msg-info dl dt {
+	float: left;
+	width: 40%;
+	text-align: right;
+	padding-right: 10px
+}
+.popup .msg-info dl dd {
+	float: left;
+	width: 50%;
+	text-align: left
+}
+.popup .msg-buttons a {
+	display: inline-block;
+	min-width: 140px;
+	background: #9973e6;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #9973e6;
+	border-radius: 3px;
+	font-size: 18px;
+	letter-spacing: 3px;
+	padding: 13px;
+	margin: 0 5px
+}
+.popup .msg-buttons a:hover {
+	background: #b695f8
+}
+.popup .msg-buttons a.inverted {
+	background: #fff;
+	color: #9973e6;
+	border: 1px solid #9973e6
+}
+.popup-warning .msg-icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-warning.png)
+}
+.popup-warning .msg-title {
+	color: #d54141
+}
+.popup-success .msg-icon {
+	background-image: url(http://192.168.0.140:81/TXWN/user_img/icon-smile.png)
+}
+.popup-success .msg-title {
+	color: #69c60f
+}
+
+
+
+/*选项卡*/
+
+
+
+.rbank-item h3 { margin: 45px 0; font-weight: normal; font-size: 16px; color: #666; line-height: 18px; }
+.rbank-item h3 i { float: left; width: 18px; height: 18px; margin-right: 5px; text-align: center; line-height: 18px; color: #fff; background: #ea3146; border-radius: 9px; font-style: normal; }
+.rbank-item h3 span { font-size: 14px; color: #999; }
+.rbank-item h3 span em{ font-style: normal; color: #f00;}
+.other-acc{ padding-left: 50px;}
+.rbank-info {}
+.rbank-info .rbank_top { padding-left: 50px; overflow: hidden;}
+.rbank-info .rbank_top_wepay{ width: 880px; text-align: center; padding-left: 0px;}
+.rbank-info .rbank_top .clo-item { display: inline-block; width: 107px; height: 45px; margin: 0 15px 15px 0; line-height: 45px; text-align: center; color: #666; border: 1px dashed #cacaca; cursor: pointer;}
+
+.rbank-info .rbank_top .clo-item_bank{ width: 148px; height: 45px;}
+
+.rbank-info .rbank_top .clo-item.on, .rbank-info .rbank_top .clo-item:hover { position: relative; border: 1px solid #ea3146; /*overflow: hidden; */ }
+
+.company-pay .rbank_top .clo-item { height: 104px !important; padding: 0px !important; border: none; border-bottom: 1px dashed #cacaca; }
+.company-pay .rbank_top .clo-item dl { width: 244px; min-height: 90px; padding: 13px 0 0 20px; margin: 0 !important; background: #fff; border: 1px dashed #cacaca; }
+.company-pay .rbank_top .clo-item dl dd { width: 175px !important; }
+.company-pay .rbank_top .clo-item.on { border: none !important; border-bottom: 1px solid #ea3146 !important; }
+.company-pay .rbank_top .clo-item:hover { border: none !important; overflow: visible !important; }
+.company-pay .rbank_top .clo-item.on dl, .company-pay .rbank_top .clo-item:hover dl { position: absolute; border: 1px solid #ea3146; }
+
+.company-pay .rbank_top .clo-item.on:hover dl dd p.p3 { border: 1px solid #ea3146; border-top: none; }
+.rbank-info .rbank_top .clo-item.on .mark { display: block; position: absolute; right: 0; bottom: 0; width: 16px; height: 17px; margin: 0; background-position: 0 -63px; }
+.rbank-info .rbank_top .clo-item.on:hover .mark { display: none; }
+.rbank-info .rbank_top .clo-item .mark { display: none; }
+.rbank-info .rbank_top .clo-item i.rbank-icon { width: 25px; height: 25px; margin-right: 10px; background-position: 0 0; vertical-align: middle; }
+.rbank-info .rbank_top .clo-item i.quit-icon { width: 27px; height: 32px; margin-right: 10px; background-position: 0 -787px; vertical-align: middle; }
+.rbank-info .rbank_top .clo-item label { cursor: pointer; }
+.rbank-info .rbank_top .clo-item b { width: 164px; height: 50px; }
+.rbank-info .rbank_top .clo-item b img{ width: 148px; height: 45px;}
+
+.pay_1 .rbank_top .clo-item i.rbank-icon { width: 40px; height: 27px; background-position: 0 -362px; }
+.rbank-icon { display: inline-block; background: url(http://192.168.0.140:81/TXWN/user_img/rbank-icon.png) no-repeat; }
+.rbank-icon_wepay { display: inline-block; background: url(http://192.168.0.140:81/TXWN/user_img/rbank-icon.png) no-repeat; }
+
+
+.rbank-icon_wepay {
+    width: 31px;
+    height: 28px;
+    background-position: 0 -90px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.rbank-icon_alipay{ 
+    width: 28px;
+    height: 28px;
+    background-position: 0 -128px;
+
+}
+
+.rbank-icon_qqpay{ 
+	width: 25px;
+    height: 30px;
+    background-position: 0 -166px;
+
+}
+
+.rbank-btn { display: inline-block; width: 88px; height: 36px; margin-top: 10px; background: #ea3146; border-radius: 4px; text-align: center; line-height: 36px; color: #fff; font-weight: bold; font-size: 16px; }
+.rbank-btn.disabled { background: #828282; }
+.acc-main .main-l dl dd input { width: 190px; height: 28px; margin: 0; line-height: 26px; padding-left: 10px; border: 1px solid #e5e5e5; color: #666;  outline: none;}
+.acc-main .main-l dl dd input.inp-date { width: 60px; }
+.acc-main .main-l dl dd input.inp-mess { width: 98px; }
+.acc-main .main-l dl dd input:focus { border-color: #ea3146; }
+
+
+/*.bank-ico {
+    display: inline-block;
+    background: url(http://192.168.0.140:81/TXWN/user_img/bank-ico.png) no-repeat;
+}
+.rbank-info .rbank_top .clo-item_bank{ width: 164px; height: 50px;}
+.rbank-info .rbank_top .clo-item .ZGGSYX { width: 164px; height: 50px; background-position: 0 0; }
+.rbank-info .rbank_top .clo-item .ZGNYYX { width: 164px; height: 50px; background-position: 0 -50px; }
+.rbank-info .rbank_top .clo-item .ZGMSYX { width: 164px; height: 50px; background-position: 0 -100px; }
+.rbank-info .rbank_top .clo-item .ZGJSYX { width: 164px; height: 50px; background-position: 0 -150px; }
+.rbank-info .rbank_top .clo-item .ZGZSYX { width: 164px; height: 50px; background-position: 0 -200px; }
+.rbank-info .rbank_top .clo-item .ZGYX { width: 164px; height: 50px; background-position: 0 -250px; }
+.rbank-info .rbank_top .clo-item .ZGJTYX { width: 164px; height: 50px; background-position: 0 -300px; }
+.rbank-info .rbank_top .clo-item .ZGYZYX { width: 164px; height: 50px; background-position: 0 -350px; }
+.rbank-info .rbank_top .clo-item .ZGXYYX { width: 164px; height: 50px; background-position: 0 -400px; }
+.rbank-info .rbank_top .clo-item .HXYX { width: 164px; height: 50px; background-position: 0 -450px; }
+.rbank-info .rbank_top .clo-item .PFYX { width: 164px; height: 50px; background-position: 0 -500px; }
+.rbank-info .rbank_top .clo-item .GZYX { width: 164px; height: 50px; background-position: 0 -550px; }
+.rbank-info .rbank_top .clo-item .BEADYYX { width: 164px; height: 50px; background-position: 0 -600px; }
+.rbank-info .rbank_top .clo-item .GZNSYX { width: 164px; height: 50px; background-position: 0 -650px; }
+.rbank-info .rbank_top .clo-item .SDNSYX { width: 164px; height: 50px; background-position: 0 -700px; }
+.rbank-info .rbank_top .clo-item .BJYX { width: 164px; height: 50px; background-position: 0 -750px; }
+.rbank-info .rbank_top .clo-item .PAYX { width: 164px; height: 50px; background-position: 0 -800px; }
+.rbank-info .rbank_top .clo-item .HZYX { width: 164px; height: 50px; background-position: 0 -850px; }
+.rbank-info .rbank_top .clo-item .WZYX { width: 164px; height: 50px; background-position: 0 -900px; }
+.rbank-info .rbank_top .clo-item .SHNSYX { width: 164px; height: 50px; background-position: 0 -950px; }
+.rbank-info .rbank_top .clo-item .YDXYS { width: 164px; height: 50px; background-position: 0 -1000px; }
+.rbank-info .rbank_top .clo-item .ZGGDYX { width: 164px; height: 50px; background-position: 0 -1050px; }
+.rbank-info .rbank_top .clo-item .ZXYX { width: 164px; height: 50px; background-position: 0 -1100px; }
+.rbank-info .rbank_top .clo-item .BHYX { width: 164px; height: 50px; background-position: 0 -1150px; }
+.rbank-info .rbank_top .clo-item .ZSYX { width: 164px; height: 50px; background-position: 0 -1200px; }
+.rbank-info .rbank_top .clo-item .SXJSYX { width: 164px; height: 50px; background-position: 0 -1250px; }
+.rbank-info .rbank_top .clo-item .HKYX { width: 164px; height: 50px; background-position: 0 -1300px; }
+.rbank-info .rbank_top .clo-item .ZJCZSYYX { width: 164px; height: 50px; background-position: 0 -1350px; }
+.rbank-info .rbank_top .clo-item .SHYX { width: 164px; height: 50px; background-position: 0 -1400px; }
+.rbank-info .rbank_top .clo-item .GFYX { width: 164px; height: 50px; background-position: 0 -1450px; }
+.rbank-info .rbank_top .clo-item .DWYX { width: 164px; height: 50px; background-position: 0 -1500px; }
+.rbank-info .rbank_top .clo-item .NBYX { width: 164px; height: 50px; background-position: 0 -1550px; }
+.rbank-info .rbank_top .clo-item .NJYX { width: 164px; height: 50px; background-position: 0 -1600px; }
+.rbank-info .rbank_top .clo-item .BJNSYX { width: 164px; height: 50px; background-position: 0 -1650px; }
+.rbank-info .rbank_top .clo-item .ZQYX { width: 164px; height: 50px; background-position: 0 -1700px; }
+.rbank-info .rbank_top .clo-item .GXXYS { width: 164px; height: 50px; background-position: 0 -1750px; }
+.rbank-info .rbank_top .clo-item .JSYX { width: 164px; height: 50px; background-position: 0 -1800px; }
+.rbank-info .rbank_top .clo-item .JLYX { width: 164px; height: 50px; background-position: 0 -1850px; }
+.rbank-info .rbank_top .clo-item p { margin-top: -10px; line-height: 1.8; color: #999; }
+.rbank-info .rbank_top .sel-ico { float: left; width: 18px; height: 18px; margin: 24px 15px 24px 0; background-position: 0 -35px; }*/
+
+
+

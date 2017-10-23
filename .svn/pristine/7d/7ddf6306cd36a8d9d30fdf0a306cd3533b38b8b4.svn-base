@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title>天下网络</title>
+		<link rel="stylesheet" type="text/css" href="user_css/user.css">
+		<link href="user_css/ui.css" rel="stylesheet" type="text/css" />
+		<link href="user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="user_css/forms.css" rel="stylesheet" type="text/css" />
+		<script src="../public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="user_js/user_main.js"></script>
+		
+	</head>
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<div class="dtls-con">
+
+					<div class="f_con">
+						<ul class="tabs eveb_sub_nav_type">
+					        <li class="on active"><a id="showAll" href="javascript:;">全部 (<em>0</em>)</a></li>
+					        <li><a id="showUnReaded" href="javascript:;">未读 (<em>0</em>)</a></li>
+					        <li><a id="showReaded" href="javascript:;">已读 (<em>0</em>)</a></li>
+					      	
+						</ul>
+						<div class="eveb_search"> 起止时间：
+					         <input  type="text" size="10" id="begin_time" class="Wdate beginTime" onclick="WdatePicker({dateFmt:'yyyy-MM-dd', minDate:'%y-#{%M-1}-%d', maxDate:'%y-%M-%d', autoPickDate:'true'})" />
+					          -
+					          <input  type="text" size="10" id="end_time" class="Wdate endTime" onclick="WdatePicker({dateFmt:'yyyy-MM-dd', minDate:'%y-#{%M-1}-%d', maxDate:'%y-%M-%d', autoPickDate:'true'})" />
+					          <a id="refreshDataList" href="javascript:;" class="button_small button_1">筛选</a>
+					          <a id="theDay" href="javascript:;" class="button_small button_4" onclick="today()">今日</a> 
+					          <a id="threeDay" href="javascript:;" class="button_small button_4" onclick="threeDay()">3天</a>
+					          <a id="theWeek" href="javascript:;" class="button_small button_4 the_week" onclick="weekday()">本周</a>
+				      	</div>
+					</div>
+                    <div CLASS="clear"></div>
+					<!-- tab内容 -->
+					<div class="f_con_list f_con_list_tab">
+					    <ul class="eveb_letter_list" id="mainBody">
+					    	<ul id="no_data"></ul>
+					      <!--<li>
+					        <div class="eveb_letter_title"><span>正在加载数据...</span> </div>  	
+					        </div>
+					      </li>-->
+					      <li id="list_container">
+					      	<!--<div class="eveb_letter">
+					            <div class="eveb_letter_title">
+					                <span class="fl">
+					                    <input type="checkbox" name="Ids" value="618491" status="1">
+					                    <strong class="eveb_letter_title_em"><a href="javascript:;">亲爱的会员：linz123，恭喜您注册成</a></strong>
+					                </span>
+					                <span class="fr">2017-05-12</span>
+					            </div>
+					            <div class="detail">
+					                <p>亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！亲爱的会员：linz123，恭喜您注册成功，我们网站有上百种好玩的游戏，您可以一试身手！</p>
+					                <div class="eveb_letter_control">
+					                    
+					                    <a name="deleteMessage" href="javascripts:;" class="button_small button_3 delete_confirm" msgid="618491">删除</a>
+					                    
+					                </div>
+					            </div>
+					            </div>-->  
+					        </li>
+					      <!--<li style="display:none">
+					        <div class="eveb_letter_title"><span>正在加载数据...</span></div>
+					      </li>
+					      <li style="display:none">
+					        <div class="eveb_letter_title"><span>正在加载数据...</span></div>
+					      </li>-->
+					    </ul>
+						<!--全选-->
+						<div class="eveb_list_footer">
+							<div class="eveb_list_select fl">
+								<label>
+							          <input type="checkbox" id="selectAll" />
+							          全选</label>
+								<a id="btnDelete" href="javascript:;" class="button_small button_3 delete_confirm">删除</a>
+								<!--<a id="btnRead" href="javascript:;" class="button_small button_3 readed_confirm">标记为已读</a>-->
+							</div>
+							<!--分页start-->
+							<div id="pagination" class="fr"></div>
+							<!--分页end-->
+						</div>
+
+					</div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="pop_cover hide">
+			<div class="pop_up mail">
+				<a class="pop_close"></a>
+				<div class="_c">
+					<div class="_t title"></div>
+					<div class="txt">尊敬的用户：<br>
+						<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好！<br> -->
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="content"></span>
+						<br>
+						<p class="fr">祝您好运！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript" src="user_js/My97DatePicker/WdatePicker.js"></script>
+		<script src="user_js/messagelist.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 切换到相关页
+			$(function (){
+			$(".eveb_sub_nav_type li").click(function(){
+			        $(".eveb_sub_nav_type li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+			//      $(".eveb_letter_list li").hide().eq($(this).index()).show();
+			   })    
+			})
+		</script>
+
+		<div class="user_footer">
+			<script>
+				puli('component/user_footer.html','.user_footer')
+			</script>
+		</div>
+
+	</body>
+	<script>
+		$(document).ready(function() {
+			$('.eveb_letter_title').on('click', function() {
+				$(this).next('.detail').slideToggle();
+			})
+			$("#mm_nav_" + 9).addClass("active");
+		});
+	</script>
+
+</html>

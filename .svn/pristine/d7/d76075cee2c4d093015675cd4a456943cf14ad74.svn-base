@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>天下网络-优惠永远多一点</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link rel="stylesheet" type="text/css" href="../user_css/user.css">
+		<link href="../user_css/deposit.css" rel="stylesheet" type="text/css" />
+		<script src="../../public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/layer/layer.js"></script>
+		<script type="text/javascript" src="../user_js/user_main.js"></script>
+		<script type="text/javascript" src="OnlinePay/deposit-cash.js"></script>
+	</head>
+
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('../component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap" ms-controller = "CardPay">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+
+					<a id="mm_nav_8" href="javescript:;" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="/UserCenter/memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<div class="dtls-con">
+					<div class="deposit-tabs">
+						<ul class="tabs">
+							<li>
+								<a href="deposit-card.html">在线支付</a>
+							</li>
+							<li>
+								<a href="deposit-wepay.html">微信支付</a>
+							</li>
+							<li>
+								<a href="deposit-alipay.html">支付宝支付</a>
+							</li>
+							<li>
+								<a href="deposit-qqpay.html">财付通</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);" class="active">银行汇款</a>
+							</li>
+						</ul>
+					</div>
+					<div class="deposit-form card">
+						<div class="form" id="deposit-cash-form">
+							<!--修改宽度-->
+							<div class="step" style="width: 655px">
+								<div class="step1">
+									<div class="img"></div>
+									<div class="info" onclick="alert('暂未开放')">第一步<br> <span style="text-decoration: underline;cursor: pointer">联系在线客服</span></div>
+								</div>
+								<div class="next"></div>
+								<div class="step2 ">
+									<div class="img"></div>
+									<div class="info">第二步<br>索要最新收款账户</div>
+								</div>
+								<div class="next"></div>
+								<div class="step3 ">
+									<div class="img"></div>
+									<div class="info">第三步<br>办理转账汇款</div>
+								</div>
+								<div class="next"></div>
+								<div class="step4 ">
+									<div class="img"></div>
+									<div class="info">第四步<br>提交汇款信息</div>
+								</div>
+							</div>
+							<!--表单开始-->
+							<div class="row">
+								<div class="field">
+									<label>中心钱包余额</label>
+									<div class="input disabled">
+										<input type="text" name="verifyCode" disabled="" ms-attr="{value:UserInfo.wallet +'元'}">
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="field">
+									<label>存款人姓名</label>
+									<div class="input">
+										<input type="text" name="verifyCode" ms-duplex = "forms.depositorName" >
+									</div>
+									<p>转账账号对应的姓名</p>
+									<div class="clear"></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="field">
+									<label>支付账号</label>
+									<div class="input">
+										<input type="text" name="verifyCode" value="" ms-duplex = "forms.bankAccount" >
+									</div>
+									<p>例如：0006545554221000456</p>
+									<div class="clear"></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="field">
+									<label>存款金额</label>
+									<div class="input">
+										<input type="text" name="amount" ms-duplex = "forms.amount" onkeyup="this.value = this.value.replace(/^0|\D/gi,'')"  id="bankAccount" />
+										<span>元</span>
+									</div>
+									<p>例如：500元</p>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="field">
+									<label>存款时间</label>
+									<div class="input">
+										<input type="text" name="amount"  ms-duplex = "forms.depositTime" />
+									</div>
+									<p>例如: 2017-05-24</p>
+									<div class="clear"></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="field field_one">
+									<label>存款方式</label>
+									<div class="select">
+										<select name="bankcode"  ms-duplex = "forms.typeSelected">
+											<option value="1">网银转账</option>
+				                            <option value="2">支付宝</option>
+				                            <option value="3">财付通</option>
+				                            <option value="4">微信</option>
+				                            <option value="5">ATM自动柜员机</option>
+				                            <option value="6">ATM现金入款</option>
+				                            <option value="7">银行柜台</option>
+
+										</select>
+									</div>
+									<!--<div class="showBankInfo">提醒：若支付宝转帐，请勿选择交通银行</div>-->
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+								<div class="field">
+									<label>是否申请彩金</label>
+									<div class="select">
+										<select name="bankcode"  ms-duplex = "forms.isHandsel">
+											<option value="0">申请</option>
+				                            <option value="1">不申请</option>
+										</select>
+									</div>
+									<!--<div class="showBankInfo">提醒：若支付宝转帐，请勿选择交通银行</div>-->
+									<div class="clear"></div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<!--<div class="row">
+								<div class="field info">
+									<div class="warning">
+										时限：提交后需在15分钟内完成存款
+									</div>
+								</div>
+							</div>-->
+							<div class="row">
+								<div class="field buttons">
+									<button type="button" class="button" ms-click = "cashSubmit">提交</button>
+								</div>
+							</div>
+						</div>
+						<div class="form hide" id="deposit-cash-resp">
+							<div class="step">
+								<div class="step1">
+									<div class="img"></div>
+									<div class="info">第一步<br>向客服索要</div>
+								</div>
+								<div class="next"></div>
+								<div class="step2">
+									<div class="img"></div>
+									<div class="info">第二步<br>获取网站收款账号</div>
+								</div>
+								<div class="next"></div>
+								<div class="step3 Normal">
+									<div class="img"></div>
+									<div class="info">第三步<br>转账汇款</div>
+								</div>
+								<div class="next"></div>
+								<div class="step4 Normal">
+									<div class="img"></div>
+									<div class="info">第四步<br>存款成功</div>
+								</div>
+							</div>
+							<!--第二步-->
+							<div class="row">
+								<div class="information">
+									<div class="deposit-info">
+										<dl>
+											<dt>存款金额：</dt>
+											<dd data-post-amount></dd>
+										</dl>
+										<dl>
+											<dt>持卡人：</dt>
+											<dd data-post-depositor></dd>
+										</dl>
+										<dl>
+											<dt>网站银行：</dt>
+											<dd data-callback-bankname></dd>
+										</dl>
+										<div class="clear"></div>
+									</div>
+									<div class="deposit-desc">确认订单信息：实际存款金额与持卡人须符合订单信息</div>
+								</div>
+								<div class="countdown">
+									<div class="timer" data-countdown="900">15:00</div>
+									<div class="timer-desc">为保证存款成功<br>请在15分钟之内完成支付</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="row response">
+								<dl>
+									<dt>收款银行：</dt>
+									<dd><span data-callback-bankname></span></dd>
+								</dl>
+								<dl>
+									<dt>收款人姓名：</dt>
+									<dd><span data-callback-accountname></span>
+										<a href="javascript:void(0);" class="copy" data-clipboard>复制</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>收款账号：</dt>
+									<dd><span data-callback-accountnumber></span>
+										<a href="javascript:void(0);" class="copy" data-clipboard>复制</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>开户行：</dt>
+									<dd><span data-callback-bankaddress></span>
+										<a href="javascript:void(0);" class="copy" data-clipboard>复制</a>
+									</dd>
+								</dl>
+								<div class="clear"></div>
+							</div>
+							
+							<div class="row">
+								<div class="field cash-buttons">
+									<a href="" target="_blabk" class="button show_msg" data-callback-bankurl>登录网银支付</a>
+									<a href="https://auth.alipay.com/login/index.html" target="_blabk" class="button show_msg">支付宝支付</a>
+									<a id="show_other_bank" class="button">其他方式汇款</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="user_footer">
+			<script>
+				puli('../component/user_footer.html','.user_footer')
+			</script>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function() {
+			$("#mm_nav_" + 3).addClass("active");
+			show_sub_bar($("#mm_nav_" + 3));
+			$("#sd-lnk-" + 3 + '_' + 2).addClass("active");
+		});
+	</script>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/UserCenter/user_css/user.css">
+    <link href="/UserCenter/user_css/ui.css" rel="stylesheet" type="text/css"/>
+    <link href="/UserCenter/user_css/withdraw.css" rel="stylesheet" type="text/css"/>
+    <script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/UserCenter/user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/UserCenter/user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src = "../user_js/layer/layer.js"></script>
+    <!--头尾js-->
+    <script type="text/javascript" src="/UserCenter/user_js/user_main.js"></script>
+    <!--提款js-->
+    <script type="text/javascript" src="withdarw.js"></script>
+</head>
+<body ms-controller="index" class="ms-controller">
+<div class="user_header">
+    <script>
+        puli('/UserCenter/component/user_header.html', '.user_header')
+    </script>
+</div>
+<div class="clear wrap" ms-controller="withDraw">
+    <div class="holder">
+        <div class="side-bar">
+            <div class="top-height"></div>
+            <a id="mm_nav_1" class="dpt-sd-lnk-header">
+                会员中心
+            </a>
+            <a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+                <span class="icon-member-left member-left-icon"></span>会员首页
+            </a>
+            <a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+                <span class="icon-wallet member-left-icon"></span>转账
+            </a>
+            <a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+                <span class="icon-wallet member-left-icon"></span>存款
+            </a>
+            <a id="sd-lnk-3_3" href="../withdraw/withdraw.html" class="dpt-sd-lnk active">
+                <span class="icon-wallet member-left-icon"></span>取款
+            </a>
+            <a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+                <span class="icon-file member-left-icon"></span>历史记录
+            </a>
+
+            <a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+                <span class="icon-journal member-left-icon"></span>个人资料
+                <div class="icon icon-down" id="account-info" attr-value="down"></div>
+            </a>
+            <div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+                <a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+                    个人信息
+                    <div class="icon-purple-right"></div>
+                </a>
+                <a class="sd-lnk" id="sd-lnk-8_2" href="bank_add.html">
+                    银行资料
+                    <div class="icon-purple-right"></div>
+                </a>
+                <a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+                    修改密码
+                    <div class="icon-purple-right"></div>
+                </a>
+            </div>
+            <a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+                <span class="icon-mail member-left-icon"></span>站内信
+            </a>
+            <div></div>
+        </div>
+
+
+        <div class="dtls-con">
+            <div class="withdraw-header">
+                <!--中心钱包余额-->
+
+                <div class="title">可用余额 <b id="can_use_credit"><span>{{UserInfo.wallet.toFixed(2)}}</span></b> 元</div>
+                <div class="desc">
+                    <!--可用余额 = 总余额 - 各厅余额不足1元部分之和 - 棋牌游戏-->
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="withdraw-form">
+                <div class="row cards">
+                    <div class="field">
+                        <div class="title" style="line-height: 70px;">取款至：</div>
+                        <div class="desc">
+                            <!--循环银行卡列表-->
+                            <div class="bankcard ccb select" ms-if = "config.userCard" ms-for = "(index,el) in config.userCard">
+                            	<div class="bankCard_list">
+                            		<i class="icon"></i>
+                                	{{el.bank_name}}<b>{{el.card_num}}</b>
+                            	</div>
+                            	<p><a href="javascript:;" ms-click="delShow">删除</a></p>
+                            </div>
+                            <!--无数据时显示添加银行卡-->
+                            <a href="bank_add.html" ms-if = "!config.userCard">
+                                <div class="bankcard add" >
+                                    <b>+</b><br>添加银行卡
+                                </div>
+                            </a>
+                        </div>
+                        <input type="hidden" name="bank_id" value="">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <div class="title">要求打码量：</div>
+                        <div class="desc desc_Codeok">
+                            <!--要求打码量-->
+                            <div class="input">
+                                <input type="text" name="amount" disabled="disabled" ms-attr = "{value:' '+config.making.marking_quantity}"/>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="field">
+                        <div class="title">完成打码量：</div>
+                        <div class="desc desc_Codeok">
+                            <!--要求打码量-->
+                            <div class="input">
+                                <input type="text" name="amount" disabled="disabled" ms-attr = "{value:' '+config.making.user_quantity}"/>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="field">
+                        <div class="title">金额：</div>
+                        <div class="desc">
+                            <div class="input">
+                                <!--绑定金额-->
+                                <input ms-duplex = "config.amount" type="text" name="amount" maxlength="15" placeholder="请输入金额"
+                                       onkeyup="this.value=this.value.replace(/^0|\D/gi,&quot;&quot;)"
+                                       ondragenter=" return false"
+                                       onpaste="return !clipboardData.getData('text').match(/\D/)"/>
+                                <label class="after">元</label>
+                            </div>
+                            <div class="desc_span"><span>* 单笔 最小提款	金额为：100元 / 最大转账金额：100,000元</span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    
+
+                    <div class="field">
+                        <div class="title">提款密码：</div>
+                        <div class="desc">
+                            <div class="input">
+                                <!--提款密码绑定-->
+                                <input type="password" name="amount" ms-duplex = "config.drawingPwd" maxlength="6" placeholder="请输入提款密码"/>
+                            </div>
+                            <div class="desc_span"><a href="../modifyPwd/ptpwdupdate.html"><span>修改提款密码 </span></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                     <!--提款提交-->
+                    <button type="button" ms-click = "doWithDraw">提交</button>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="user_footer">
+        <script>
+            puli('/UserCenter/component/user_footer.html', '.user_footer')
+        </script>
+    </div>
+    
+    <!--删除银行卡弹窗-->
+<div class="eveb_popup_wraptbddete" ms-if = "win.isDelShow" ></div>
+<div class="set_alertdele" ms-if = "win.isDelShow">
+    <div class="alert_title">
+        <h4>是否删除银行卡</h4>
+        <i></i>
+    </div>
+    <div class="alert_content">
+        <ul>
+            <li><span>确认取款密码：</span>
+                <input type="password" id="login_pwd" ms-duplex = "win.rePwd" />
+            </li>
+            <li class="alert_btn">
+
+                <input type="button" id="btn_getpwddele" value="确认"  ms-click = "deleteCard" />
+                <input type="button" id="btn_cancledele" value="取消" ms-click="delHide" />
+
+            </li>
+        </ul>
+    </div>
+</div>
+<!--删除银行卡弹窗-end-->
+    
+</div>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("#mm_nav_" + 3).addClass("active");
+        show_sub_bar($("#mm_nav_" + 3));
+        $("#sd-lnk-" + 3 + '_' + 3).addClass("active");
+    });
+</script>
+</html>

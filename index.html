@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>天下网络-优惠永远多一点</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="天下网络" />
+		<meta name="description" content="" />
+		
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link href="css/index.css" rel="stylesheet" type="text/css" />
+		<link href="css/home.css" rel="stylesheet" type="text/css" />
+		<!--<link href="css/slick.min.css" rel="stylesheet" type="text/css" />-->
+		<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="template/main.js"></script>
+        <script src="js/jquery.SuperSlide.2.1.1.source.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Carousel.js"></script>
+
+		<!--公共基础js-->
+		<script src="public/init.js" type="text/javascript" ></script>
+		<script src="public/page_common.js" type="text/javascript" ></script>
+		<script src="public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="public/checkinput.js" type="text/javascript" ></script>
+		<script src="public/loadpage.js" type="text/javascript" ></script>
+		<script src="public/imagescode.js" type="text/javascript" ></script>
+		<script src="public/game_plat.js" type="text/javascript" ></script>
+		<script src="public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="/game/slot_gg.js"></script>
+        <!-- 滚动插件 -->
+		<script src="public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- 游戏 -->
+		<!-- <script src="/game/Platform_haba.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/game/Platform_PT.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/game/slot_gg.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/game/slot_mg.js" type="text/javascript" charset="utf-8"></script> -->
+
+    </head>
+
+	<body>
+    <style>
+        #nav_1 a{ color: #e1af7f;}
+    </style>
+    <div class="header_bgbox">
+        <script>Main($('.header_bgbox'),'template/header.html');</script>
+    </div>
+
+		<div class="clear wrap">
+			<div class="header-banner">
+                <div class="banner_index">
+                    <div class="fullSlide">
+
+                        <div class="bd">
+                            <ul id="swiper_container">
+                            </ul>
+                        </div>
+
+                        <div class="hd"><ul></ul></div>
+                    </div>
+                </div>
+				<div class="marq trans-bg">
+					<div class="marq-con">
+						<a id="open-notice-list" style="cursor:pointer;">
+							<div class="icon-speaker"></div>
+							<div id="announcement_marquee">
+                        
+                    		</div>
+						</a>
+
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="account-content">
+					<div class="box">
+						<div class="box-img icon-deposit"></div>
+						<div class="box-info">
+							<div class="box-span">
+								<span id="minutes">--</span>分<span id="seconds">--</span>秒
+							</div>
+							<br> 存款平均到账时间
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-img icon-withdraw"></div>
+						<div class="box-info">
+							<div class="box-span">
+								<span id="minutes2">--</span>分<span id="seconds2">--</span>秒
+							</div>
+							<br> 取款平均到账时间
+						</div>
+					</div>
+					<div class="box">
+						<div class="box-img icon-global"></div>
+						<div class="box-info">
+							<div class="box-span" id="register_count">--</div>
+							<br> 24小时注册数
+						</div>
+					</div>
+					<div class="box" style="padding-right: 0;">
+						<div class="box-img icon-pig"></div>
+
+						<div class="box-info">
+							<div class="box-span" id="offers_rpize">--</div>
+							<br> 累计送出回赠
+						</div>
+					</div>
+				</div>
+
+				<div class="main wrap">
+					<div class="wrap-inner">
+						<div class="casinos">
+							<div class="col1">
+                                <!--卡卡湾-->
+								<div class="casino-wrap agqj">
+									<img src="http://192.168.0.140:81/TXWN/images/casino-classic.png">
+									<h3>
+                                        <span id="show_online_num_1"></span>人
+                                    </h3>
+									<div class="layer">
+										<div class="layer-buttons">
+											<!--<a href="javascript:void(0);" class="regist">真钱开户</a>-->
+											<a href="javascript:void(0);" onclick="loadgame('CG');" class="for_free" name="3">进入游戏</a>
+										</div>
+									</div>
+								</div>
+                                <!--DS-->
+                                <div class="casino-wrap agqj luckyway">
+                                    <img src="http://192.168.0.140:81/TXWN/images/casino-classic2.png">
+                                    <h3 style=" bottom: 50px;">
+                                        <span id="show_online_num_2"></span>人
+                                    </h3>
+                                    <div class="layer">
+                                        <div class="layer-buttons">
+                                            <!--<a href="javascript:void(0);" class="regist">真钱开户</a>-->
+                                            <a href="javascript:void(0);" onclick="loadgame('DS');" class="for_free" name="3">进入游戏</a>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+							<div class="col2">
+                                <!--AG极速-->
+								<div class="casino-wrap">
+									<img src="http://192.168.0.140:81/TXWN/images/casino-agin.png" />
+									<div class="layer">
+										<div class="layer-buttons">
+											<!--<a href="javascript:void(0);" class="regist">真钱开户</a>-->
+											<a href="javascript:void(0);" onclick="loadgame('AGIN');" class="for_free">进入游戏</a>
+										</div>
+									</div>
+									<!--<a href="javascript:void(0);" class="lobby" title="进入游戏厅">进厅</a>-->
+									<!--<a href="rule1_branch.htm" class="tips" title="规则介绍">玩法</a>-->
+								</div>
+                                <!--AG国际-->
+								<div class="casino-wrap small left">
+									<img src="http://192.168.0.140:81/TXWN/images/casino-agin2.png" />
+									<h2>
+                                        <strong>AG</strong><br>极速厅
+                                    </h2>
+									<div class="layer small">
+										<div class="layer-buttons">
+											<!--<a class="regist" href="javascript:void(0)"> <span>真钱开户</span>-->
+											</a>
+											<a href="javascript:void(0)" onclick="loadgame('AG');" class="for_free">进入游戏</a>
+										</div>
+									</div>
+								</div>
+
+                                <!--申博-->
+								<div class="casino-wrap small right">
+									<img src="http://192.168.0.140:81/TXWN/images/casino-as.png">
+									<h2>
+                                        <strong>申博</strong><br>视讯
+                                    </h2>
+									<div class="layer small">
+										<div class="layer-buttons">
+											<!--<a href="javascript:void(0);" class="regist">真钱开户</a>-->
+											<a href="javascript:void(0)" onclick="loadgame('SB','1');" class="for_free">进入游戏</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col3">
+								<div class="game-table">
+									<div class="table-top"></div>
+									<div class="table-body">
+                                        <!--欧博-->
+										<div class="hot_table table_1">
+											<div class="table_mun">
+												<span>欧博</span>视讯
+											</div>
+											<i class="icon icon_table_chip"></i>
+											<div class="table_chips" title="上周投注总额">
+												<span>6614</span>万
+											</div>
+											<i class="icon icon_member"></i>
+											<div class="table_players" title="累计投注人数">
+												<span>18.8</span>万人
+											</div>
+											<a class="btn_entrance" href="javascript:void(0);" onclick="loadgame('OB');"></a>
+										</div>
+                                        <!--BBIN-->
+										<div class="hot_table table_2">
+											<div class="table_mun">
+												<span>BBIN</span>视讯
+											</div>
+											<i class="icon icon_table_chip"></i>
+											<div class="table_chips" title="上周投注总额">
+												<span>6156</span>万
+											</div>
+											<i class="icon icon_member"></i>
+											<div class="table_players" title="累计投注人数">
+												<span>18.3</span>万人
+											</div>
+											<a class="btn_entrance" href="javascript:void(0);" onclick="loadgame('BBIN','1');"></a>
+										</div>
+                                        <!--OG-->
+										<div class="hot_table table_3">
+											<div class="table_mun">
+												<span>OG</span>视讯
+											</div>
+											<i class="icon icon_table_chip"></i>
+											<div class="table_chips" title="上周投注总额">
+												<span>6256</span>万
+											</div>
+											<i class="icon icon_member"></i>
+											<div class="table_players" title="累计投注人数">
+												<span>17.1</span>万人
+											</div>
+											<a class="btn_entrance" href="javascript:void(0);" onclick="loadgame('OG');"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="slots">
+							<h2 class="title"><span>电子游戏</span></h2>
+							<ul class="slots-list">
+								<li class="puyu" style=" overflow: visible;">
+									<div class="img-wrap">
+										<img src="http://192.168.0.140:81/TXWN/images/slot1.png">
+									</div>
+									<div class="game-info">
+										<h3><strong>AG</strong>捕鱼</h3>
+										<p>花式捕鱼 爽快捞金</p>
+									</div>
+									<div class="link-layer">
+										<a href="javascript:void(0);" onclick="loadgame('AGBY');" class="free-play gamein_fish">进入游戏</a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" src="http://192.168.0.140:81/TXWN/PT_img/Card_Games/super_lion.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('slion')"></a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" style=" background: #000;" src="http://192.168.0.140:81/TXWN/PT_img/Classic_Slots/Funky_Monkey.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('fm')"></a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" src="http://192.168.0.140:81/TXWN/PT_img/Video_Slots/wlgjp.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('wlgjp')"></a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" src="http://192.168.0.140:81/TXWN/PT_img/Video_Slots/kfp.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('kfp')"></a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" src="http://192.168.0.140:81/TXWN/PT_img/Card_Games/si_ling.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('sling')"></a>
+									</div>
+								</li>
+								<li>
+									<div class="img-wrap">
+									 	<img width="294" height="197" src="http://192.168.0.140:81/TXWN/PT_img/Video_Slots/yjjb.png" />
+									</div>
+									<div class="link-layer">
+										<a  class="play gamein" onclick="load_game_link_pt('gesjp')"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="brand wrap">
+					<div class="wrap-inner">
+						<h2 class="title white"><span>品牌合作</span></h2>
+                        <div class="poster-main brand-slider" id="carousel" data-setting='{
+                                "width":1200,
+                                "height":240,
+                                "posterWidth":720,
+                                "posterHeight":240,
+                                "scale":0.8,
+                                "speed":1000,
+                                "autoPlay":true,
+                                "delay":3000,
+                                "verticalAlign":"middle"
+                                }'>
+                            <div class="poster-btn poster-prev-btn"></div>
+                            <ul class="poster-list">
+                                <!--<li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand1.jpg"  width="100%" /></li>-->
+                                <li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand2.jpg"  width="100%" /></li>
+                                <li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand3.jpg"  width="100%" /></li>
+                                <li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand4.jpg"  width="100%" /></li>
+                                <li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand5.jpg"  width="100%" /></li>
+                                <!--<li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand6.jpg"  width="100%" /></li>-->
+                                <li class="poster-item"><img src="http://192.168.0.140:81/TXWN/images/banner-brand7.jpg"  width="100%" /></li>
+                            </ul>
+                            <div class="poster-btn poster-next-btn"></div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<!--<div class="mobile-banner">
+                <img src="http://192.168.0.140:81/TXWN/images/footer_img.jpg" />
+			</div>-->
+
+		</div>
+    <!--尾部-->
+    <div class="footer_bgbox">
+        <script>Main($('.footer_bgbox'),'template/footer.html');</script>
+    </div>
+    <!--尾部-->
+
+	<!--打开时时的公告--> 
+	<!--打开时的弹窗-->
+	<div class="mask" style="display:none;"></div>
+	<div class="mess" style="display:none;">
+	  <p class="Poptop"> <span class="center">天下网络公告</span> <a href="javascript:void(0)" onclick="$('.mask').hide();$('.mess').remove();" id="closeicon"><span></span></a> </p>
+	  <p class="Popcontent"> <a href="javascript:void(0)" ><img id="gonggao_img" src="" width="100%" height="100%"/></a> </p>
+	</div>
+	<!--打开时的弹窗-->
+
+
+    <script>
+    $(function($){
+    		
+	    	setTimeout(time, 1000);
+		    function time () {
+		    	var show_online_num =Math.round(Math.random()*2000);
+		    	var register_count =Math.round(Math.random()*200 + 500);
+		    	var offers_rpize =Math.random()*1000000 + 20000000;
+		    	var active_deposit =Math.round(Math.random()*50);
+		    	var active_deposit_min =Math.round(Math.random()*1);
+		    	var active_awal_minute =Math.round(Math.random());
+		    	var active_awal_second =Math.round(Math.random()*150);
+
+		    	var default_data = {
+	        			"show_online_num":show_online_num,
+	        			"register_count":register_count,
+	        			"offers_rpize":offers_rpize.toFixed(2),
+	        			"active_deposit":active_deposit,
+	        			"active_deposit_min":active_deposit_min,
+	        			"active_awal_minute":active_awal_minute,
+	        			"active_awal_second":active_awal_second
+		        	};
+		        	
+		            $("#show_online_num_1").html(default_data.show_online_num);
+		            $("#show_online_num_2").html(default_data.show_online_num);
+		            
+		            $("#offers_rpize").html(default_data.offers_rpize);
+		        	$("#register_count").html(default_data.register_count);
+		    		$("#minutes").html("0" + default_data.active_deposit_min);
+		    		$("#seconds").html(default_data.active_deposit);
+		    		$("#minutes2").html(default_data.active_awal_minute);
+		    		$("#seconds2").html(default_data.active_awal_second);
+
+				    //TIMER
+				    var minutesLabel = document.getElementById("minutes");
+				    var secondsLabel = document.getElementById("seconds");
+
+				    var minutesLabel2 = document.getElementById("minutes2");
+				    var secondsLabel2 = document.getElementById("seconds2");
+
+				    var totalSeconds1 = 0;
+				    var totalSeconds2 = 0;
+				    var total1 = parseInt(default_data.active_deposit_min*60) + parseInt(default_data.active_deposit);
+				    var total2 = parseInt(default_data.active_awal_minute*60) + parseInt(default_data.active_awal_second);
+
+				    var setTime1 = setInterval(setTime1, 80);
+				    var setTime2 = setInterval(setTime2, 5);
+
+				    function setTime1() {
+
+				        ++totalSeconds1;
+
+				        if (totalSeconds1 <= total1) {
+				            secondsLabel.innerHTML = pad(totalSeconds1 % 60);
+				            minutesLabel.innerHTML = pad(parseInt(totalSeconds1 / 60));
+				        }
+
+				    }
+
+				    function setTime2() {
+				        ++totalSeconds2;
+
+				        if (totalSeconds2 <= total2) {
+				            secondsLabel2.innerHTML = pad(totalSeconds2 % 60);
+				            minutesLabel2.innerHTML = pad(parseInt(totalSeconds2 / 60));
+				        } else {
+				            clearInterval(setTime2);
+				        }
+				    }
+
+				    function pad(val) {
+				        var valString = val + "";
+				        if (valString.length < 2) {
+				            return "0" + valString;
+				        }
+				        else {
+				            return valString;
+				        }
+				    }
+		    }
+        $(function(){
+            Carousel.init($("#carousel"));
+            $("#carousel").init();
+        });
+		    
+    });
+
+		</script>
+	</body>
+</html>

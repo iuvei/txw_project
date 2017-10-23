@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/UserCenter/user_css/user.css">
+		<link href="/UserCenter/user_css/ui.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/forms.css" rel="stylesheet" type="text/css" />
+		
+		<script src="/UserCenter/user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/user_main.js"></script>
+		<script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/UserCenter/user_js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('/UserCenter/component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				
+
+				<div class="dtls-con">
+					<div class="f_con">
+						<ul class="tabs">
+							<li class="active">
+								<a href="###">个人信息</a>
+							</li>
+							<li>
+								<a href="../withdraw/bank_add.html">银行资料</a>
+							</li>
+							<li>
+								<a href="modifyPassword.html">修改密码</a>
+							</li>
+						</ul>
+						<div class="f_main">
+							<!-- <div class="bar"><i class="per_icn">&nbsp;</i> 绑定手机即可领取<span class="red">2元</span>免费彩金！
+	                	<span class="info ml"><i class="q_icn">&nbsp;</i> 优惠细则
+	                		<span class="in_box" style="right:-130px;top:38px;"><i class="arw"></i>
+                              	<span class="_c">
+					                                    ・绑定手机，送2元彩金<br>
+					                                    ・至少需要完成一次成功存款<br>
+                                </span>
+                              </span>
+	                	</span>
+                	</div> -->
+                	<div class="form">
+                		
+                	
+							<!-- <form class="form" id="submit-form" action="personal_information.html" method="post"> -->
+								<input type="hidden" name="operate" value="1" />
+
+								<div class="r">
+									<label><span class="red">*</span> 真实姓名</label>
+									<span class="inp">
+                            	<input type="text"  id="realName" name="realName" maxlength="20" data-check  placeholder="请填写真实姓名，与收款银行卡开户名相同">
+                            </span>
+									<span class="info ml"><i class="q_icn">&nbsp;</i> 为什么要填写真实姓名？
+                            	<span class="in_box " style="right:-45px;top:31px;"><i class="arw"></i>
+	                              	<span class="_c">
+	                                	提款银行卡姓名必须和游戏账户姓名一致才可以申请提款，所以请务必用真实姓名
+	                                </span>
+									</span>
+									</span>
+								</div>
+								<!-- <div class="r">
+									<label><span class="red">*</span> 预留信息</label>
+									<span class="inp">
+                            	<input type="text"  id="verifyCode" name="verifyCode"  maxlength="16"  data-check placeholder="由1-16位数字、字母或文字组合而成" />
+                            </span>
+									<span class="info ml"><i class="q_icn">&nbsp;</i> 什么是预留信息？
+                           		<span class="in_box " style="right:-82px;top:31px;"><i class="arw"></i>
+	                              	<span class="_c">
+	                              		预留信息可以帮您有效识别官方网站。在存款等界面，请您认准您填写的预留信息
+	                                </span>
+									</span>
+									</span>
+								</div> -->
+								<div class="r">
+									<label>手机号码</label>
+									<span class="inp">
+                            	<!-- <input id="mobile" type="text"  name="phone"  maxlength="12"  data-check  onkeypress="return numberOnly(event);" placeholder="可选填" /> -->
+                            	<input id="mobile" type="text"  name="phone" placeholder="可选填" />
+
+                            </span>
+									<span class="info ml"></span>
+								</div>
+								<div class="r">
+									<label>邮箱地址</label>
+									<span class="inp">
+                            	<input type="text"  data-check name="email" maxlength="30" id="email" placeholder="可选填"/>
+                            </span>
+									<span class="info ml"></span>
+
+								</div>
+								<!-- <div class="r">
+									<label>性别</label>
+									<span class="inp2">
+	                            <input name="sex" type="radio" value="M"  checked >男 &nbsp; &nbsp; &nbsp;
+	                            <input name="sex" type="radio" value="F" >女
+                            </span>
+								</div> -->
+								<!-- <div class="r">
+									<label>出生日期</label>
+									<span class="inp" id="mydp_birthdate">
+                            	<i class="c_icn">&nbsp;</i>
+                            	<input type="text" data-check name="birthdate" id="birthdate" maxlength="20" value="" onfocus="javascript:WdatePicker({dateFmt:'yyyy-MM-dd'});" class="w2" />
+                            	<i class="ard"></i>
+                            </span>
+									<span class="info ml"></span>
+								</div> -->
+								<div class="r">
+									<label>相关备注</label>
+									<span class="inp">
+                            	<input  type="text" name="remarks" id="remarks"  maxlength="30"  value="" placeholder="可选填">
+                            </span>
+								</div>
+								<div class="btn_con">
+									<a class="btn submit_a">保存</a>
+								</div>
+							<!-- </form> -->
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div id="member_bind_cover" class="pop_cover" style="display:none">
+
+			<!-- 手机绑定 -->
+			<div class="pop_up s5 center" id="phone_verify" data-flag="0" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c1">
+					<div class="_t">
+						验证码已发送至您的手机，5分钟内输入有效，请勿泄露<br> 如长时间未收到验证码，联系
+						<a href="javascript:prj.openOnlineChat()">在线客服</a>完成验证
+					</div>
+					<div class="form">
+						<div class="_r">
+							<label>手机号码：</label>
+							<span class="inp_text phone_num"></span>
+						</div>
+						<div class="_r ">
+							<label>验证码：</label>
+							<span class="inp"><input class="smscode" type="text" placeholder="请输入验证码" maxlength="8"></span>
+							<a class="inp_btn3 re_send" href="###">重新发送<span class="count_num"></span></a>
+							<div class="info send_msg">验证码已发送至您的手机，请注意查收</div>
+						</div>
+						<div class="btn_con">
+							<a href="###" class="btn save_button">保存</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 手机绑定成功提示 -->
+			<div class="pop_up s5 center" id="phone_check_step_success" style="display:none">
+				<a class="pop_close" href="###"></a>
+				<div class="_c2">
+					<i class="smile"></i>
+					<br>
+					<div class="_t">恭喜您，完成绑定手机号码！</div>
+					<!--  <div class="txt">您可以前往礼金中心，查看<a href="#">2元礼金</a>领取详情</div> -->
+					<div class="btn_con">
+						<a href="###" class="btn suc_closed">完成</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 手机修改 第一步，旧号码验证 -->
+			<div class="pop_up s5 center " id="phone_update_step_confirm" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2">
+					<i class="exclam"></i>
+					<div class="_t2">您确定要更换已绑定的手机号码吗？</div>
+					<div class="txt">
+						确认后，我们将向当前已绑定的手机号码发送验证码<br> 请注意查收！
+					</div>
+					<div class="btn_con">
+						<a href="###" class="btn save_button">确认</a>
+					</div>
+				</div>
+			</div>
+			<!-- 手机修改 第二步，填写新号码 -->
+			<div class="pop_up s5 center" id="phone_update_step_1" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2 p3">
+					<i class="smile"></i>
+					<div class="txt">
+						安全验证通过，请填写您的手机号码。<br> 不能和旧的绑定手机号码重复哦~
+						<div class="form pd1">
+							<div class="_r ">
+								<label class="w3">输入新的手机号：</label>
+								<span class="inp">
+                    	<input class="f14 phone" maxlength="12" onkeypress="return numberOnly(event);">
+                    </span>
+								<p class="error"></p>
+							</div>
+						</div>
+					</div>
+					<div class="btn_con pd0">
+						<a href="###" class="btn save_button">确认</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 邮箱绑定 -->
+			<div class="pop_up s5 center" id="email_verify" data-flag="0" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c1 w2">
+					<div class="_t f16">
+						验证码已发送至您的邮箱 <span class="email email_address"></span>，<br>请登录您的邮箱，并在下方输入邮件内的验证码！
+					</div>
+					<div class="form">
+						<div class="info_top">如长时间未收到验证邮件，建议您查看您的垃圾邮件列表，或者重新发送验证邮件</div>
+						<div class="_r ">
+							<label class="w2">邮件验证码：</label>
+							<span class="inp"><input type="text" class="smscode" maxlength="8" placeholder="请输入验证码"></span>
+							<a class="inp_btn3 re_send" href="###">重新发送<span class="count_num"></span></a>
+							<div class="info w2 send_msg"></div>
+						</div>
+						<div class="btn_con w2">
+							<a href="###" class="btn save_button">确认</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 邮箱绑定成功提示 -->
+			<div class="pop_up s5 center " id="email_check_step_success" style="display:none">
+				<a class="pop_close" href="###"></a>
+				<div class="_c2">
+					<i class="smile"></i>
+					<div class="_t">恭喜您，完成绑定邮箱号码！</div>
+					<div class="txt">&nbsp;</div>
+					<div class="btn_con">
+						<a href="###" class="btn suc_closed">完成</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 邮箱修改 第一步，填写旧邮箱 -->
+			<div class="pop_up s5 center " id="email_update_step_confirm" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2">
+					<i class="exclam"></i>
+					<div class="_t2">您确定要更换已绑定的邮箱吗？</div>
+					<div class="txt">
+						确认后，我们将向当前已绑定的邮箱发送一封验证邮件，<br> 请注意查收！
+					</div>
+					<div class="btn_con">
+						<a href="###" class="btn save_button">确认</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 邮箱修改 第二步，新验证 -->
+			<div class="pop_up s5 center " id="email_update_step_1" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2">
+					<i class="smile"></i>
+					<div class="txt">
+						安全验证通过，请填写您常用邮箱。<br> 不能和旧的绑定邮箱重复哦~
+						<div class="form pd1">
+							<div class="_r ">
+								<label class="w2">输入新邮箱：</label>
+								<span class="inp"><input type="text" class="f14 email" maxlength="50"></span>
+								<p class="error" style="margin-left:91px;"></p>
+							</div>
+						</div>
+					</div>
+					<div class="btn_con pd0">
+						<a href="###" class="btn save_button">确认</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			//检查是否添加过个人信息,添加过就显示出来
+			$.post(xpj_src + "User/getUserInfo", function(data) {
+				//默认无号码
+				if (data.mobile == "00000000000") {
+					return false;
+				}else{
+					//设置禁止输入属性
+					$('#realName').val(data.realname).css('background','#f3f3f3').attr('disabled','true').parent().addClass('disabled');
+					$('#mobile').val(data.mobile).css('background','#f3f3f3').attr('disabled','true').parent().addClass('disabled');
+					$('#email').val(data.email).css('background','#f3f3f3').attr('disabled','true').parent().addClass('disabled');
+				}
+
+			})
+
+				$('.submit_a').on('click',function () {
+				var userName = $('#realName').val();
+				var mobile = $('#mobile').val();
+				var email = $('#email').val();
+				var rmk = $('#remarks').val();
+
+				if (userName == '') {
+					layer.alert('请填写真实姓名！')
+					return false;
+				}else if (!(/^1[3|4|5|8][0-9]\d{4,8}$/.test(mobile)) && mobile != '') {
+					layer.alert('请填写正确的手机号！')
+					return false;
+				}else if(email == ''||rmk == ''){
+					layer.alert('选项不能为空！')
+					return false;
+				}else {
+					$.ajax({
+						type:"post",
+						url:xpj_src+"XUser/personalInformation",
+						data:{userName:userName,mobile:mobile,email:email,rmk:rmk},
+						cache:false,
+						success:function  (data) {
+							if (data.status == 'success') {
+								layer.confirm('保存成功!', {
+									btn: ['确定'],
+									closeBtn:0
+								}, function(){
+									window.location.reload();
+								});
+							}else{
+								layer.confirm('保存失败!', {
+									btn: ['确定'],
+									closeBtn:0
+								}, function(){
+									window.location.reload();
+								});
+								// layer.alert('保存失败!');
+							}
+						}
+					});
+				}
+
+
+			})
+
+		</script>
+		<!--<script>
+			var phone_num = '';
+			var email_address = '';
+		</script>
+
+		<script>
+			$(document).ready(function() {
+				$("#mydp_birthdate").click(function() {
+					$dp.show();
+				});
+
+				$('.modify_phone').click(function() {
+					$(this).parents('.disabled').hide();
+					$('#phone_span').show();
+				});
+
+				$('.modify_email').click(function() {
+					$(this).parents('.disabled').hide();
+					$('#email_span').show();
+				});
+
+				var $step = $('#submit-form');
+
+				$step.validate({
+					onkeyup: false,
+					onfocusout: false,
+					errorPlacement: function(error, element) {},
+					rules: {
+						realName: {
+							required: true,
+							checkRealName: true,
+						},
+						verifyCode: {
+							required: true,
+							checkVerifyCode: false,
+						},
+						phone: {
+							required: false,
+							number: true,
+							checkPhone: true
+						},
+						email: {
+							required: false,
+							email: true
+						},
+
+						birthdate: {
+							date: true
+						},
+
+					},
+					messages: {
+						realName: {
+							required: '请输入真实姓名！',
+							checkRealName: '请填写正确的姓名'
+						},
+						verifyCode: {
+							required: '请输入预留信息！',
+							checkVerifyCode: '请填写正确的预留信息'
+						},
+						phone: {
+							number: '请输入正确的手机号码',
+							checkPhone: '请输入11～12位手机号码',
+						},
+						email: {
+							email: '请输入正确的邮箱地址',
+						},
+						birthdate: {
+							date: '请选择正确的出生日期',
+						},
+
+					},
+
+					invalidHandler: function(event, validator) {},
+
+					showErrors: function(errorMap, errorList) {
+						if(errorList.length > 0) {
+							var firstError = errorList[0];
+							prj.hideLoading(function() {
+								prj.tips(firstError.message, 2000);
+							});
+						}
+					},
+					submitHandler: function(form, e) {
+						prj.loading();
+						form.submit();
+					}
+				});
+			});
+		</script>-->
+
+		<div class="user_footer">
+			<script>
+				puli('/UserCenter/component/user_footer.html','.user_footer')
+			</script>
+		</div>
+
+	</body>
+<script type="text/javascript" src="/UserCenter/user_js/My97DatePicker/WdatePicker.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#mm_nav_" + 8).addClass("active");
+		show_sub_bar($("#mm_nav_" + 8));
+		$("#sd-lnk-" + 8 + '_' + 1).addClass("active");
+	});
+</script>
+</html>

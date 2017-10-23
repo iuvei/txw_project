@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/free-hall.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.source.js" charset="utf-8"></script>
+
+
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<div class="header_bgbox">
+    <script>Main($('.header_bgbox'),'../template/header.html');</script>
+</div>
+<div class="clear wrap">
+    <div class="header-banner" style="height: 200px;">
+        <div class="sldr-con index_common_sidebar">
+        	<div style="background:url('http://192.168.0.140:81/TXWN/images/hall-banner.jpg') no-repeat top center; height: 200px;"></div>
+        </div>
+        <!--<div class="marq trans-bg" style="top: 170px;">
+            <div class="marq-con">
+                <a id="open-notice-list" style="cursor:pointer;">
+                    <div class="icon-speaker"></div>
+                    <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrolldelay="100" scrollamount="3" behavior="scroll">
+                        银行公告：兴业银行于9月30日（周六）00:00至00:30进行维护，届时将影响部分存款、取款等业务，请耐心等待，维护完毕及时处理。感谢您的谅解与支持！公告编号：1709262311&nbsp;&nbsp;&nbsp;&nbsp;存款公告：即日起中信银行（吴鲁川、徐广彬、陈顺顺）、招商银行（赵晓宇、韩俊、王平川、刘晓雷、杨陈俊）、交通银行（蔡子明）已经停止使用，请勿存款至过期或非指定账号，每次存款前务必核实最新账号，避免造成个人损失。感谢您的配合与支持！公告编号：1709211904&nbsp;&nbsp;&nbsp;&nbsp;存款公告：银行每日例行盘点通知---农行：23:00-1:30、建行：22:00-00:00、中信：23：30-01：00、招行：01:30—04:00、交行：23:30—01:30、兴行：00:00—01:00，期间无法查询存款，请避开此时间段存款，以免影响入账进度。感谢您的谅解与支持！公告编号：1708191041&nbsp;&nbsp;&nbsp;&nbsp;游戏公告：AG国际厅\捕鱼王\在线棋牌的IOS系统手机客户端进行维护，恢复时间待定●在线棋牌游戏厅转帐功能每天00：00-9：00进行线路维护，期间额度只能转入无法转出，游戏不受影响。感谢您的谅解与支持！公告编号：17071521&nbsp;&nbsp;&nbsp;&nbsp;
+                    </marquee>
+                </a>
+            </div>
+        </div>-->
+        <div class="marq trans-bg" style="top: 170px;">
+            <div class="marq-con">
+                <a id="open-notice-list" style="cursor:pointer;">
+                    <div class="icon-speaker"></div>
+                    <div id="announcement_marquee">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+	<div class="content">
+		<div class="live">
+			<div class="live-left">
+				<div class="title">彩票投注</div>
+				<div class="hr"></div>
+			</div>
+			<div class="live-right">
+				<div class="hall-box">
+					<div class="hall-top ig_new">
+						<img src="http://192.168.0.140:81/TXWN/images/game-logo1.jpg">
+					</div>
+					<div class="hall-down ig_new">
+						新IG彩票
+						<div class="icon-h"></div>
+					</div>
+				</div>
+
+				<div class="hall-box">
+					<div class="hall-top ig_new">
+						<img src="http://192.168.0.140:81/TXWN/images/game-logo2.jpg">
+					</div>
+					<div class="hall-down ig_new">
+						IG彩票    
+					</div>
+				</div>
+				<!--<div class="hall-box">
+					<div class="hall-top bg_try">
+						<img src="http://192.168.0.140:81/TXWN/images/game-logo3.jpg">
+					</div>
+					<div class="hall-down bg_try">
+						官方彩
+					</div>
+				</div>-->
+            </div>
+		</div>
+		<div class="srparate"></div>
+		<div class="game">
+			<div class="game-left">
+				<div class="title">电子游戏</div>
+				<div class="hr"></div>
+			</div>
+			<div class="game-right">
+				<!--<div class="hall-box">-->
+					<!--<div class="hall-top gamein_fish">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo8.jpg">-->
+					<!--</div>-->
+					<!--<div class="hall-down">-->
+						<!--MG-->
+						<!--&lt;!&ndash; <div class="icon-h"></div> &ndash;&gt;-->
+					<!--</div>-->
+				<!--</div>-->
+
+				<div class="hall-box">
+					<a href="/coloum/lobby_pt.html">
+						<div class="hall-top">
+							<img src="http://192.168.0.140:81/TXWN/images/game-logo6.jpg">
+						</div>
+						<div class="hall-down">
+							PT
+							<div class="icon-h"></div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="srparate"></div>
+
+		<!--<div class="other">-->
+			<!--<div class="other-left">-->
+				<!--<div class="title">真人视讯</div>-->
+				<!--<div class="hr"></div>-->
+			<!--</div>-->
+			<!--<div class="other-right">-->
+				<!--&lt;!&ndash;<div class="hall-box">-->
+					<!--<div class="hall-top">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo11.jpg">-->
+					<!--</div>-->
+				<!--</div>&ndash;&gt;-->
+				<!---->
+				<!--&lt;!&ndash;<div class="hall-box">-->
+					<!--<div class="hall-top bg_k">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo2.jpg">-->
+					<!--</div>-->
+					<!--<div class="hall-down">-->
+						<!--BG视讯   -->
+					<!--</div>-->
+				<!--</div>&ndash;&gt;-->
+
+				<!--&lt;!&ndash;<div class="hall-box">-->
+					<!--<div class="hall-top">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo12.jpg">-->
+					<!--</div>-->
+				<!--</div>-->
+
+				<!--<div class="hall-box">-->
+					<!--<div class="hall-top">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo13.jpg">-->
+					<!--</div>-->
+				<!--</div>-->
+
+				<!--<div class="hall-box">-->
+					<!--<div class="hall-top">-->
+						<!--<img src="http://192.168.0.140:81/TXWN/images/game-logo14.jpg">-->
+					<!--</div>-->
+				<!--</div>&ndash;&gt;-->
+
+			<!--</div>-->
+		<!--</div>-->
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('.ig_new').on('click',function  () {
+		getCookie('login_judge')==''?try_lottery('2'):layer.alert('请先退出账户', {shade:0.3,icon: 0});
+            		
+	})
+	$('.bg_try').on('click',function  () {
+		getCookie('login_judge')==''?try_loadgame('2','fun'):layer.alert('请先退出账户', {shade:0.3,icon: 0});
+            		
+	})
+	$('.gamein_fish').on('click',function  () {
+		layer.alert('暂未开放', {shade:0.3,icon: 0});
+            		
+	})
+//	$('.bg_k').on('click',function  () {
+//		getCookie('login_judge')==''?try_loadgame_sx('BG','1','fun'):layer.alert('请先退出账户', {shade:0.3,icon: 0});
+//          		
+//	})
+</script>
+<!--尾部-->
+<div class="footer_bgbox">
+    <script>Main($('.footer_bgbox'),'../template/footer.html');</script>
+</div>
+<!--尾部-->
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../user_css/user.css">
+		<link href="../user_css/ui.css" rel="stylesheet" type="text/css" />
+		<link href="../user_css/records.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../user_js/skin/laypage.css"/>
+		<script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../user_js/user_main.js"></script>
+		<script type="text/javascript" src="../user_js/laypage.js"></script>		
+		<script type="text/javascript" src="../user_js/layer/layer.js"></script>
+		<!--分页-->
+		<script type="text/javascript" src="record-withdraw.js"></script>
+	</head>
+
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('../component/user_header.html','.user_header')
+			</script>
+		</div>
+
+		<div class="clear wrap" ms-controller="withdraw">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="../withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<div class="dtls-con">
+					<ul class="am tabs">
+						<li>
+							<a href="record-deposit.html">存款</a>
+						</li>
+						<li class="active">
+							<a href="record-withdraw.html">取款</a>
+						</li>
+						<li>
+							<a href="record-transfer.html">转账记录</a>
+						</li>
+						<li>
+							<a href="record-credit.html">资金流水</a>
+						</li>
+						<li>
+							<a href="record-game.html">投注记录</a>
+						</li>
+					</ul>
+					<div class="am tabs-content">
+						<div class="search-form" id="record-deposit-search" >
+							<div class="field input">
+								<!--<div class="icon calendar"></div>-->
+								<!--开始时间-->
+								<input name="start-time" title="start-time" ms-duplex = "config.startTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd', minDate:'%y-#{%M-1}-%d', maxDate:'%y-%M-%d', autoPickDate:'true'})" readonly="readonly">
+							</div>
+							<div class="field">至</div>
+							<div class="field input">
+								<!--<div class="icon calendar"></div>-->
+								<!--结束时间-->
+								<input name="end-time" title="end-time" ms-duplex = "config.endTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd', minDate:'%y-#{%M-1}-%d', maxDate:'%y-%M-%d', autoPickDate:'true'})" readonly="readonly">
+							</div>
+							<div class="field select">
+								<select name="status" title="status" ms-duplex = "config.status">
+									<option value="">全部状态</option>
+									<option value="0">处理中</option>
+					            	<option value="2">交易失败</option>
+					            	<option value="1">交易成功</option>
+
+								</select>
+							</div>
+							<div class="field buttons">
+								<!--查询-->
+								<button type="button" ms-click = "layPage">查询</button>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="am table">
+						<table>
+							<tr>
+								<th>申请时间</th>
+								<th>取款金额</th>
+								<th>银行卡</th>
+                                <th>手续费</th>
+                                <th>实收金额</th>
+								<th>状态</th>
+								<th>备注</th>
+							</tr>
+							<!--分页循环-->
+							<tr  ms-for ="(index,el) in datas" style="border-bottom: 1px solid #ccc; line-height: 30px;">
+								<td>{{el.add_time.time | date("yyyy-MM-dd HH:mm:ss")}}</td>
+								<td>{{el.amount}}</td>
+								<td>{{el.card_num}}</td>
+                                <td>{{el.poundage+el.administrative_fee|number(2)}}</td>
+                                <td>{{el.amount_paid}}</td>
+								<td>{{el.status}}</td>
+								<td>{{el.rmk}}</td>
+							</tr>
+							<!--无数据情况下-->
+							<tr ms-if="!pageData.totalCount">
+								<td colspan="7" class="center align status-0" style=" padding-top: 20px;">目前没有任何记录存在</td>
+							</tr>
+							<!--页脚小计-->
+							<tr class="foot" style=" line-height: 40px;" ms-if="pageData.totalCount">
+								<!--金额本页小计-->
+								<td colspan="2" class="center align">本页小计 <span class="amount" id="sum_amount">{{pageData.pageMoney}}元</span></td>
+								<!--金额总计-->
+								<td colspan="3" class="center align">总计 <span class="amount" id="total_amount">{{pageData.totalMoney}}元</span></td>
+							</tr>
+						</table>
+						<!--页面跳转容器-->
+						<div id="d_fenb" style=" text-align: right;margin-top: 15px" ms-if="pageData.totalCount"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+
+		<div class="user_footer">
+			<script>
+				puli('../component/user_footer.html','.user_footer')
+			</script>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../user_js/My97DatePicker/WdatePicker.js"></script>
+	
+<script>
+	$(document).ready(function() {
+		$("#mm_nav_" + 6).addClass("active");
+	});
+</script>
+</html>

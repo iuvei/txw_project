@@ -1,0 +1,908 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" type="image/x-icon" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/home.css" rel="stylesheet" type="text/css" />
+<link href="/css/faq.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="header_bgbox">
+    <script>Main($('.header_bgbox'),'/template/header.html');</script>
+</div>
+<!-- 头部显示 end -->
+	<div class="content cstm-wrap2">
+<div class="rule_banner"></div>
+    <ul class="gmrl-con">
+		<li id="rule_nav1"><a href="rule1_branch.html" >百家乐</a></li>
+		<li id="rule_nav2"><a href="rule2_branch.html" >包桌（VIP）百家乐</a></li>
+		<li id="rule_nav3"><a href="rule3_branch.html" >竞咪（LED）百家乐 </a></li>
+		<li id="rule_nav4"><a href="rule4_branch.html" >龙宝百家乐</a></li>
+		<li id="rule_nav20"><a href="rule20_branch.html" >保险百家乐</a></li>
+		<li id="rule_nav5"><a href="rule5_branch.html" >七喜百家乐</a></li>
+		<li id="rule_nav6"><a href="rule6_branch.html" >龙虎</a></li>
+		<li id="rule_nav7"><a href="rule7_branch.html" >骰宝</a></li>
+		<li id="rule_nav8"><a href="rule8_branch.html" >轮盘</a></li>
+		<li id="rule_nav9"><a href="rule9_branch.html" >二八杠</a></li>
+		<div class="clear"></div>
+		<li id="rule_nav10"><a href="rule10_branch.html" >三公</a></li>
+		<li id="rule_nav11"><a href="rule11_branch.html" >温州牌九</a></li>
+		<li id="rule_nav12"><a href="rule12_branch.html" >牛牛</a></li>
+		<li id="rule_nav13"><a href="rule13_branch.html" >色碟</a></li>
+		<li id="rule_nav14"><a href="rule14_branch.html" >德州扑克</a></li>
+		<li id="rule_nav15"><a href="rule15_branch.html" >特奖德州扑克 </a></li>
+		<li id="rule_nav16"><a href="rule16_branch.html" >21点</a></li>
+		<li id="rule_nav17"><a href="rule17_branch.html" >真人乐透</a></li>
+		<li id="rule_nav18"><a href="rule18_branch.html" >水果拉霸</a></li>
+		<li id="rule_nav19"><a href="rule19_branch.html" >杰克高手</a></li>
+		<li id="rule_nav22" class="active"><a href="rule22_branch.html">时时彩</a></li>
+		<div class="clear"></div>
+</ul>
+    <div class="gamerule-con">
+        <div class="prm_h1_rule"> 时时彩 </div><br/>
+        <div class="rule-text14"> 时时彩以重庆、上海、江西、中国社会福利3D彩票、天津及新疆的官方结果为依据，由3或5组、每组为0-9的号码中
+            摇出3或5个数字作为开奖号码。根据开奖号码衍生出多种玩法，以玩家选择的数字或玩法与官方开奖号码比对是否获奖。<br><br>
+            时时彩提供3大类共16种玩法如下：<br>
+            <span class="khaki-box" style="padding-bottom: 2px;">珠仔玩法:</span> 珠仔单选、二星串关、三星串关、四星串关、五星串关、珠仔大小、珠仔单双、珠仔大小单双串关<br>
+            <span class="khaki-box" style="padding-bottom: 2px;">组选玩法:</span> 二星组选、三星组选3、三星组选6<br>
+            <span class="khaki-box" style="padding-bottom: 2px;">和值玩法:</span> 和值、和值七彩、和值大小、和值单双、和值大小单双串关<br>
+            开奖时间和相应地区的官方站点保持同步，玩家也可以通过游戏中提供的官网链接进行结果验证。
+        </div>
+
+        <div class="info">
+            <div class="text-title">游戏规则：</div>
+            时时彩提供3大类共16种玩法：
+            <br/><br/>
+            <table width="80%" cellspacing="1" class="table-float" style="width: 95%;">
+                <tr>
+                    <th width="20%" class="thset thset-brd1">玩法大类</th>
+                    <th width="80%" class="thset thset-brd2">说明</th>
+                </tr>
+                <tr>
+                    <td class="tdset tdset-brd1">珠仔玩法</td>
+                    <td class="tdset-left tdset-brd2">
+                        根据官方的5个开奖号码（部分地区为3位），比对结果时要求投注的数字位置及数字完全一致。<br/>
+                        珠仔单选：在一组号码中进行选择<br/>
+                        二星串关：在两组号码中进行选择（三、四、五星串关类推）<br/>
+                        珠仔大小：在一组号码中选择大 /小（0-4为小，5-9为大）<br/>
+                        珠仔单双：在一组号码中选择单 / 双<br/>
+                        珠仔大小单双串关：至少在两组号码中选择大 / 小 / 单 / 双
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdset tdset-brd1">组选玩法</td>
+                    <td class="tdset-left tdset-brd2">
+                        根据官方的5个开奖号码（部分地区为3位），比对结果时要求投注的数字与开奖结果的后三或后二的数字一致，不限位置。<br/>
+                        二星组选：至少选择两个号码，开奖时比对开奖号码后两位<br/>
+                        三星组选3：选择两相同号码及一个不同号码，开奖时比对开奖号码后三位<br/>
+                        三星组选6：至少选择3个号码，开奖时比对开奖号码后三位
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdset tdset-brd1">和值玩法</td>
+                    <td class="tdset-left tdset-brd2">
+                        根据官方的5个开奖号码（部分地区为3位），对后三位数字相加的和值进行竞猜。<br/>
+                        和值：竞猜后三位数字相加的和值。<br/>
+                        和值七彩：竞猜后三位数字相加的和值，所落入的区间。<br/>
+                        和值大小：竞猜和值的大 / 小（0-13为小，14-27为大）。<br/>
+                        和值单双：在一组号码中选择单 / 双。<br/>
+                        和值大小单双串关：同时竞猜和值的大 / 小、单 / 双。
+                    </td>
+                </tr>
+            </table>
+            <br/><br/>
+            <div class="clear"></div>
+        </div>
+
+        <div class="info">
+            <div class="text-title">各种投注类型详细说明如下</div>
+            ※ 以下赔率皆含本金
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 — 珠仔单选</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔-珠仔单选</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">在万 / 千 / 百 / 十 / 个位5组号码（部分地区3组号码）中，仅在其中一组进行号码选择</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">8.5</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-1000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在珠仔路的一组号码中：<br />
+                单式：选择1个号码进行投注，为单式投注，生成1注<br />
+                复式：选择N个号码（N＞1，N≤9）进行投注，为复式投注，生成N注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“8”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8，与投注一致，中奖<br />
+                投注金额：2 RMB<br />
+                派彩金额：2 RMB×8.5=17 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 - 二星串关</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔-二星串关</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">在万 / 千 / 百 / 十 / 个位5组号码（部分地区3组号码）中，在其中两组进行号码选择</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">85</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-200</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在两组号码中（代号组1、组2）：<br />
+                单式：分别选择1个号码进行投注，为单式投注，生成1注<br />
+                复式：每组分别选择1-N个号码（N＞1 ，N≤9）进行投注，为复式投注，同时生成X注 : X=组1号码数 × 组2号码数<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“8”，十位选“6<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8、十位为6，与投注一致，中奖<br />
+                投注金额：2 RMB<br />
+                派彩金额：2 RMB×85=170 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 - 三星串关</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔-三星串关</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">在万 / 千 / 百 / 十 / 个位5组号码中（部分地区3组号码），在其中三组进行号码选择</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">850</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-10</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在三组号码中（代号组1、组2、组3）：<br />
+                单式：分别选择1个号码进行投注，为单式投注，生成1注<br />
+                复式：每组分别选择1-N个号码（N＞1，N≤9）进行投注，为复式投注，同时生成X注 : X=组1号码数 × 组2号码数 × 组3号码数<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“8”，十位选“6”，个位选“8”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8、十位为6、个位为8，与投注一致，中奖<br />
+                投注金额：2 RM<br />
+                派彩金额：2 RMB×850=1,700 RMB （包含本金）<br />
+                ※ 四星、五星串关以此类推！<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 — 珠仔大小</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔大小</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">在万 / 千 / 百 / 十/ 个位5组号码（部分地区3组号码）中，在其中一组选择大/小</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">1.95</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-5000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在一组号码中，选择“大“或”小“进行投注，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“大”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8、大（0-4为小，5-9为大），与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB × 1.95=19.5 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 — 珠仔单双</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔单双</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">在万 / 千 / 百 / 十 / 个位5组号码（部分地区3组号码）中，在其中一组选择单/双</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">1.95</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-5000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在一组号码中，选择“单“或”双“进行投注，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“双”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8、双（1,3,5,7,9为单，0,2,4,6,8为双），与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB×1.95=19.5 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：珠仔 — 珠仔大小单双串关</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">珠仔-珠仔大小单双串关</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">至少在两组号码中，每组分别投注“大 / 小“或”单 / 双“，同组中不能大小单双互串</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">3.7（两组）；6.3（三组）；11.7（四组）；21.6（五组）</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-5000（两组）；10-2000（三组）；10-1000（四 / 五组）</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在至少两组号码中，每组分别投注“大 / 小“或”单 / 双“，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：百位选“大”，十位选“双”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码百位为8-大，十位为6-双，与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB×3.7=37 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：组选 - 二星组选</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">二星组选</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">选择2个号码</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">对子70 / 非对子30</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-500（选择不含对子）；2-200（选择包含对子）</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                不分位：<br />
+                用户在一组号码中：<br />
+                单式：选择2个号码进行投注，为单式投注，生成1注<br />
+                复式：选择N个号码（N＞1，N≤9）进行投注，为复式投注，同时生成X注 : X=N! /（2! ×（N-2）!）<br />
+                分位：<br />
+                用户在十位、个位两组号码中：<br />
+                单式：每组各选择1个号码，为单式投注，生成1注<br />
+                复式：每组1-N个号码（N＞1，N≤9）进行投注，为复式投注，同时生成X注 : X=组1号码数 × 组2号码数 <br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：选数字“8”、“6”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码后两位为6 、8，与投注一致（不限位置），中奖<br />
+                投注金额：2 RMB<br />
+                派彩金额：2 RMB×30=60 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：组选 - 三星组选3</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">三星组选</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">选择3个号码，有且仅有两个号码相同</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">285</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                单式：用户在三组号码中，每组选择1个号码进行投注，生成1注<br />
+                复式：用户在一组号码中，选择2-N（N>2，N≤9）个号码，生成X注 X=N ×（N-1）<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：选数字“6”、“8”、“8”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码后三位为8、6、8，与投注一致（不限位置），中奖<br />
+                投注金额：2 RMB<br />
+                派彩金额：2 RMB×285=570 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：组选 - 三星组选6</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">三星组选6</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">选择3个号码</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式、复式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">140</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">2-100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在一组号码中：<br />
+                单式：选择3个号码进行投注，为单式投注，生成1注<br />
+                复式：选择N个号码（N＞3，N≤9）进行投注，为复式投注，同时生成X注 : X=N! /（3! ×（N-3）!）<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：选数字“5”、“6”、“8”<br />
+                开奖号码：97865<br />
+                投注结果：开奖号码后三位为8、6、5，与投注一致（不限位置），中奖<br />
+                投注金额：2 RMB<br />
+                派彩金额：2 RMB×140=280 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：和值 — 和值</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">和值</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">选择0-27之间的一个数字，竞猜开奖号码百、十、个位的总和</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">10-600，详见下文赔率总览</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-1000，详见下文赔率总览</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在0-27的28个号码中，选择1个号码，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：选数字22<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码后三位8+6+8=22，与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB×35=350 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：和值 — 和值七彩</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">和值七彩</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">0-27均匀分为7个区间，选择的一个数字区间竞猜开奖结果百、十、个位的总和</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">2.8-40，详见下文赔率总览</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-5000，详见下文赔率总览</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户在 [ 0，3] , [ 4，7 ] , [ 8，11 ] , [ 12，15 ] , [ 16-19 ] , [ 20，23 ] , [ 24，27 ] 的7个数字区间中，选择1个区间，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：选区间[20，23]<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码后三位8+6+8=22，与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB×8=80 RMB （包含本金）<br />
+            </div>
+            <br/>
+        </div>
+
+        <div class="info">
+            <div class="khaki-box">投注类型：和值 — 和值大小</div>
+            <div class="text-title">玩法说明:</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2">
+                    <tr>
+                        <th width="20%" class="thset thset-brd1">玩法</th>
+                        <td width="80%" class="tdset tdset-brd0">和值大小</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注规则</th>
+                        <td class="tdset tdset-brd1">选择大 / 小，竞猜开奖号码百、十、个位的总和大小</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">投注方式</th>
+                        <td class="tdset tdset-brd1">单式</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">赔率</th>
+                        <td class="tdset tdset-brd1">1.95</td>
+                    </tr>
+                    <tr>
+                        <th class="thset thset-brd1">限红</th>
+                        <td class="tdset tdset-brd1">10-5000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="text-title">投注方式</div>
+            <div class="info">
+                用户选择“大 / 小“，生成1注<br />
+            </div>
+            <div class="text-title">中奖范例</div>
+            <div class="info">
+                玩家投注：和值选“大”<br />
+                开奖号码：97868<br />
+                投注结果：开奖号码后三位8+6+8=22为大（0-13为小，14-27为大），与投注一致，中奖<br />
+                投注金额：10 RMB<br />
+                派彩金额：10 RMB×1.95=19.5 RMB （包含本金）<br />
+            </div>
+        </div>
+
+        <div class="info">
+            ※ 和值单双、和值大小单双串关与珠仔单双、珠仔大小单双串关同理<br />
+        </div>
+
+        <div class="info">
+            <div class="text-title">赔率一览表</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2 rtbl">
+                    <tr>
+                        <th class="thset thset-brd1" width="20%">玩法大类</th>
+                        <th class="thset thset-brd2" width="40%">玩法</th>
+                        <th class="thset thset-brd2" width="20%">赔率</th>
+                        <th class="thset thset-brd2" width="20%">限红</th>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1" rowspan="11">珠仔玩法</td>
+                        <td class="tdset tdset-brd2">珠仔单选</td>
+                        <td class="tdset tdset-brd2">8.5</td>
+                        <td class="tdset tdset-brd2">2-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">二星串关</td>
+                        <td class="tdset tdset-brd2">85</td>
+                        <td class="tdset tdset-brd2">2-200</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">三星串关</td>
+                        <td class="tdset tdset-brd2">850</td>
+                        <td class="tdset tdset-brd2">2-10</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">四星串关</td>
+                        <td class="tdset tdset-brd2">5000</td>
+                        <td class="tdset tdset-brd2">2-10</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">五星串关</td>
+                        <td class="tdset tdset-brd2">60000</td>
+                        <td class="tdset tdset-brd2">2-10</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔大小</td>
+                        <td class="tdset tdset-brd2">1.95</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔单双</td>
+                        <td class="tdset tdset-brd2">1.95</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔大小单双串关（两组）</td>
+                        <td class="tdset tdset-brd2">3.7</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔大小单双串关（三组）</td>
+                        <td class="tdset tdset-brd2">6.3</td>
+                        <td class="tdset tdset-brd2">10-2000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔大小单双串关（四组）</td>
+                        <td class="tdset tdset-brd2">11.7</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">珠仔大小单双串关（五组）</td>
+                        <td class="tdset tdset-brd2">21.6</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1" rowspan="4">组选玩法</td>
+                        <td class="tdset tdset-brd2">二星组选（选择不含对子）</td>
+                        <td class="tdset tdset-brd2">30</td>
+                        <td class="tdset tdset-brd2">2-500</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">二星组选（选择包含对子）</td>
+                        <td class="tdset tdset-brd2">70</td>
+                        <td class="tdset tdset-brd2">2-200</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">三星组选3</td>
+                        <td class="tdset tdset-brd2">285</td>
+                        <td class="tdset tdset-brd2">2-100</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">三星组选6</td>
+                        <td class="tdset tdset-brd2">140</td>
+                        <td class="tdset tdset-brd2">2-100</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1" rowspan="5">和值玩法</td>
+                        <td class="tdset tdset-brd2">和值</td>
+                        <td class="tdset tdset-brd2">见 和值赔率 表</td>
+                        <td class="tdset tdset-brd2">见 和值赔率 表</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">和值七彩</td>
+                        <td class="tdset tdset-brd2">见 和值赔率 表</td>
+                        <td class="tdset tdset-brd2">见 和值赔率 表</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">和值大小</td>
+                        <td class="tdset tdset-brd2">1.95</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">和值单双</td>
+                        <td class="tdset tdset-brd2">1.95</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd2">和值大小单双过关</td>
+                        <td class="tdset tdset-brd2">3.7</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <div class="text-title">和值赔率表</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2 rtbl">
+                    <tr>
+                        <th class="thset thset-brd2" width="30%">和值</th>
+                        <th class="thset thset-brd2" width="30%">赔率</th>
+                        <th class="thset thset-brd2" width="40%">限红</th>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">0 / 27</td>
+                        <td class="tdset tdset-brd2">600</td>
+                        <td class="tdset tdset-brd2">10-100</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">1 / 26</td>
+                        <td class="tdset tdset-brd2">200</td>
+                        <td class="tdset tdset-brd2">10-100</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">2 / 25</td>
+                        <td class="tdset tdset-brd2">100</td>
+                        <td class="tdset tdset-brd2">10-200</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">3 / 24</td>
+                        <td class="tdset tdset-brd2">60</td>
+                        <td class="tdset tdset-brd2">10-500</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">4 / 23</td>
+                        <td class="tdset tdset-brd2">45</td>
+                        <td class="tdset tdset-brd2">10-500</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">5 / 22</td>
+                        <td class="tdset tdset-brd2">35</td>
+                        <td class="tdset tdset-brd2">10-500</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">6 / 21</td>
+                        <td class="tdset tdset-brd2">25</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">7 / 20</td>
+                        <td class="tdset tdset-brd2">20</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">8 / 19</td>
+                        <td class="tdset tdset-brd2">16</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">9 / 18</td>
+                        <td class="tdset tdset-brd2">14</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">10 / 17</td>
+                        <td class="tdset tdset-brd2">12</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">11 / 16</td>
+                        <td class="tdset tdset-brd2">11</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">12 / 15</td>
+                        <td class="tdset tdset-brd2">10</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">13 / 14</td>
+                        <td class="tdset tdset-brd2">10</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <div class="text-title">和值七彩赔率表</div>
+            <div class="rule-tbl">
+                <table cellpadding="0" cellspacing="1" class="rule-table2 rtbl">
+                    <tr>
+                        <th class="thset thset-brd2" width="90px">区间</th>
+                        <th class="thset thset-brd2" width="95px">0-3</th>
+                        <th class="thset thset-brd2" width="95px">4-7</th>
+                        <th class="thset thset-brd2" width="95px">8-11</th>
+                        <th class="thset thset-brd2" width="95px">12-15</th>
+                        <th class="thset thset-brd2" width="95px">16-19</th>
+                        <th class="thset thset-brd2" width="95px">20-23</th>
+                        <th class="thset thset-brd2" width="95px">24-27</th>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">赔率</td>
+                        <td class="tdset tdset-brd2">40</td>
+                        <td class="tdset tdset-brd2">8</td>
+                        <td class="tdset tdset-brd2">3.5</td>
+                        <td class="tdset tdset-brd2">2.8</td>
+                        <td class="tdset tdset-brd2">3.5</td>
+                        <td class="tdset tdset-brd2">8</td>
+                        <td class="tdset tdset-brd2">40</td>
+                    </tr>
+                    <tr>
+                        <td class="tdset tdset-brd1">限红</td>
+                        <td class="tdset tdset-brd2">10-500</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                        <td class="tdset tdset-brd2">10-2000</td>
+                        <td class="tdset tdset-brd2">10-5000</td>
+                        <td class="tdset tdset-brd2">10-2000</td>
+                        <td class="tdset tdset-brd2">10-1000</td>
+                        <td class="tdset tdset-brd2">10-500</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <div class="clear"></div>
+        </div>
+
+        <div class="info">
+            <div class="text-title">冷热遗漏统计规则</div>
+            组选玩法中的冷热遗漏统计规则如下：<br/><br/>
+            <span class="khaki-box">百</span><span class="khaki-box">十</span><span class="khaki-box">个</span><br/>
+            <b>冷热：</b>根据露珠计算出该位数字出现的次数。<br/>
+            <b>遗漏：</b>根据露珠计算出该位数字已经连续多少局未开出，开出后重新以0开始计数。<br/><br/>
+            <span class="khaki-box">总</span><br/>
+            <b>冷热：</b>根据露珠计算，只要任意位（百，十，个）上出现该数字的次数。<br/>
+            <b>遗漏：</b>根据露珠计算，该数字连续未出现的次数。任意位开出后重新以0开始计数。<br/>
+            <b>对遗：</b>根据露珠计算，该数字在任意两位连续未出现的次数。任意两位开出后重新以0开始计数。<br/>
+            <div class="clear"></div>
+        </div>
+
+        <div class="info">
+            <div class="text-title">请注意</div>
+            1.若某一期官方未发布结果，将作取消局处理，并全额退还玩家投注金额，玩家可通过官网、额度记录进行核对。<br/>
+            2.为便于查阅记录，有效投注额只作整数显示。在总有效投注额中，原有的小数会参与统计。<br/><br/><br/>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</div>
+<!--尾部-->
+<div class="footer_bgbox">
+    <script>Main($('.footer_bgbox'),'../template/footer.html');</script>
+</div>
+<!--尾部-->
+</body>
+</html>

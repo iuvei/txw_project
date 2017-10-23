@@ -1,0 +1,46 @@
+  <div class="top_bar clear">
+    <p><a href="/index.html" style="margin-top: 15px;display: block;">
+    	<img src="http://192.168.0.140:81/TXWN/images/logo2.png" alt="logo"  />
+    </a></p>
+    <ul class="top_nav">
+    	<li><a href="/coloum/slot.html">传统彩</a></li>
+    	<li><a href="/coloum/fishing.html">捕鱼达人</a></li>
+    	<!--<li><a href="javascript:;" onclick="loadgame('VR','1')">VR彩票</a></li>-->
+      <li><a href="/coloum/sports.html">体育赛事</a></li>
+      <li><a href="/coloum/live-casino.html">视讯直播</a></li>
+      <li><a href="/coloum/lobby.html">电子游戏</a></li>
+    </ul>
+    <div class="header_info"> 
+    	<a  class="first" href="javascript:;">{{UserInfo.username.slice(3)}}</a>|
+    	<a class="last" ms-click ='loginOut'>注销</a> 
+    	<a class="button" onclick="alert('暂未开放')">在线客服</a>
+    </div>
+  </div>
+  <!--notice-->
+  <div class="notice">
+    <!--<div class="eveb_header_notice">-->
+      <!--<h4><i class="icon_small icon_header_notice"></i>公告：</h4>-->
+      <!--&lt;!&ndash;轮播&ndash;&gt;-->
+      <!--<div class="txtScroll-top">-->
+          <!--&lt;!&ndash;文字滚动&ndash;&gt;-->
+        <!--<div class="header-center_gd">-->
+            <!--<div class="picMarquee-left">-->
+              <!--<ul class="header_marquee" id="announcement_marquee" behavior="scroll">-->
+              <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;文字滚动-end&ndash;&gt;-->
+      <!--</div>-->
+      <!--&lt;!&ndash;轮播-end&ndash;&gt;-->
+    <!--</div>-->
+  </div>
+  <!--notice-end-->
+  <!--<ul class="user_nav clear">
+    <li ><a href="user_center.html"><i class="icon_home"></i>会员首页</a></li>
+    <li><a href="deposit.html"><i class="icon_bank"></i>存款</a></li>
+    <li><a href="drawing.html"><i class="icon_withdraw"></i>提款</a></li>
+    <li><a href="transfer_accounts.html"><i class="icon_transfer"></i>转账</a></li>
+    <li><a href="messagelist.html"><i class="icon_letter"></i>站内信</a></li>
+    <li><a href="history.html"><i class="icon_record"></i>历史记录</a></li>
+    <li><a href="Account_settings.html"><i class="icon_set"></i>账户设置</a></li>
+  </ul>-->

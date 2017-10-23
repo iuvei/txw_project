@@ -1,0 +1,159 @@
+.register-content {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+.register-box{
+	width: 855px;
+    margin:0 auto;
+    height: 332px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 4px 4px 4px #e9e9e9;
+    border-radius: 8px;
+    
+    }
+
+.registration{margin-top: 50px;margin-bottom: 20px;position: relative;}
+hr{margin-top:35px;border-top: 1px solid #4baae2;}
+.register-box .title{
+	width: 85px;
+	height: 24px;
+	line-height: 24px;
+	background: #4baae2;
+	position: absolute;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 3px;
+	top:22px;
+	z-index: 10;
+	left: 72px;
+}
+.registration p{position: absolute;color: #9d9d9d;top: 8px;display: inline-block;font-size: 13px;right: 30px;}
+.registration p a{color: #ee0909;font-weight: bold;font-size: 16px;}
+.information {position: relative;}
+
+
+.register-box ul {margin-top: 20px;width:405px;margin-left: 88px;float: left;}
+.register-box li {
+    width: 405px;
+    height: 50px;
+    position: relative;
+    margin:10px 0px;
+}
+.register-box li span {
+    float: left;
+    display: block;
+    width: 83px;
+    line-height: 25px;
+    text-align: right;
+    color: #878787;
+    font-size: 14px;
+}
+.register-box li input {
+    width: 270px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    border: 1px solid #d6d4d4;
+    color: #999;
+    border-radius: 3px;
+    
+}
+.register-box li strong {
+	float: left;
+	height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: -12px;
+    display: none;
+}
+.register-box li h4 {
+    float: left;
+    font-size: 12px;
+    padding-left: 15px;
+    color: #999;
+    margin-left: 77px;
+    display: block;
+    line-height: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+    display: none;
+}
+.ico-error {
+    background: url(http://192.168.0.140:81/TXWN/images/icon_wrong.png);
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.ico-notic {
+    background: url(http://192.168.0.140:81/TXWN/images/icon_notic.png);
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+.ico {
+    /*background-image: url(http://192.168.0.140:81/TXWN/images/icon_notic.png);*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+/*.ico-error{background-position: -8px -36px;width: 17px;height: 17px;margin-right: 5px;}*/
+.register-box li span i{color: red;padding-right: 6px;}
+.register-box ul .title_top{background: #ddb79a;width:87px;height: 23px;text-align: center;line-height: 23px;border-radius: 5px;position: absolute;   
+     margin-top: -34px;
+    margin-left: 20px;}
+
+
+.register-box select {
+    margin-top: 3px;
+    width: 42px;
+    float: left;
+    margin-right: 2px;
+}
+.Verification-code_zc{
+	width: 125px !important;
+	
+}
+.information a{width: 21px; height: 21px;float: left;margin-left: 5px;margin-top: 2px;}
+
+.register-content b {
+    height: 25px;
+    font-weight: normal;
+    display: block;
+    width: 450px;
+    line-height: 25px;
+    margin-left: 120px;
+}
+.register-content b input{margin-top:0px !important;}
+
+.register-content #btnSubmit{
+	width: 220px;
+    height:32px;
+	color: #fff;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    background: #4baae2;
+ }
+ .register-content h3 {
+    font-size: 12px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.register-content h3 span {
+    display: block;
+    height: 20px;
+}
+ 
+
+

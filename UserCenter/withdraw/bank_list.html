@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="icon" href="http://192.168.0.140:81/TXWN/user_img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/UserCenter/user_css/user.css">
+		<link href="/UserCenter/user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/forms.css" rel="stylesheet" type="text/css" />
+		<script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/UserCenter/user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/user_main.js"></script>
+	</head>
+
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('/UserCenter/component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" href="../withdraw/withdraw.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>取款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<!--<script>
+function show_sub_bar($nav){
+	var $sub_div = $('#' + $nav.attr("id") + '_hide_bar');
+	var $icon = $nav.find('div');
+
+	$sub_div.removeClass('hide');
+	$sub_div.animate({
+		height : $sub_div.attr('attr-height')
+	}, 700 , function() {
+	});
+	//$nav.addClass("active");
+	$icon.attr("attr-value" , "top");
+	$icon.attr("class","icon-top");
+}
+
+function hide_sub_bar($nav){
+	var $sub_div = $('#' + $nav.attr("id") + '_hide_bar');
+	var $icon = $nav.find('div');
+
+	$sub_div.animate({
+		height : 0
+	}, 700 , function() {
+		$sub_div.addClass("hide");
+	});
+	$nav.removeClass("active");
+	$icon.attr("attr-value" , "down");
+	$icon.attr("class","icon-down");
+}
+
+
+$(document).ready(function(){
+	$(".dpt-sd-lnk.has_sub").click(function() {
+		var $icon = $(this).find('div');
+
+		if ($icon.attr("attr-value") == "down"){
+			show_sub_bar($(this));
+		}else{
+			hide_sub_bar($(this));
+		}
+		return false;
+	});
+
+	$("#mm_nav_"+8).addClass("active");
+		show_sub_bar($("#mm_nav_"+8));
+		$("#sd-lnk-"+8+'_'+2).addClass("active");
+});
+</script>-->
+
+				<div class="dtls-con">
+					<div class="f_con">
+						<ul class="tabs">
+							<li>
+								<a href="../modifyPwd/personal_information.html">个人信息</a>
+							</li>
+							<li class="active">
+								<a href="###">银行资料</a>
+							</li>
+							<li>
+								<a href="../modifyPwd/modifyPassword.html">修改密码</a>
+							</li>
+						</ul>
+
+						<div class="f_main">
+							<div class="bank">
+								<div class="_t">我的银行卡（1/3）：</div>
+								
+								
+								<div class="card_con">
+                          <div class="card">
+                          	<div class="c1">
+                            	<div class="bankn">
+                                	<img src="http://192.168.0.140:81/TXWN/user_img/icon-icbc.png">
+                                	<span class="name">建设银行</span>
+                                </div>
+                                <a class="ln">借记卡</a>
+                            </div>
+                            <div class="c2">**思 6***************56</div>
+                            <!--开户支行地址-->
+                            <div class="c3">
+                            	大幅度
+                            </div>
+                          </div>
+                          <div class="cbtn_con">
+                          	<a href="###" onclick="edit_bank('1000122831')">编辑</a>  
+                          </div>
+                        </div>
+								
+								
+								
+								<div class="card_con">
+									<div class="add_card" onclick="add_bank()">
+										<div class="_c">
+											<div class="plus">+</div>
+											<span><a href="bank_add.html">新增银行卡</a></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="clear"></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<div class="pop_cover" id="bank_bind_cover" style="display:none">
+
+			<!-- 未绑定 -->
+			<div class="pop_up s4 center" id="not_bind" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2">
+					<div class="_t">
+						安全验证
+					</div>
+					<div class="ntc2"><i class="ntc_warn">&nbsp;</i> 经检测，您的账号安全存在一定的风险，请先绑定手机或邮箱再进行修改银行资料操作！</div>
+					<div class="box1 off">
+						<i class="cel2 mr"></i><br>
+						<span class="h">绑定手机</span><br><br>
+						<!-- 完成绑定，即可获得<span class="red">2元</span>绑定手机礼金 -->
+						<a class="c_btn1" href="../modifyPwd/personal_information.html">立即绑定</a>
+					</div>
+					<div class="box1 off">
+						<i class="mail mr"></i><br>
+						<span class="h">绑定邮箱</span><br> &nbsp;
+						<br>
+						<a class="c_btn1" href="../modifyPwd/personal_information.html">立即绑定</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 第一步，选择验证方式 -->
+			<div class="pop_up s4 center" id="bank_check_step_1" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c2">
+					<div class="_t">
+						安全验证
+					</div>
+					<div class="ntc2"><i class="ntc_ok">&nbsp;</i> 经过安全监测，您可以通过以下方式进行验证：</div>
+					<div class="box2 off">
+						<i class="cel2 mr2"></i>
+						<div class="_c">
+							<span class="h">通过短信验证</span><br> 选择此方式，我们将向您号码为的手机
+							<br> 发送验证码
+						</div>
+						<a class="c_btn1" href="../modifyPwd/personal_information.html">立即绑定</a>
+					</div>
+					<div class="box2 off">
+						<i class="mail mr2"></i>
+						<div class="_c">
+							<span class="h">通过绑定邮箱验证</span><br> 选择此方式，我们将向您的邮箱
+							<br> 发送验证码
+						</div>
+						<a class="c_btn1" href="../modifyPwd/personal_information.html">立即绑定</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- 第二步，之 手机绑定 -->
+			<div class="pop_up s3 center" id="phone_verify" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c">
+					<div class="_t">通过<span>短信验证</span> 操作银行卡</div>
+
+					<div class="form">
+						<div class="note">
+							<span class="ntc"><i  class="ntc_icn">&nbsp;</i> 操作提示：</span> 验证码已发送至您的手机号码（
+							<span class="inp_text phone_num"></span>），在15分钟内输入有效。<br>
+						</div>
+						<div class="r">
+							<label>手机验证码：</label>
+							<span class="inp"> <input class="smscode" type="text" placeholder="请输入验证码" maxlength="8"> </span>
+							<a class="inp_btn re_send_bank" href="###">重新发送<span class="count_num"></span></a>
+						</div>
+
+						<div class="r">
+							<label>银行卡开户人姓名：</label>
+							<span class="inp"> <input class="realname" type="text"  maxlength="10"></span>
+						</div>
+						<div class="_r ">
+							<div class="info error"></div>
+						</div>
+						<div class="btn_con">
+							<a href="###" class="btn bank_save_btn">保存</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 第二步，之 邮箱验证 -->
+			<div class="pop_up s3 center" id="email_verify" style="display:none">
+				<a class="pop_close"></a>
+				<div class="_c">
+					<div class="_t">通过<span>邮箱验证</span> </div>
+
+					<div class="form">
+						<div class="note">
+							<span class="ntc"><i  class="ntc_icn">&nbsp;</i> 操作提示：</span> 验证码已发送至您绑定的邮箱（
+							<span class="inp_text email_address"></span>），在15分钟内输入有效。<br>
+						</div>
+						<div class="r">
+							<label>验证码：</label>
+							<span class="inp"> <input class="smscode" type="text" placeholder="请输入验证码" maxlength="8"> </span>
+							<a class="inp_btn re_send_bank" href="###">重新发送<span class="count_num"></span></a>
+						</div>
+
+						<div class="r">
+							<label>银行卡开户人姓名：</label>
+							<span class="inp"> <input class="realname" type="text"  maxlength="10"></span>
+						</div>
+						<div class="_r ">
+							<div class="info error"></div>
+						</div>
+						<div class="btn_con">
+							<a href="###" class="btn bank_save_btn">保存</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 修改银行卡  新流程-->
+		<form action="/bank_update_sms.html" method="post" name="modifyForm" id="modifyForm_sms">
+			<input type="hidden" name="customer_bank_id" id="upate_customer_bank_id_sms">
+		</form>
+		<div class="user_footer">
+			<script>
+				puli('/UserCenter/component/user_footer.html','.user_footer')
+			</script>
+		</div>
+		<!--<script>
+$(document).ready(function () {
+	$('.card_con').mouseover(function () {
+	     $(this).addClass("active").siblings().removeClass("active");
+	}).mouseout(function () {
+	     $(this).removeClass("active");
+	});
+	
+});
+
+var customerBankNum = 0;
+var bank_operate = '';
+var bank_operate_name = '操作';
+var operate_bank_id = '';
+
+//检测是否有绑定手机或者邮箱 
+function check_bind(){
+	
+	return ('0' == '1') || ('0' == '1');
+}
+</script>-->
+
+		<!-- 右侧悬浮框 start -->
+
+		<!-- 支付宝扫码 -->
+		<!-- <div class="ali-payment "></div>
+<div class="icon-alipay-right"></div> -->
+
+		<!--<script type="text/javascript" src="user_js/new_public.js"></script>
+<script type="text/javascript" src="user_js/member_bind_pop.js"></script>
+<script type="text/javascript" src="user_js/bank_sms_pop.js"></script>
+<script type="text/javascript" src="user_js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="user_js/jquery.validate.js"></script>
+<script type="text/javascript" src="user_js/jquery.validate.custom.methods.js"></script>-->
+	</body>
+<script type="text/javascript">
+	$("#mm_nav_"+8).addClass("active");
+		show_sub_bar($("#mm_nav_"+8));
+		$("#sd-lnk-"+8+'_'+2).addClass("active");
+</script>
+</html>

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="" />
+<title>天下网络-优惠永远多一点</title>
+<link rel="shortcut icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" />
+<link href="/css/public.css" rel="stylesheet" type="text/css">
+<link href="/css/ag-slot.css" rel="stylesheet" type="text/css">
+<link href="/css/phone.css" rel="stylesheet" >
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/js/jquery-ui.js"></script>
+<script src="/template/main.js"></script>
+<script src="/js/jquery.SuperSlide.2.1.1.source.js" type="text/javascript" charset="utf-8"></script>
+
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body style="margin: 0;">
+<style>
+    #nav_9 a{    color: #e1af7f;}
+</style>
+<!--引入公共头部-->
+<div class="header_bgbox"> 
+  <script>Main($('.header_bgbox'),'../template/header.html');</script> 
+</div>
+<!-- 手机start -->
+<div class="main_phone">
+  <!--<div class="phone_banner"> <img src="http://192.168.0.140:81/TXWN/images/phone/phone_banner.png"> </div>-->
+   <div class="header-banner" style="height: 300px;">
+        <div class="sldr-con index_common_sidebar">
+                <div style="height: 300px;" class="banner_phone">
+                    <!--<img src="http://192.168.0.140:81/TXWN/images/banner-promotion_banner-01504082196.jpg" />-->
+                </div>
+        </div>
+
+        <div class="marq trans-bg" style="top: 270px;">
+            <div class="marq-con">
+                <a id="open-notice-list" style="cursor:pointer;">
+                    <div class="icon-speaker"></div>
+                   <div id="announcement_marquee" style="width: 97%">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  
+  
+
+  <div class="phone_content">
+    <div class="phone_inner">
+      <p> <span>指尖上的游戏，从这里开始！随时随地，随心所欲。</span> <span>手机浏览输入：<a href="javascript:;">mtxn.tx1888.com</a></span> </p>
+      <p> <span>扫一扫，二维码开玩 </span> <span>①  手机浏览器扫描二维码，进入下载页面，点击下载</span> <span>②  APP安装和授权 点此查看<a href="/help/help_center5.html">IOS版教程 </a></span> <span>③  注意：第一步使用微信扫描下载的用户</span> <span>请扫描后点击右上角选择“在浏览器中打开”</span> </p>
+      <div class="erweima_code">
+        <div class="code_left"> <img src="http://192.168.0.140:81/TXWN/images/phone/h5_ewm.png"> <a href="javascript:;" style="background: #7187de;">手机H5版</a> </div>
+        <div class="code_right"> <img src="http://192.168.0.140:81/TXWN/images/phone/app_ewm.png"> <a href="javascript:;" style="background: #a671ff;">手机APP</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 手机end --> 
+<!--尾部-->
+<div class="footer_bgbox"> 
+  <script>Main($('.footer_bgbox'),'../template/footer.html');</script> 
+</div>
+<!--尾部-->
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="user_css/user.css">
+		<link href="user_css/change-limit.css" rel="stylesheet" type="text/css" />
+		<link href="user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="user_css/nice-select.css" rel="stylesheet" type="text/css" />
+		<script src="../public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<!--业务js-->
+		<script type="text/javascript" src="/public/game_plat.js"></script>
+		<script type="text/javascript" src="user_js/user_main.js"></script>
+		<script src="user_js/user_balance.js" type="text/javascript" charset="utf-8"></script>
+		<script src="user_js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//全局使用。即所有弹出层都默认采用，但是单个配置skin的优先级更高
+				layer.config({
+				  skin: 'alert_box'
+				})
+		</script>
+	</head>
+
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('component/user_header.html','.user_header')
+			</script>
+		</div>
+		<!-- 头部显示 end -->
+
+		<div class="clear wrap">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>					
+					<a id="sd-lnk-3_1" href="memberbalance.html" class="dpt-sd-lnk active">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="withdraw/bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+
+				<div class="dtls-con" ms-controller='banlance'>
+					<div class="balance-title">
+						<span class="span1">中心钱包</span>
+						<span class="span2" id="totalmoney">{{UserInfo.wallet.toFixed(2)}}</span>
+						<span class="span3"> 元</span>
+						<a class="icon-gold-refresh" href="javascript:void(0);" ms-click = 'getUserInfo'></a>
+					</div>
+
+                    <div class="line"></div>
+                    
+                    
+
+					<!--<div class="balance-content">
+						<div class="div1">各厅余额</div>-->
+						<!--<div class="div2" id="transfer_to_local">全部转至本地</div>-->
+						<!--<div class="clear"></div>
+						<div class="balance_table">-->
+							<!--平台列表-->
+							<!--<div class="balance-box" ms-for ='(index,el) in balanceData'>
+								<div class="tin">{{el.name}}</div>
+								<div class="money" id="agqj">{{ "￥"+el.blance}}</div>
+								<div class="bal_refresh" ms-click = 'refresh(index)'><img src="http://192.168.0.140:81/TXWN/user_img/transfer_accounts_pic3.png" /></div>
+							</div>-->
+						<!--</div>
+					</div>-->
+					<div class="transfer-content">
+                        <p>* 温馨提示：单次一键转入最小转账金额为：1元 / 最大转账金额：10000元</p>
+                    </div>
+					<div class="transfer-form">
+						<div class="list-head">
+							<div class="le_list">
+								<ul>
+									<li class="game_name">我的厅室</li>
+									<li class="game_money">余额</li>
+									<li class="game_action">按键操作</li>
+								</ul>
+							</div>
+							
+							<div class="ri_list">额度转换</div>
+							
+							
+							
+							
+							
+							
+						</div>
+						<style type="text/css">
+							.moneyIn[disabled],.moneyOut[disabled],.moneyOut:disabled,.moneyIn:disabled{
+								border:1px solid #DDD;
+								background-color:#F5F5F5;
+								color:#ACA899;
+								cursor: not-allowed
+							}
+						</style>
+						<div class="content_b">
+						<!--left-->
+						<div class="left">
+							<ul>
+								<li ms-for="(index,els) in @balanceData" >
+									<div class="game_name"><span class="game_name_txt">{{els.name}}</span></div>
+									<div class="game_money">
+                                        <span class="game_money_txt">{{els.blance}}</span>
+                                        <p class="bal_refresh" ms-click = 'refresh(index)'><img src="http://192.168.0.140:81/TXWN/user_img/transfer_accounts_pic3.png" alt="刷新金额"></p>
+                                    </div>
+									<div class="game_action specil_li">
+										<span class="game_action_txt">
+											<button class="btn moneyIn" ms-attr="{PlatDataBlance: els.code}" ms-click = "allOut(index)" >一键转入</button>
+											<button class="btn moneyOut" ms-attr="{PlatDataBlance: els.code}" ms-click = "allIn(index)" >一键转出</button>
+											<!--<button class="btn startGame" ><a ms-attr="{herf: els.src}">开始游戏</a></button>-->
+											<a class="btn startGame" ms-click = "gameJump(index)">开始游戏</a>
+											<!-- loadgame('IGPJLOTTERY','7','PC'); -->
+										</span>
+									</div>
+								</li>
+                            </ul>
+						</div>
+						
+						<!--right-->
+						<div class="right">
+						<div class="row" style="padding-top: 20px;">
+							<div class="field">
+								<div class="title" >转出：</div>
+								<div class="desc">
+									<select name="agin_limit" class="wide"  id="selectedout" ms-on-change= 'OutSelectEvent'>
+										<!--转出下拉列表-->
+										<option ms-css="[ el.disable && active]"  ms-attr = "{value:index,disabled:el.disable}" ms-for ="(index,el) in PlatList">{{el.name}}</option>
+										
+									</select>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="field info">
+								<div class="title">转入： </div>
+								<div class="desc">
+									<select name="bbin_limit" class="wide"  id="selectedin" ms-on-change= 'InSelectEvent'>
+										<!--转入下拉列表-->
+										<option ms-css="[ el.disable && active]"  ms-attr = "{value:index,disabled:el.disable}" ms-for ="(index,el) in PlatList">{{el.name}}</option>
+									</select>
+								</div>
+								<div class="clear"></div>
+								
+							</div>
+						</div>
+						
+						<div class="row_nube">
+							<div class="field info">
+								<div class="title" style="height: 34px;width: 73px;margin-right: 0px;">金额： </div>
+								<div class="desc">
+									<div class="field_botm">
+										<input type="hidden" name="target" value="LOCAL">
+										<input ms-duplex = "amountCheck.amount" type="text" name="amount" placeholder="请输入金额" onkeyup="this.value=this.value.replace(/^0|\D/gi,&quot;&quot;)" ondragenter=" return false" onpaste="return !clipboardData.getData('text').match(/\D/)">
+										<label class="after">元</label>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row_nube">
+							<div class="field info">
+							    <div class="title" style="height: 34px;width: 73px;margin-right: 0px;">验证码： </div>
+								<div class="desc">
+								    <input type="text" ms-duplex = "amountCheck.code" id="Verification-code_zzs" maxlength="4" onkeyup="this.value=this.value.replace(/\D/gi,'')" value="" class="Verification-code_zz" placeholder="请输入验证码" style="float:left;">
+									  <img id="imgObj_zz" alt="验证码"  ms-click="VerificationCode('#imgObj_zz')" style="float:left;margin-top:3px;height:35px; width: 80px; margin-left: 7px; margin-top: 5px;"  />
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+						
+						<div class="row">
+							<button id="change-limit-submit" ms-click = 'doSubmit'>提交</button>
+						</div>
+						
+						<div class="row_nube_content"><span>* 温馨提示：单笔 最小转账金额为：1元 / 最大转账金额：100,000元</span></div>
+						
+						<div class="switchAccount" ms-click = 'switchAccount'>
+							<img src="http://192.168.0.140:81/TXWN/user_img/icon-transfer.png" />
+						</div>
+						
+					</div>	
+					
+					</div>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+					</div>
+
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="user_footer">
+			<script>
+				puli('component/user_footer.html','.user_footer')
+			</script>
+		</div>
+		
+		
+		
+		
+		<!--确认弹窗-->
+		<div class="deposit_code_box">
+		    <div class="eveb_popup_hd">
+			     <h4 class="fl">提示</h4>
+			     <a href="javascript:;" title="关闭" onclick="$('.deposit_code_box').hide();"></a> 
+		    </div>
+	      	<div class="eveb_popup_bd">
+	          
+	          	<p>确认是否需要<a href="" target="_blank">转入</a>？</p>    
+	       </div>
+	       <div class="eveb_popup_btn"> 
+		        <a href="javascript:;" class="button_yes button_btn">确定</a>
+		        <a href="javascript:;" class="button_know button_btn" onclick="location.reload();">知道了</a> 
+	       </div>
+    	</div>
+    
+    
+    
+    
+    
+	</body>
+	<script type="text/javascript" src="user_js/memberUseAjax.js"></script>
+<script type="text/javascript">
+		//左侧导航效果
+		show_sub_bar($("#mm_nav_" + 3));
+		$("#sd-lnk-" + 3 + '_' + 1).addClass("active");
+//        限制转账下拉
+//        function selectfun(){
+//            var id = document.getElementById('selectedout');
+//            for(var i =0;i < id.options.length;i++){
+//                if(id.options[i].value == "5"||id.options[i].value == "6"||id.options[i].value == "7"||id.options[i].value == "14"){
+//                    id.options[i].disabled = "disabled";
+//                    id.options[i].selected = false;
+//                    id.options[i].style.background = "#f0f0f0";
+//                }
+//            }
+//            var id = document.getElementById('selectedin');
+//            for(var i =0;i <id.options.length;i++){
+//                if(id.options[i].value == "5"||id.options[i].value == "6"||id.options[i].value == "7"||id.options[i].value == "14"){
+//                    id.options[i].disabled = "disabled";
+//                    id.options[i].selected = false;
+//                    id.options[i].style.background = "#f0f0f0";
+//                }
+//            }
+//        }
+//        $(function () {
+//            selectfun();
+//        })
+	</script>
+
+</html>

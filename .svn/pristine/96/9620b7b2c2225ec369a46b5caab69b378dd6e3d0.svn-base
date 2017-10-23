@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" type="image/x-icon" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/home.css" rel="stylesheet" type="text/css" />
+<link href="/css/faq.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="header_bgbox">
+    <script>Main($('.header_bgbox'),'/template/header.html');</script>
+</div>
+
+<!-- 头部显示 end -->
+
+	<div class="content cstm-wrap2">
+<div class="rule_banner"></div>
+  <ul class="gmrl-con">
+		<li id="rule_nav1"><a href="rule1_branch.html" >百家乐</a></li>
+		<li id="rule_nav2"><a href="rule2_branch.html" >包桌（VIP）百家乐</a></li>
+		<li id="rule_nav3"><a href="rule3_branch.html" >竞咪（LED）百家乐 </a></li>
+		<li id="rule_nav4"><a href="rule4_branch.html" >龙宝百家乐</a></li>
+		<li id="rule_nav20"><a href="rule20_branch.html" >保险百家乐</a></li>
+		<li id="rule_nav5" class="active"><a href="rule5_branch.html" >七喜百家乐</a></li>
+		<li id="rule_nav6"><a href="rule6_branch.html" >龙虎</a></li>
+		<li id="rule_nav7"><a href="rule7_branch.html" >骰宝</a></li>
+		<li id="rule_nav8"><a href="rule8_branch.html" >轮盘</a></li>
+		<li id="rule_nav9"><a href="rule9_branch.html" >二八杠</a></li>
+		<div class="clear"></div>
+		<li id="rule_nav10"><a href="rule10_branch.html" >三公</a></li>
+		<li id="rule_nav11"><a href="rule11_branch.html" >温州牌九</a></li>
+		<li id="rule_nav12"><a href="rule12_branch.html" >牛牛</a></li>
+		<li id="rule_nav13"><a href="rule13_branch.html" >色碟</a></li>
+		<li id="rule_nav14"><a href="rule14_branch.html" >德州扑克</a></li>
+		<li id="rule_nav15"><a href="rule15_branch.html" >特奖德州扑克 </a></li>
+		<li id="rule_nav16"><a href="rule16_branch.html" >21点</a></li>
+		<li id="rule_nav17"><a href="rule17_branch.html" >真人乐透</a></li>
+		<li id="rule_nav18"><a href="rule18_branch.html" >水果拉霸</a></li>
+		<li id="rule_nav19"><a href="rule19_branch.html" >杰克高手</a></li>
+		
+		<li id="rule_nav22"><a href="rule22_branch.html">时时彩</a></li>
+		<div class="clear"></div>
+</ul>
+  <div class="gamerule-con">
+    <div class="prm_h1_rule"> 七喜百家乐 </div>
+        <br>
+        <div class="pa_bn"><img src="http://192.168.0.140:81/TXWN/images/rule/rule-banner17.jpg" alt=""></div>
+
+        <div class="info">
+          <div class="text-title">不同于常规的百家乐游戏：</div>
+          <ol>
+            <li>闲的第一张牌固定面值为7 ；</li>
+            <li>每手从庄开始发牌；</li>
+            <li>第二张牌发给闲，第三张牌发送给庄；</li>
+            <li>随后的3张牌的将适用于一般的百家乐规则。</li>
+          </ol>
+        </div>
+
+        <div class="info">
+          <div class="text-title">投注7喜百家乐提供的赔付表如下：</div>
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="50%">赢注</th>
+                  <th class="thset thset-brd2" width="50%">赔率</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">投注"庄"7点</td>
+                  <td class="tdset tdset-brd2">1 赔 1.5</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">投注"庄"任意点数</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">投注"闲" 7点</td>
+                  <td class="tdset tdset-brd2">1 赔 0.5</td>
+              </tr>   
+              <tr>
+                  <td class="tdset tdset-brd1">投注"闲"任意点数</td>
+                  <td class="tdset tdset-brd2">1 赔 1</td>
+              </tr>    
+              <tr>
+                  <td class="tdset tdset-brd1">投注"和" 7点</td>
+                  <td class="tdset tdset-brd2">1 赔 9</td>
+              </tr>     
+              <tr>
+                  <td class="tdset tdset-brd1">投注"和"任意点数</td>
+                  <td class="tdset tdset-brd2">1 赔 7</td>
+              </tr>
+              </table><br>
+
+              <table cellpadding="0" cellspacing="1" class="rule-table2">         
+              <tr>
+                  <th class="thset thset-brd1" width="50%">超级7</th>
+                  <th class="thset thset-brd2" width="50%">赔率</th>
+              </tr>      
+              <tr>
+                  <td class="tdset tdset-brd1">任意两个7</td>
+                  <td class="tdset tdset-brd2">1 赔 1.5</td>
+              </tr>   
+              <tr>
+                  <td class="tdset tdset-brd1">任意三个7</td>
+                  <td class="tdset tdset-brd2">1 赔 6</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">任意四个7</td>
+                  <td class="tdset tdset-brd2">1 赔 15</td>
+              </tr>   
+              <tr>
+                  <td class="tdset tdset-brd1">任意四个7</td>
+                  <td class="tdset tdset-brd2">1 赔 77</td>
+              </tr>    
+              <tr>
+                  <td class="tdset tdset-brd1">任意四个7</td>
+                  <td class="tdset tdset-brd2">1 赔 777</td>
+              </tr>                                                                                                                                
+          </table><br/>
+          <ol>
+            <li>"和"是指在每一局结束时，闲和庄拥有相同的点数；</li>
+            <li>"超级7" 系列是指所有完整的一手牌中， 至少有2张7组成的，包括托管到闲手中的7；</li>
+            <li>“超级7”作为旁边注，需要先投注于庄、闲或者和之后才可进行投注。</li>
+          </ol>
+        </div>
+
+        <div class="info">
+           <div class="text-title">一般百家乐规则：</div>  
+           <ol>
+             <li>百家乐是根据闲和庄的点数，最接近9点的一方胜；</li>
+             <li>闲和庄都会得到2张牌；</li>
+             <li>任何10，J，Q，K的点数是0；</li>
+             <li>牌面相加的总数如果是在0到9之间，就是这手牌的点数；</li>
+             <li>牌面相加的总数如果是10或10以上，这手牌的点数以个位为准；</li>
+             <li>如果之前的两张牌，加起来是8或9的话，叫做"天牌"，此时就不需要发第三张牌 ；</li>
+             <li>如果闲和庄都是6或者是7的话，这时候是"和" 。</li>
+           </ol>
+        </div>
+        <div class="info">
+          <div class="text-title">这个规则叫做"抽牌规则"：</div>
+          抽第3张牌给闲完全由娱乐场标准规则决定并自动执行。
+        </div>
+
+        <div class="info">
+          <div class="text-title">闲牌面：</div>
+
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1" width="50%">前2张牌面总和点数</th>
+                  <th class="thset thset-brd2" width="50%">抽牌或停牌</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">0,1,2,3,4 和 5</td>
+                  <td class="tdset tdset-brd2">抽1张牌除非庄是天牌</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">6 或 7</td>
+                  <td class="tdset tdset-brd2">停牌</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">8 或 9</td>
+                  <td class="tdset tdset-brd2">天牌</td>
+              </tr>                            
+          </table><br/>
+
+          如果闲已经抽第3张牌，抽第3张牌给庄完全由娱乐场标准规则决定并自动执行。
+        </div>
+        <div class="info">
+          <div class="text-title">庄牌面：</div>
+          <table cellpadding="0" cellspacing="1" class="rule-table2">
+              <tr>
+                  <th class="thset thset-brd1">前2张牌面总和点数</th>
+                  <th class="thset thset-brd2">当闲第3张牌是以下点数时抽牌</th>
+                  <th class="thset thset-brd2">当闲第3张牌是以下点数时停牌</th>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">0,1,2</td>
+                  <td class="tdset tdset-brd2">0,1,2,3,4,5,6,7,8,9</td>
+                  <td class="tdset tdset-brd2">0,1,2,3,4,5,6,7,8,9</td>
+              </tr>
+              <tr>
+                  <td class="tdset tdset-brd1">3</td>
+                  <td class="tdset tdset-brd2">0,1,2,3,4,5,6,7,9</td>
+                  <td class="tdset tdset-brd2">0,1,2,3,4,5,6,7,9</td>
+              </tr>   
+              <tr>
+                  <td class="tdset tdset-brd1">4</td>
+                  <td class="tdset tdset-brd2">2,3,4,5,6,7</td>
+                  <td class="tdset tdset-brd2">2,3,4,5,6,7</td>
+              </tr>       
+              <tr>
+                  <td class="tdset tdset-brd1">5</td>
+                  <td class="tdset tdset-brd2">4,5,6,7</td>
+                  <td class="tdset tdset-brd2">4,5,6,7</td>
+              </tr> 
+              <tr>
+                  <td class="tdset tdset-brd1">6</td>
+                  <td class="tdset tdset-brd2">6,7</td>
+                  <td class="tdset tdset-brd2">6,7</td>
+              </tr>  
+              <tr>
+                  <td class="tdset tdset-brd1">7</td>
+                  <td class="tdset tdset-brd2">停牌</td>
+                  <td class="tdset tdset-brd2">停牌</td>
+              </tr>    
+              <tr>
+                  <td class="tdset tdset-brd1">8,9</td>
+                  <td class="tdset tdset-brd2">天牌</td>
+                  <td class="tdset tdset-brd2">天牌</td>
+              </tr>                                                                                                
+          </table><br/>
+
+          庄闲任何一方两牌合计8、9点为例牌，对方不须博牌，即定胜负。<br>
+          庄闲两方各得6、7点，即和局。<br>
+          庄两张牌，闲两张牌，共四张牌已分出胜负或和局，此局是小。<br>
+          庄两或三张牌，闲两或三张牌，共五或六张牌分出胜负或和局， 此局是大。<br><br>
+
+          温馨提示：不同的游戏平台，游戏规则略有不同，具体以相关平台展示的对应游戏项目为准<br><br>
+        </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--尾部-->
+<div class="footer_bgbox">
+    <script>Main($('.footer_bgbox'),'../template/footer.html');</script>
+</div>
+<!--尾部-->
+</body>
+</html>

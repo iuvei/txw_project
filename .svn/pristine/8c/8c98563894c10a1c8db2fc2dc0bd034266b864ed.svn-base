@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/ag-slot.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.source.js" charset="utf-8"></script>
+
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+
+</head>
+<body>
+<style>
+    #nav_5 a{ color: #e1af7f;}
+</style>
+<div class="header_bgbox"> 
+  <script>Main($('.header_bgbox'),'../template/header.html');</script> 
+</div>
+<div class="clear wrap">
+  <div class="header-banner" style="height: 400px;">
+    <div class="header-content">
+      <div class="profit-list">
+        <div class="profit-list-header">
+          <div class="c1">v***x</div>
+          <div class="c2"> 加拿大 </div>
+          <div class="c3">200</div>
+          <div class="c4">1640</div>
+        </div>
+        <div class="picScroll-top">
+          <div class="hd">
+            <ul>
+            </ul>
+          </div>
+          <div class="bd">
+            <ul class="picList">
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">a***x</div>
+                  <div class="_rnum c2"> 加拿大 </div>
+                  <div class="_rnum c3">200</div>
+                  <div class="_rnum c4">1640</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">h***6</div>
+                  <div class="_rnum c2"> 加拿大西部 </div>
+                  <div class="_rnum c3">4900</div>
+                  <div class="_rnum c4">4704</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">u***x</div>
+                  <div class="_rnum c2"> 斯洛伐克 </div>
+                  <div class="_rnum c3">80</div>
+                  <div class="_rnum c4">656</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">q***6</div>
+                  <div class="_rnum c2"> 俄勒冈 </div>
+                  <div class="_rnum c3">2000</div>
+                  <div class="_rnum c4">1920</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">y***x</div>
+                  <div class="_rnum c2"> 加拿大 </div>
+                  <div class="_rnum c3">200</div>
+                  <div class="_rnum c4">1640</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">o***6</div>
+                  <div class="_rnum c2"> 加拿大西部 </div>
+                  <div class="_rnum c3">4900</div>
+                  <div class="_rnum c4">4704</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">b***x</div>
+                  <div class="_rnum c2"> 斯洛伐克 </div>
+                  <div class="_rnum c3">80</div>
+                  <div class="_rnum c4">656</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">e***x</div>
+                  <div class="_rnum c2"> 加拿大 </div>
+                  <div class="_rnum c3">200</div>
+                  <div class="_rnum c4">1640</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">p***6</div>
+                  <div class="_rnum c2"> 加拿大西部 </div>
+                  <div class="_rnum c3">4900</div>
+                  <div class="_rnum c4">4704</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">s***x</div>
+                  <div class="_rnum c2"> 斯洛伐克 </div>
+                  <div class="_rnum c3">80</div>
+                  <div class="_rnum c4">656</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">j***6</div>
+                  <div class="_rnum c2"> 加拿大西部 </div>
+                  <div class="_rnum c3">4900</div>
+                  <div class="_rnum c4">4704</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">l***x</div>
+                  <div class="_rnum c2"> 斯洛伐克 </div>
+                  <div class="_rnum c3">80</div>
+                  <div class="_rnum c4">656</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">w***x</div>
+                  <div class="_rnum c2"> 加拿大 </div>
+                  <div class="_rnum c3">200</div>
+                  <div class="_rnum c4">1640</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">f***6</div>
+                  <div class="_rnum c2"> 加拿大西部 </div>
+                  <div class="_rnum c3">4900</div>
+                  <div class="_rnum c4">4704</div>
+                </div>
+              </li>
+              <li>
+                <div class="_rbonus_list">
+                  <div class="_rnum c1">v***x</div>
+                  <div class="_rnum c2"> 斯洛伐克 </div>
+                  <div class="_rnum c3">80</div>
+                  <div class="_rnum c4">656</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+                    jQuery(".picScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",autoPlay:true,vis:7,trigger:"click"});
+                </script> 
+      </div>
+      
+      <!--<div class="pager" id="pager" style="top:372px;">--> 
+      <!--<div class="icon-white">--> 
+      <!--<div></div>--> 
+      <!--</div>--> 
+      <!--</div>--> 
+    </div>
+    <div class="sldr-con index_common_sidebar">
+      <div style="background:url('http://192.168.0.140:81/TXWN/images/banner-ag-01504082196.jpg') no-repeat top center; height: 400px;"> </div>
+    </div>
+    <div class="marq trans-bg" style="top: 370px;">
+        <div class="marq-con">
+            <a id="open-notice-list" style="cursor:pointer;">
+                <div class="icon-speaker"></div>
+               <div id="announcement_marquee" style="width: 97%;">
+                        
+                    </div>
+            </a>
+        </div>
+    </div>
+
+  </div>
+  <!--<div class="content">
+        <div class="click-button">
+             <a class="keno-info" target="_blank" href="rule21_branch.htm">KENO介绍<span class="icon-purple"></span></a>
+             <a class="goto-game" href="javascript:;">进入游戏<span class="icon-purple"></span></a>
+             <a class="now-info" target="_blank" href="javascript:;">时时彩介绍<span class="icon-purple"></span></a>
+        </div>
+  </div>-->
+  <div class="content">
+  	<div class="content_inner">
+  		<div class="game_list">
+  			<!--<img src="http://192.168.0.140:81/TXWN/images/slot/game_bg.png">-->
+  			<div class="game_left">
+  				<img src="http://192.168.0.140:81/TXWN/images/slot/lottery_left_word.png">
+                <div class="game_em">
+                    <!--<em>速度最快 </em>-->
+                    <!--<em>种类最全</em>-->
+                    <!--<em>选择最多</em>-->
+                    <!--<em>反正就是玩 </em>-->
+                    <!--<em>先发牌后下注 </em>-->
+                    <!--<em>公平公正</em>-->
+                    <em>
+                        天下网络提供彩票品种有PK10、时时彩、快乐十分、十一选五等各地区时时彩及香港特区六合彩，彩票游戏玩法简单且彩种、赔率多样化，满足玩家多变的需求。所有彩票游戏公正公开，皆参照各地官方开奖结果为依据，连线同步即时开彩，让你享乐零时差体验。
+                    </em>
+                </div>
+
+  				<p>推荐彩票</p>
+                <div class="game_icolist">
+                    <span><i>▪</i>时时彩</span>
+                    <span><i>▪</i>十一选5</span>
+                    <span><i>▪</i>PK10</span>
+                    <span><i>▪</i>PC蛋蛋</span><br />
+                    <span><i>▪</i>快3</span>
+                    <span><i>▪</i>六合彩</span>
+                    <span><i>▪</i>幸运飞艇</span>
+                    <span><i>▪</i>极速3D</span>
+                    <span><i>▪</i>快乐十分</span>
+                </div>
+  			</div>
+  			<div class="game_right"  onclick="loadgame('IGPJLOTTERY','2','PC');">
+  				<!--<p>新IG彩票</p>-->
+  				<div class="wapper_blank_right">
+  					<a href="javascript:;" class="free_play" onclick="loadgame('IGPJLOTTERY','2','PC');">开始游戏</a>
+  	    		    <!--<a href="javascript:;" class="start_game">开始游戏</a>-->
+  				</div>
+                <!--<a href="javascript:;" class="free_play" onclick="loadgame('IGPJLOTTERY','2','PC');">新IG彩票</a>-->
+
+            </div>
+  		</div>
+  	    <div class="game_sw">
+  	    	<!--图-->
+  	    	<ul>
+  	    		<li class="ig_game" onclick="loadgame('IGLOTTERY','2','PC');">
+  	    			<div class="wapper_blank">
+  	    				<a href="javascript:;" class="free_play" onclick="loadgame('IGLOTTERY','2','PC');">开始游戏</a>
+  	    				<!--<a href="javascript:;" class="start_game">开始游戏</a>-->
+  	    			</div>
+  	    		</li>
+                <li class="vr_game" onclick="loadgame('VR','1')">
+                    <div class="wapper_blank">
+                        <!--<a href="javascript:;" class="free_play">免费试玩</a>-->
+                        <a href="javascript:;" class="start_game" style=" background: #936cb0; margin-top: 87px;" onclick="loadgame('VR','1')">开始游戏</a>
+                    </div>
+                </li>
+  	    		<!--<li class="gf_game">-->
+  	    			<!--&lt;!&ndash;<div class="wapper_blank">&ndash;&gt;-->
+  	    				<!--&lt;!&ndash;<a href="javascript:;" class="free_play" onclick="loadgame('BG','2');">开始游戏</a>&ndash;&gt;-->
+  	    			<!--&lt;!&ndash;</div>&ndash;&gt;-->
+  	    		<!--</li>-->
+
+  	    	</ul>
+  	    	<!--字-->
+  	    	
+  	    	<!--<p class="ig_word">IG彩票</p>-->
+  	    	<!--<p class="gf_word">VR彩票</p>-->
+            <!--<p class="vr_word">即将推出</p>-->
+  	    </div>
+  	    
+  	    <!--规则详解-->
+    	<div class="game_detil">
+    		<a href="/rule/rule1_branch.html">各游戏规则详解>></a>
+    	</div>
+  	</div>
+   </div>
+</div>
+<script>
+window.onload=function(){
+	$(".game_right").hover(
+		function(){
+			$(".wapper_blank_right").css('display','block');
+		},
+		function(){
+			$(".wapper_blank_right").css('display','none');
+			
+		}
+	)
+
+    $('.game_sw ul li').hover(
+  		function(){
+  			$(this).children('.wapper_blank').css('display','block');
+  		},
+  		function(){
+  			$(this).children('.wapper_blank').css('display','none');
+  		}
+  	)
+}
+</script>
+<!--尾部-->
+<div class="footer_bgbox"> 
+  <script>Main($('.footer_bgbox'),'../template/footer.html');</script> 
+</div>
+<!--尾部-->
+</body>
+</html>

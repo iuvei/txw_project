@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/UserCenter/user_css/user.css">
+		<link href="/UserCenter/user_css/member.css" rel="stylesheet" type="text/css" />
+		<link href="/UserCenter/user_css/forms.css" rel="stylesheet" type="text/css" />
+		<script src="/public/init.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/UserCenter/user_js/avalon.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/jquery-1.8.2.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/distpicker.data.js"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/distpicker.js"></script>
+		<script type="text/javascript" src="/UserCenter/user_js/user_main.js"></script>
+		<script src="bank_add.js"></script>
+	</head>
+	<body ms-controller="index" class="ms-controller">
+		<div class="user_header">
+			<script>
+				puli('/UserCenter/component/user_header.html','.user_header')
+			</script>
+		</div>
+		<div class="clear wrap" ms-controller="addCard">
+			<div class="holder">
+				<div class="side-bar">
+					<div class="top-height"></div>
+					<a id="mm_nav_1" class="dpt-sd-lnk-header">
+						会员中心
+					</a>
+					<a id="mm_nav_2" href="../membercenter.html" class="dpt-sd-lnk">
+						<span class="icon-member-left member-left-icon"></span>会员首页
+					</a>
+					<a id="sd-lnk-3_1" href="../memberbalance.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>转账
+					</a>
+					<a id="sd-lnk-3_2" href="../deposit-home.html" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>存款
+					</a>
+					<a id="sd-lnk-3_3" onclick="isbankcard()" class="dpt-sd-lnk">
+						<span class="icon-wallet member-left-icon"></span>提款
+					</a>
+					<a id="mm_nav_6" href="../pages/record-deposit.html" class="dpt-sd-lnk">
+						<span class="icon-file member-left-icon"></span>历史记录
+					</a>
+					<a id="mm_nav_8" href="#" class="dpt-sd-lnk has_sub">
+						<span class="icon-journal member-left-icon"></span>个人资料
+						<div class="icon icon-down" id="account-info" attr-value="down"></div>
+					</a>
+					<div id="mm_nav_8_hide_bar" class="account-bar hide" attr-height="120">
+						<a class="sd-lnk" id="sd-lnk-8_1" href="../modifyPwd/personal_information.html">
+							个人信息
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_2" href="bank_add.html">
+							银行资料
+							<div class="icon-purple-right"></div>
+						</a>
+						<a class="sd-lnk" id="sd-lnk-8_3" href="../modifyPwd/modifyPassword.html">
+							修改密码
+							<div class="icon-purple-right"></div>
+						</a>
+					</div>
+					<a id="mm_nav_9" href="../memberletter.html" class="dpt-sd-lnk">
+						<span class="icon-mail member-left-icon"></span>站内信
+					</a>
+					<div></div>
+				</div>
+				<div class="dtls-con">
+					<div class="f_con">
+						<ul class="tabs">
+							<li>
+								<a href="../modifyPwd/personal_information.html">个人信息</a>
+							</li>
+							<li class="active">
+								<a href="javascript:;">银行资料</a>
+							</li>
+							<li>
+								<a href="../modifyPwd/modifyPassword.html">修改密码</a>
+							</li>
+						</ul>
+						<div class="f_main">
+							<div id="submit-form" class="form">
+                                <div class="r">
+                                    <label>收款银行</label>
+									<span class="inp">
+		                   	 <select name="bankName" id="bindcard_bankId" ms-duplex = "config.bankName">
+                                 <option value="0">请选择</option>
+                                 <option value="1">中国农业银行</option>
+                                 <option value="2">中国银行</option>
+                                 <option value="3">交通银行</option>
+                                 <option value="4">中国建设银行</option>
+                                 <option value="5">中国工商银行</option>
+                                 <option value="6">中国邮政储蓄银行</option>
+                                 <option value="7">招商银行</option>
+                                 <option value="8">浦发银行</option>
+                                 <option value="9">中国光大银行</option>
+                                 <option value="10">中信银行</option>
+                                 <option value="11">平安银行</option>
+                                 <option value="12">中国民生银行</option>
+                                 <option value="13">华夏银行</option>
+                                 <option value="14">广发银行</option>
+                                 <option value="15">北京银行</option>
+                                 <option value="16">上海银行</option>
+                                 <option value="17">兴业银行</option>
+
+                             </select>
+		                   </span>
+                                </div>
+								<div class="r">
+									<label>开户人姓名</label>
+                                    <span class="inp">
+                                        <input class="inp username_text" type="text" name="username_text" placeholder = "姓名" ms-duplex = "config.name" />
+                                    </span>
+									<div class="info">银行卡开户人姓名需与注册时填写的姓名一致</div>
+								</div>
+
+								<div class="r">
+									<label>银行卡号</label>
+									<span class="inp"> 
+		                   		<input type="text"  onpaste="return false;" name="bankAccountNo"  maxlength="20" id="bankAccountNo" ms-duplex = "config.bankNumber" >
+		                   </span>
+									<div class="info">请仔细核对银行卡号</div>
+								</div>
+								<div class="r">
+									<label>开户支行</label>
+									<span class="inp">
+                                        <input type="text" placeholder = "如：北京市海淀区中关村支行" name="branch_name" id="branch_name" autocomplete="off" ms-duplex = "config.bankAddress" />
+						   			</span>
+								</div>
+                                <div class="r">
+                                    <label>提款密码</label>
+									<span class="inp">
+		                   		    <input type="password"   onpaste="return false;" name="confirmAccountNo" maxlength="6" id="confirmAccountNo" autocomplete="new-password"  ms-duplex = "config.withDrawPwd" />
+		                   </span>
+                                </div>
+								<div class="btn_con">
+									<!--添加提交事件-->
+									<a href="javascript:;" class="btn submit_a" ms-click = "addCard">保存</a>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="user_footer">
+			<script>
+				puli('/UserCenter/component/user_footer.html','.user_footer');
+
+			</script>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+	$("#mm_nav_"+8).addClass("active");
+		show_sub_bar($("#mm_nav_"+8));
+		$("#sd-lnk-"+8+'_'+2).addClass("active");
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!--<div class="footer_link">
+	<a href="../help/about.html">关于我们</a>|
+	<a href="../help/partner.html">合作伙伴</a>|
+	<a href="../help/save_help.html">存款帮助</a>|
+	<a href="../help/contact_us.html">联系我们</a>|
+	<a href="../help/question.html">常见问题</a>
+</div>-->
+<div class="copyright ">
+	<p style="margin-right: 20px;">Copyright © 2017 天下网络 All Right Reserved</p>
+	<p>PT游戏是由PT TransPacific在PAGCOR<img style="width:15px;" src="http://192.168.0.140:81/TXWN/user_img/pagcorlogo.png">的授权下部署</p>
+</div>
+<!--错误提示框-->
+<div class="pop_cover_bg" ms-if='alert_msg'></div>
+<div class="pop_cover_box" ms-if='alert_msg'>
+	<div class="pop_cover_title">
+		<a href="javascript:;" id="close" ms-click='closeAlert'><img src="http://192.168.0.140:81/TXWN/user_img/close_pop.png" /></a>
+	</div>
+	<div class="pop_cover_conter">
+		<ul>
+			<li><img ms-attr="[img_bol?imgRight:imgError]" /></li>
+			<li id="pop_content">{{alert_msg}}</li>
+		</ul>
+		<div class="confirm_ico">
+			<a href="javascript:;" id="confirm" ms-click='closeAlert'>确认</a>
+		</div>
+	</div>
+</div>
+<!--转账完成提示框-->
+<div class="dialog_bg"></div>
+	<div class="dialog_box">
+		<div class="dialog_title">
+			<a href="javascript:;" onclick="payClose()"><img src="http://192.168.0.140:81/TXWN/user_img/close_pop.png"  /></a>
+		</div>
+		<div class="dialog_content">
+			<div class="msg-desc"> 您的存款订单已生成，请您在弹出的银行页面上完成存款：
+				<div class="msg-info"> 付款后请根据状况选择 </div>
+			</div>
+			<div class="msg-buttons">
+				<a href="/UserCenter/pages/record-deposit.html" class="wepay-finish" onclick="payClose()">完成</a>
+				<a href="javascript:;" onclick="window.location.reload();" class="wepay-fail inverted" >支付遇到问题，重新支付</a>
+			</div>
+	</div>
+</div><!--转账完成提示框-end-->
+<!--删除银行卡弹窗-->
+<div class="eveb_popup_wraptbddete" ms-if = "win.isDelShow" ></div>
+<div class="set_alertdele" ms-if = "win.isDelShow">
+    <div class="alert_title">
+        <h4>是否删除银行卡</h4>
+        <i></i>
+    </div>
+    <div class="alert_content">
+        <ul>
+            <li><span>确认取款密码：</span>
+                <input type="password" id="login_pwd" ms-duplex = "win.rePwd" />
+            </li>
+            <li class="alert_btn">
+
+                <input type="button" id="btn_getpwddele" value="确认"  ms-click = "deleteCard" />
+                <input type="button" id="btn_cancledele" value="取消" ms-click="delHide" />
+
+            </li>
+        </ul>
+    </div>
+</div>
+<!--删除银行卡弹窗-end-->
+
+
+
+

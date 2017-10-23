@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>天下网络-优惠永远多一点</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="keywords" content="天下网络" />
+<meta name="description" content="" />
+<link rel="icon" href="http://192.168.0.140:81/TXWN/images/favicon.ico" type="image/x-icon" />
+<link href="/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/css/home.css" rel="stylesheet" type="text/css" />
+<link href="/css/faq.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js" charset="utf-8"></script>
+<script src="/template/main.js"></script>
+<!--公共基础js-->
+<script src="/public/init.js" type="text/javascript" ></script>
+<script src="/public/page_common.js" type="text/javascript" ></script>
+<script src="/public/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/checkinput.js" type="text/javascript" ></script>
+<script src="/public/loadpage.js" type="text/javascript" ></script>
+<script src="/public/imagescode.js" type="text/javascript" ></script>
+<script src="/public/game_plat.js" type="text/javascript" ></script>
+<script src="/public/checkMobile.js" type="text/javascript" charset="utf-8"></script>
+<!-- 滚动插件 -->
+<script src="/public/jquery.marquee.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="header_bgbox">
+    <script>Main($('.header_bgbox'),'/template/header.html');</script>
+</div>
+<!-- 头部显示 end -->
+
+
+	<div class="content cstm-wrap2">
+<div class="rule_banner"></div>
+   <ul class="gmrl-con">
+		<li id="rule_nav1"><a href="rule1_branch.html" >百家乐</a></li>
+		<li id="rule_nav2"><a href="rule2_branch.html" >包桌（VIP）百家乐</a></li>
+		<li id="rule_nav3"><a href="rule3_branch.html" >竞咪（LED）百家乐 </a></li>
+		<li id="rule_nav4"><a href="rule4_branch.html" >龙宝百家乐</a></li>
+		<li id="rule_nav20"><a href="rule20_branch.html" >保险百家乐</a></li>
+		<li id="rule_nav5"><a href="rule5_branch.html" >七喜百家乐</a></li>
+		<li id="rule_nav6"><a href="rule6_branch.html" >龙虎</a></li>
+		<li id="rule_nav7"><a href="rule7_branch.html" >骰宝</a></li>
+		<li id="rule_nav8"><a href="rule8_branch.html" >轮盘</a></li>
+		<li id="rule_nav9"><a href="rule9_branch.html" >二八杠</a></li>
+		<div class="clear"></div>
+		<li id="rule_nav10"><a href="rule10_branch.html" >三公</a></li>
+		<li id="rule_nav11"><a href="rule11_branch.html" >温州牌九</a></li>
+		<li id="rule_nav12"><a href="rule12_branch.html" >牛牛</a></li>
+		<li id="rule_nav13"><a href="rule13_branch.html" >色碟</a></li>
+		<li id="rule_nav14"><a href="rule14_branch.html" >德州扑克</a></li>
+		<li id="rule_nav15"><a href="rule15_branch.html" >特奖德州扑克 </a></li>
+		<li id="rule_nav16"><a href="rule16_branch.html" >21点</a></li>
+		<li id="rule_nav17"><a href="rule17_branch.html" >真人乐透</a></li>
+		<li id="rule_nav18"><a href="rule18_branch.html" >水果拉霸</a></li>
+		<li id="rule_nav19" class="active"><a href="rule19_branch.html" >杰克高手</a></li>
+		
+		<li id="rule_nav22"><a href="rule22_branch.html">时时彩</a></li>
+		<div class="clear"></div>
+</ul>
+  <div class="gamerule-con">
+     <div class="prm_h1_rule"> 杰克高手 </div>
+        <br><br>
+        <!--<div class="pa_bn"><img src="http://192.168.0.140:81/TXWN/images/rule/rule-banner15.jpg" alt=""></div>-->
+
+        <div class="info">
+          <div class="text-title">游戏规则：</div>
+          
+          <ol>
+            <li>杰克高手是一种使用一副52张的扑克牌，并可以为玩家提供一手或者多手牌（5，25，50，100）玩法的游戏。</li>
+            <li>玩家按一次按键 &nbsp; 
+            	<!--<img src="http://192.168.0.140:81/TXWN/images/rule/rule-img12.jpg" style="vertical-align: middle;">--> 
+            	 &nbsp;则增加1单位投注。按下最大投注键则以系统设定的游戏最高注进行游戏，若玩家当前的 余额少于最高投注值时，则剩余金额将被全部被投注。</li>
+            <li>玩家一旦确认投注不能取消投注。</li>
+            <li>按下最大投注或者发牌键开始游戏，在没有按其他按键时直接按下发牌键则重复三次的投注。</li>
+            <li>游戏开始系统会发5张牌。</li>
+            <li>发牌后点击画面上的牌来选择要留下的牌。</li>
+            <li>保留牌上将显示锁定。</li>
+            <li>再次按下发牌，则非锁定的牌将被更换。</li>
+            <li>再发牌后的5张为最后结果。</li>
+            <li>由最后的纸牌组合决定赔率的大小。</li>
+            <li>游戏的总注额为基本注额与赔率倍数以及手牌数的乘积。</li>
+            <li>基本游戏赢取的额度为基本注额与总赔率的乘积。</li>
+            <li>单局游戏的派彩高达1,000,000RMB</li>
+            <li>若游戏系统出现网络或其他故障，系统会自动托管（5分钟内）完成本次游戏，玩家仍然可以通过查询游戏记录查到具体的游戏结果。</li>
+          </ol>
+        </div>
+
+        <div class="info">
+          <div class="text-title">牌型组合：</div>
+          皇家同花顺：最高为Ace的同花顺，例：A <span class="suites">♠</span> K <span class="suites">♠</span> Q <span class="suites">♠ </span> J <span class="suites">♠ </span> 10 <span class="suites">♠ </span> <br>
+          同花顺：同一花色顺序的牌，例：A <span class="suites">♦ </span> J <span class="suites">♦</span> 10 <span class="suites">♦ </span> 9 <span class="suites">♦</span> 8 <span class="suites">♦ </span> <br>
+          四条：有4张同一点数的牌，例：4 <span class="suites">♣ </span> 4 <span class="suites">♦ </span> 4 <span class="suites">♠ </span> 4 <span class="suites">♥ </span> 9 <span class="suites">♥</span> <br>
+          葫芦（三带二）：3张同一点数的牌，加一对其它点数的牌，例：8 <span class="suites">♣ </span> 8 <span class="suites">♦ </span> 8 <span class="suites">♠ </span> K <span class="suites">♥</span> K <span class="suites">♠ </span><br>
+          同花：5张同一花色的牌，例：K <span class="suites">♠ </span> J <span class="suites">♠ </span> 8 <span class="suites">♠ </span> 4 <span class="suites">♠ </span> 3 <span class="suites">♠ </span><br>
+          顺子：5张顺连的牌，例：5 <span class="suites">♣ </span> 4 <span class="suites">♦ </span> 3 <span class="suites">♠ </span> 2 <span class="suites">♥</span> A <span class="suites">♠ </span> <br>
+          三条：有3张同一点数的牌，例：7 <span class="suites">♣ </span> 7 <span class="suites">♦ </span> 7 <span class="suites">♠ </span> K <span class="suites">♥ </span> 2 <span class="suites">♠ </span><br>
+          两队：2张相同点数的牌，加另外两张相同点数的牌。例：A <span class="suites">♣ </span> A <span class="suites">♦</span> 8 <span class="suites">♠ </span> 8 <span class="suites">♥ </span> Q <span class="suites">♠ </span> <br>
+          一对J或以上：2张Jack或以上相同点数的牌，即J，Q，K，A，但如一对2至10也不能计算获取资格。
+        </div>
+
+        <div class="info">
+          <div class="text-title">博取游戏：</div>
+          若玩家在基本游戏结束后，赢取大于零，玩家可以按“博取”进入博取游戏；
+          
+          <p>在博取游戏中，玩家可以选择“红”或者“黑”，如果玩家的选择与系统之后翻开的牌的颜色一致，则博取成功，赢取双倍的奖金；否则博取失败，此局全部奖金取消；</p>
+          玩家每轮最多可以连续博取5次。
+        </div>
+
+        <div class="info">
+          <div class="text-title">自动选牌：</div>
+          四条，同花顺，皇家同花顺，全部牌保留。<br>
+          差一张牌组成皇家同花顺的牌型。 <br>
+          三条，顺子，同花，葫芦（三带二）。 <br>
+          差一张牌组成同花顺的牌型。 <br>
+          两队。 <br>
+          大于或等于J的对子。<br>
+          差两张牌组成皇家同花顺的牌型。<br>
+          差一张牌组成同花的牌型。<br>
+          对子。 <br>
+          差一张牌（头或尾）组成顺子的牌型。<br>
+          同一花色的最大两张高牌。 <br>
+          差两张牌组成同花顺的牌型。 <br>
+          不同花色的最小两张高牌。 <br>
+          同花色的10/J，10/Q 或 10/K <br>
+          大于或等于J的牌。 <br>
+          换全部牌（不选牌）。<br><br>
+
+        </div>
+       
+      </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--尾部-->
+<div class="footer_bgbox">
+    <script>Main($('.footer_bgbox'),'../template/footer.html');</script>
+</div>
+<!--尾部-->
+</body>
+</html>

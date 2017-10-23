@@ -1,0 +1,911 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', sans-serif
+}
+
+html input {
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', sans-serif
+}
+
+html body {
+    background: #FFFFFF
+}
+
+html body a {
+    text-decoration: none
+}
+
+.pop-con {
+    width: 460px;
+    height: 250px;
+    margin: 0 auto;
+    background: #FFFFFF no-repeat;
+    position: fixed;
+    z-index: 99999999999
+}
+
+.pop-con .close-btn {
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 10px
+}
+
+.sk-double-bounce {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 40px auto
+}
+
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-doubleBounce 2.0s infinite ease-in-out;
+    animation: sk-doubleBounce 2.0s infinite ease-in-out
+}
+
+.sk-double-bounce .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s
+}
+
+@-webkit-keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.hide {
+    display: none
+}
+
+.free-play-box {
+    width: 745px;
+    height: 434px;
+    position: fixed;
+    top: 30%;
+    z-index: 999;
+    background: url(../images/free-play-box.png) no-repeat;
+    -webkit-border-radius: 8px
+}
+
+.free-play-box .icon-cancle {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    cursor: pointer
+}
+
+.free-play-box .free-top {
+    float: left;
+    width: 500px;
+    padding: 40px 0 0 110px;
+    height: 250px
+}
+
+.free-play-box .free-top .register-img {
+    width: 341px;
+    padding-left: 70px
+}
+
+.free-play-box .free-top .title {
+    font-size: 30px;
+    color: #1f1c2b;
+    padding: 23px 0 0 60px;
+    width: 450px
+}
+
+.free-play-box .free-top .title span {
+    color: #ee484c
+}
+
+.free-play-box .free-top .content {
+    color: #535353;
+    font-size: 18px;
+    padding: 15px 0 0 80px
+}
+
+.free-play-box .free-top .content span {
+    font-size: 22px
+}
+
+.free-play-box .free-top .buttons {
+    padding: 50px 0 0 100px;
+    width: 330px;
+    margin: 0 auto
+}
+
+.free-play-box .free-top .buttons .code {
+    color: #959595;
+    font-size: 16px;
+    width: 160px;
+    padding-bottom: 10px
+}
+
+.free-play-box .free-top .buttons .registercode {
+    float: left;
+    height: 32px;
+    width: 73px;
+    margin: 0 0 0 10px
+}
+
+.free-play-box .free-top .buttons #captcha {
+    outline-color: #9973e6;
+    width: 140px;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+    line-height: 32px;
+    padding: 0 10px;
+    float: left;
+    -webkit-border-radius: 3px
+}
+
+.free-play-box .free-top .buttons .icon-refresh {
+    cursor: pointer;
+    float: left;
+    margin: 5px 0 0 10px
+}
+
+.free-play-box .free-top #visityes {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 285px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    -webkit-border-radius: 6px;
+    background: #9973e6;
+    margin: 10px 0 0 130px
+}
+
+.free-play-box .free-top #visityes:hover {
+    background: #a78ae3
+}
+
+.free-play-box .free-down {
+    position: absolute;
+    right: 140px;
+    bottom: 31px;
+    width: 90px;
+    height: 70px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+    background: #FFF;
+    color: #e98a8b;
+    -webkit-border-radius: 5px;
+    cursor: pointer
+}
+
+.free-play-box .free-down .register-box {
+    padding: 11px 20px 20px 20px
+}
+
+.login-box {
+    position: fixed;
+    background: url(../images/login-box.png) no-repeat;
+    width: 554px;
+    height: 319px;
+    z-index: 999
+}
+
+.login-box .icon-cancle {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    cursor: pointer
+}
+
+.login-box .login-info {
+    width: 320px;
+    float: right
+}
+
+.login-box .login-info .tiles {
+    color: #743aa4;
+    font-size: 14px;
+    font-weight: bold;
+    width: 80px;
+    margin: 0 auto;
+    padding: 23px 0 29px 0
+}
+
+.login-box .login-info .lgn-inpt {
+    width: 200px;
+    margin: 0 auto;
+    position: relative
+}
+
+.login-box .login-info .lgn-inpt input {
+    outline-color: #59397b;
+    width: 160px;
+    height: 37px;
+    border: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    padding-left: 37px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    margin-bottom: 15px
+}
+
+.login-box .login-info .arrow1 {
+    position: absolute;
+    top: 8px;
+    left: 4px
+}
+
+.login-box .login-info .arrow2 {
+    position: absolute;
+    top: 60px;
+    left: 4px
+}
+
+.login-box .login-info .login_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 39px;
+    outline: 0;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #7187de;
+    text-align: center;
+    line-height: 38px;
+    margin: 0 auto;
+    -webkit-border-radius: 5px
+}
+
+.login-box .login-info .login_btn:hover {
+    background-color: #5d74ce
+}
+
+.login-box .login-info .free_account_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 39px;
+    margin: 0 auto;
+    outline: 0;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #a671ff;
+    text-align: center;
+    line-height: 38px;
+    -webkit-border-radius: 5px
+}
+
+.login-box .login-info .free_account_btn:hover {
+    background-color: #9362e4
+}
+
+.login-box .login-info .icon-cny {
+    float: left;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 35px
+}
+
+.modifyPwd-box {
+    width: 830px;
+    height: 380px;
+    position: fixed;
+    z-index: 999;
+    background: #FFFFFF;
+    -webkit-border-radius: 8px
+}
+
+.modifyPwd-box .icon-cancle {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    cursor: pointer
+}
+
+.modifyPwd-box .modifyPwd-left {
+    float: left;
+    width: 170px;
+    padding-left: 60px;
+    padding-top: 130px
+}
+
+.modifyPwd-box .modifyPwd-left .lock-password {
+    width: 119px;
+    height: 124px;
+    background: url(../images/lock-password.png) no-repeat
+}
+
+.modifyPwd-box .modifyPwd-content {
+    width: 320px;
+    float: left;
+    padding: 80px 0 0 0
+}
+
+.modifyPwd-box .modifyPwd-content .title {
+    width: 510px;
+    height: 31px;
+    background: #f3f0fa;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 31px;
+    color: #8b8b8b;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .title span {
+    color: red;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info {
+    padding: 30px 0 0 10px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .row {
+    padding-bottom: 20px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 550px
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input {
+    float: left;
+    height: 36px;
+    width: 260px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 0 0 8px;
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #9973e6
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message {
+    float: left;
+    height: 40px;
+    width: 280px;
+    padding-left: 10px;
+    color: #8b8b8b
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .field .input-message.active {
+    color: #fe0d0d
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons {
+    margin-top: 14px;
+    font-weight: bold
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 260px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: #9973e6
+}
+
+.modifyPwd-box .modifyPwd-content .modifyPwd-info .buttons a:hover {
+    background: #a78ae3
+}
+
+.popmask {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000;
+    z-index: 998;
+    opacity: 0.8;
+    filter: alpha(opacity=80)
+}
+
+#loadingpop .loadingpopimg {
+    position: fixed;
+    z-index: 999999
+}
+
+.clear {
+    clear: both
+}
+
+.loading-wrap {
+    width: 102px;
+    height: 102px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    margin-left: -51px;
+    background: url(../images/loading-logo.png) no-repeat;
+    z-index: 9999
+}
+
+.loading-point {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+    width: 122px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-image: url(../images/loading-sprite.png);
+    background-position: 0 0
+}
+
+.loading-point.animated {
+    -webkit-animation: circle 2s linear infinite forwards;
+    animation: circle 2s linear infinite forwards
+}
+
+@-webkit-keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.am.right.align, .am .right.align {
+    text-align: right
+}
+
+.am.left.align, .am .left.align {
+    text-align: left
+}
+
+.am.center.align, .am .center.align {
+    text-align: center
+}
+
+.am.top.align, .am .top.align {
+    vertical-align: top
+}
+
+.am.middle.align, .am .middle.align {
+    vertical-align: middle
+}
+
+.am.bottom.align, .am .bottom.align {
+    vertical-align: bottom
+}
+
+.am.button, .am .button {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    background: #9973e6
+}
+
+.am.button:hover, .am.button:active, .am .button:hover, .am .button:active {
+    background: #b79cec
+}
+
+.hide {
+    display: none
+}
+
+.am.dialog-wrap {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.am.dialog-wrap .dialog-bg {
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    opacity: .8;
+    background-color: #000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.am.dialog-wrap .dialog {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    min-width: 460px;
+    margin: 0 auto;
+    background: #fff no-repeat
+}
+
+.am.dialog-wrap .dialog p {
+    padding: 20px
+}
+
+.am.dialog-wrap .dialog .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 31px;
+    height: 31px
+}
+
+.am.dialog-wrap .dialog-loading {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -20px
+}
+
+.am.dialog-tips, .am .dialog-tips {
+    position: fixed;
+    z-index: 100000;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.am.dialog-tips h4, .am .dialog-tips h4 {
+    font-size: 16px
+}
+
+.am.dialog-tips p, .am .dialog-tips p {
+    line-height: 200%
+}
+
+.am.dialog-tips p:last-child, .am .dialog-tips p:last-child {
+    margin-bottom: 0
+}
+
+.am.dialog-tips .tips-confirm, .am .dialog-tips .tips-confirm {
+    margin-top: 10px;
+    text-align: center
+}
+
+.am.dialog-tips .tips-confirm .button, .am .dialog-tips .tips-confirm .button {
+    font-size: 14px;
+    min-width: 80px;
+    margin: 5px;
+    color: #fff
+}
+
+.wrap {
+    height: auto;
+    margin: 0 auto
+}
+
+.wrap .sport_movie {
+    background: url(http://192.168.0.140:81/TXWN/images/sports/video.jpg) no-repeat;
+    height: 220px;
+    width: 365px;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    z-index: 100;
+    border: 1px solid #485f7c
+}
+
+.wrap .sport_movie:hover {
+    border: 1px solid #7187de
+}
+
+.wrap .sport_click {
+    position: absolute;
+    top: 190px;
+    background-color: #2f374c;
+    width: 150px;
+    height: 35px;
+    z-index: 100;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-border-radius: 30px;
+    border: 1px solid #7398c5;
+    right: 250px
+}
+
+.wrap .sport_click:hover {
+    background-color: #7187de
+}
+
+.wrap .sport_click .icon-purple {
+    background: url(http://192.168.0.140:81/TXWN/images/sports/icon-right-block.png) no-repeat;
+    width: 8px;
+    height: 17px;
+    display: inline-block;
+    margin: 0 0 -3px 6px
+}
+
+.wrap .sport_content {
+    position: absolute;
+    top: 190px;
+    background-color: #2f374c;
+    width: 150px;
+    height: 35px;
+    z-index: 100;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-border-radius: 30px;
+    border: 1px solid #7398c5;
+    right: 50px
+}
+
+.wrap .sport_content:hover {
+    background-color: #7187de
+}
+
+.wrap .sport_content .icon-purple {
+    background: url(http://192.168.0.140:81/TXWN/images/sports/icon-right-block.png) no-repeat;
+    width: 8px;
+    height: 17px;
+    display: inline-block;
+    margin: 0 0 -3px 6px
+}
+
+.wrap .content {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.wrap .content .in-sport {
+    height: 390px;
+    padding-top: 20px
+}
+
+.wrap .content .in-sport .saba {
+    float: left;
+    background: url(http://192.168.0.140:81/TXWN/images/sports/sabah.jpg) no-repeat;
+    height: 335px;
+    width: 640px;
+    margin-right: 50px;
+    cursor: pointer
+}
+
+.wrap .content .in-sport .saba_sprts{
+    background: url(http://192.168.0.140:81/TXWN/images/sports/sabah_sports.jpg) no-repeat;
+}
+
+
+.wrap .content .in-sport .saba:hover {
+    background: url(http://192.168.0.140:81/TXWN/images/sports/sabah-hover.jpg) no-repeat;
+    height: 379px;
+    width: 658px;
+    margin-right: 32px
+}
+.wrap .content .in-sport .saba_sprts:hover{
+    background: url(http://192.168.0.140:81/TXWN/images/sports/sabah-hover_sports.jpg) no-repeat;
+
+}
+.wrap .content .in-sport .virtual {
+    float: left;
+    background: url(http://192.168.0.140:81/TXWN/images/sports/virtual.jpg) no-repeat;
+    height: 337px;
+    width: 510px
+}
+.wrap .content .in-sport .virtual_sprts{
+    background: url(http://192.168.0.140:81/TXWN/images/sports/virtual_sports.jpg) no-repeat;
+}
+.wrap .content .in-sport .virtual:hover {
+    background: url(http://192.168.0.140:81/TXWN/images/sports/virtual-hover.jpg) no-repeat;
+    height: 347px;
+    width: 648px;
+    margin-right: -160px
+}
+.wrap .content .in-sport .virtual_sprts:hover{
+    background: url(http://192.168.0.140:81/TXWN/images/sports/virtual-hover_sports.jpg) no-repeat;
+
+
+}
+.wrap .content .hihe {
+    float: left;
+    background: url(http://192.168.0.140:81/TXWN/images/sports/hihe.jpg) no-repeat;
+    height: 50px;
+    width: 1201px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative
+}
+
+.wrap .content .hihe .rules {
+    color: #646464;
+    position: absolute;
+    right: 30px;
+    font-size: 14px;
+    top: 18px
+}
+
+.wrap .content .hihe .rules:hover {
+    color: #bfbfbf
+}
+
+.wrap .content .hihe .sect-top {
+    position: absolute;
+    top: 0;
+    left: 160px
+}
+
+.wrap .content .hihe .sect-top div:nth-child(2) {
+    height: 25px;
+    margin-top: 13px;
+    margin-bottom: 20px
+}
+
+.wrap .content .hihe .sect-top div:nth-child(2) li {
+    height: 35px
+}
+
+.wrap .content .hihe .sect-top div:nth-child(2) li font {
+    color: #e7004c !important;
+    font-size: 16px;
+    font-weight: bold
+}
+
+
+/*banner*/
+.banner_index .fullSlide{ width:100%;  position:relative;  height:300px; background:#000;  }
+.banner_index .fullSlide .bd{ margin:0 auto; position:relative; z-index:0; overflow:hidden;  }
+.banner_index .fullSlide .bd ul{ width:100% !important;  }
+.banner_index .fullSlide .bd li{ width:100% !important;  height:300px; overflow:hidden; text-align:center;  }
+.banner_index .fullSlide .bd li a{ display:block; height:300px; }
+.banner_index .fullSlide .bd li img{ width: 100%; height: 300px;}
+.banner_index .fullSlide .hd{ height:15px; overflow:hidden; position:absolute; right:23%; bottom:0px; z-index:110; }
+.banner_index .fullSlide .hd ul{ text-align:center;  padding-top:5px;  }
+.banner_index .fullSlide .hd li{ float:left; margin-right:2px;  width:30px; height:3px; margin-right: 10px; line-height:14px; text-align:center; background:#fff; cursor:pointer; list-style: none; }
+.banner_index .fullSlide .hd .on{  background:#a671ff; color:#fff; }
+/*捕鱼遮罩*/
+.blank_wapper{
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+}
+.saba_wapper{
+	height: 335px;
+    width: 640px;
+    }
+.virtual_wapper{
+	height: 337px;
+    width: 510px;
+}
+
+.blank_wapper a{
+	width: 135px;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    border-radius: 17px;
+    background: #936cb0;
+    margin-top: 160px;
+}
+
+.fish_ag{
+	float: left;
+    height: 335px;
+    width: 640px;
+    margin-right: 40px;
+    background: url(http://192.168.0.140:81/TXWN/images/sports/sabah.jpg) no-repeat;
+}
+.fish_gg{
+	float: left;
+    height: 335px;
+    width: 510px;
+    background: url(http://192.168.0.140:81/TXWN/images/sports/virtual.jpg) no-repeat;
+}

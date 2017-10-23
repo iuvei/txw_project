@@ -1,0 +1,159 @@
+﻿<div class="footer">
+  <div class="footer-down">
+    <div class="down-menu"> <a class="p2" target="_blank" href="http://www.firstcagayan.com/fclrc/operators.php"></a> <span class="p4">Copyright © 2017 天下网络. All Rights Reserved.</span>
+      <div class="on-menu"> <a href="/help/aboutus1.html">关于我们</a> <span>|</span> <a href="/help/help_center2.html">新手指南</a> <span>|</span> <a href="/help/help_center2.html">存取款方法</a> <span>|</span> <a href="/help/aboutus4.html">规则条款 </a> <span>|</span> <a href="/help/aboutus6.html">联系我们</a>
+        <!-- span>|</span> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 右侧悬浮框 start -->
+<!-- 支付宝扫码 -->
+<div class="index-float">
+  <div class="_relative">
+    <div class="h24" onclick="alert('暂未开放')">
+      <div class="icon-24"></div>
+      <div class="info">在线客服</div>
+    </div>
+    <div class="ask">
+      <div class="icon-right-tel"></div>
+      <div class="info">0947612318</div>
+    </div>
+    <div class="askVip" id="askVip">
+        <a href="skype:txwl18899?chat">
+             <div class="icon-right-vip-tel"></div>
+             <div class="info">txwl18899</div>
+        </a>
+    </div>
+    <div class="download">
+      <div class="icon-download"></div>
+      <div class="info">txwl18899<br />@gmail.com</div>
+    </div>
+    <div class="icon-onbg"></div>
+  </div>
+  <!--<div class="ask-content">-->
+    <!--<div class="icon-close"></div>-->
+    <!--<div class="title">填写后，客服立即回电</div>-->
+    <!--<div id="reCallPhone_w"></div>-->
+    <!--<div class="ask-info">-->
+      <!--<input type="text" id="reCallPhone" maxlength="12" placeholder="请输入11或12位正确号码">-->
+    <!--</div>-->
+    <!--<div class="recall_submit">确认</div>-->
+  <!--</div>-->
+  <!--<div class="askVip-content">-->
+    <!--<div class="icon-close"></div>-->
+    <!--<div class="title">填写后，客服立即回电</div>-->
+    <!--<div id="reCallPhone_w_vip"></div>-->
+    <!--<div class="ask-info">-->
+      <!--<input type="text" id="reCallPhoneVip" maxlength="12" placeholder="请输入11或12位正确号码">-->
+    <!--</div>-->
+    <!--<div class="vip-time">客服服务时间：13:00-22:00</div>-->
+    <!--<div class="recall_submit" id="recall_vip">确认</div>-->
+  <!--</div>-->
+</div>
+
+<!-- 右侧悬浮框 end -->
+
+<div class="moonFestival2017-left" id="service">
+  <div class="moonFestival2017-close"></div>
+  <a class="float-left-prize" id="service_left" href="">
+      <img style="height: 150px;width: 150px;" src="http://192.168.0.140:81/TXWN/images/index-float-left.png">
+  </a>
+</div>
+
+<!--注册弹窗-->
+<div class="register-pup" id="register-pup" style="display: none;">
+    <div class="icon-cancle" id="icon-cancle" style="z-index: 1000"></div>
+    <div class="register-top">
+        <div id="registerType" value="2"></div>
+        <div id="registerOrdinaryDiv" class="register-top-div ">
+            <div class="registerOrdinary"></div>
+            <span>极速开户</span>
+        </div>
+        <hr />
+    </div>
+    <div class="register-left">
+        <div class="icon-register"></div>
+    </div>
+    <div class="register-content">
+        <div class="inpt-group">
+            <!--<div class="add ">r</div>-->
+            <input type="text" id="userid" maxlength="10" name="username" class="inpt1 br username" placeholder="用户名" tabindex="1">
+            <strong><img id="" src="http://192.168.0.140:81/TXWN/images/icon_right.png"></strong>
+            <div class="username-remid username_yjsc" style="float: left;"><a id="regi-btn" href="javascript:;">一键生成</a></div>
+            <!--<span id="loginname_w" class="vldn-txt"></span>
+            <div style=" clear: both"></div>-->
+            <h4 id="" style=""></h4>
+        </div>
+        <div class="inpt-group">
+            <input type="password" id="password1" maxlength="16" name="password" class="inpt1 br" placeholder="密码" tabindex="2">
+            <strong><img id="" src="http://192.168.0.140:81/TXWN/images/icon_right.png"></strong>
+
+            <div class="eye icon-eye-close" id="icon-eye-close"></div>
+            <!--<div class="password-remid">密码必须为6-16位数字或字母或其组合</div>-->
+           <!-- <span id="passwordfield_w" class="vldn-txt"></span>-->
+           <h4 id="" style=""></h4>
+        </div>
+        <div class="inpt-group" style="width: 250px;">
+            <input type="text" class="inpt_code br captcha-field" name="code" id="Verification-code_zc" maxlength="4" placeholder="验证码" tabindex="3">
+             <img class="code registercode" id="imgObj_zc" style=" width: 75px; height: 34px;" onclick="changeImg_zc()" src="" alt="验证码" />
+             <a onclick="changeImg_zc()" style="float: left;float: left;margin-top: 7px;margin-left: 9px;"><img src="http://192.168.0.140:81/TXWN/images/register/new.png"></a>
+             <h4 id=""><i class="ico ico-error"></i></h4>
+        </div>
+        <div class="checkbox no-border">
+            <input class="box roundedOne" value="None" id="agree" name="check" checked="" type="checkbox">
+            <label for="agree">我确认我已年满18岁，并已阅读和接受本网站的策略，隐私声明，<a
+                    target="_blank" href="/help/aboutus4.html">条款及条件</a>。</label>
+            <span  id="b_agree">
+            	如果您同意我们的条件和条款，且年满18岁，请勾选</span>
+        </div>
+        <div class="buttons">
+            <a id="btnSubmit" href="javascript:void(0);" class="zhuce_btn">马上注册</a>
+            <!--<span class="info">已有帐号？</span> <a class="login" href="#" onclick="javascript:prj.pop('','login','');">在此登录</a> -->
+        </div>
+
+</div>
+</div>
+
+<script>
+	$(".float-left-close").click(function() {
+		$(".index-float-left").hide();
+	});
+
+	$(".moonFestival2017-close").click(function() {
+		$(".moonFestival2017-left").hide();
+	});
+    //点击关闭注册弹窗
+    $('#icon-cancle').click(function() {
+        // $('#register-pup').hide();
+        layer.closeAll();
+    })
+    //    点击显示密码
+    $('#icon-eye-close').click(function() {
+        // console.log($(this).prev('.password-class').find('input'));
+        var type = $('#password1').attr('type') == 'text' ? 'password' : 'text';
+        $('#password1').prop('type', type);
+
+        var class_name = type == 'text' ? 'icon-eye-open' : 'icon-eye-close';
+        $(this).prop('class', class_name);
+    })
+
+
+    //layer 注册弹窗
+    $('.free_account_btn').on('click',function  () {
+        //自定页
+        layer.open({
+          area: ['830px', '380px'],
+          type: 1,
+          title: false,
+          skin: 'layui-layer-demo', //样式类名
+          closeBtn: 0,
+          shade:[0.7,'#000'],
+          shadeClose: true, //开启遮罩关闭
+          anim:0,
+          content: $('#register-pup')
+        });
+    })
+</script>
+
+
